@@ -1,21 +1,21 @@
 ---
 # Leave the homepage title empty to use the site title
 title:
-date: 2022-10-24
+date: 2024-10-24
 type: landing
 
 sections:
   - block: hero
     content:
       title: |
-        Wowchemy
-        Research Group
+        微纳机器人研究团队
+        Micro Nano Robotics Lab
       image:
-        filename: welcome.jpg
+        filename: wanghuaping2.jpg
       text: |
         <br>
         
-        The **Wowchemy Research Group** has been a center of excellence for Artificial Intelligence research, teaching, and practice since its founding in 2016.
+        本团队致力于磁驱软体机器人、微纳机器人、微尺度自动化等多领域研究工作...
   
   - block: collection
     content:

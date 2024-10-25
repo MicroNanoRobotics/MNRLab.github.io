@@ -1,6 +1,6 @@
 ---
 title: Tour
-date: 2022-10-24
+date: 2024-10-24
 
 type: landing
 
@@ -8,28 +8,28 @@ sections:
   - block: slider
     content:
       slides:
-      - title: 👋 Welcome to the group
-        content: Take a look at what we're working on...
+      - title: 欢迎访问微纳机器人研究小组
+        content: 👋 Welcome to the Micro Nano Robotics Lab...
         align: center
-        background:
-          image:
-            filename: coders.jpg
-            filters:
-              brightness: 0.7
-          position: right
-          color: '#666'
-      - title: Lunch & Learn ☕️
-        content: 'Share your knowledge with the group and explore exciting new topics together!'
-        align: left
         background:
           image:
             filename: contact.jpg
             filters:
               brightness: 0.7
+          position: right
+          color: '#666'
+      - title: 期刊封面
+        content: '本团队的代表性成果发表在国际知名杂志xxxxxxxxx'
+        align: left
+        background:
+          image:
+            filename: coders.jpg
+            filters:
+              brightness: 0.7
           position: center
           color: '#555'
-      - title: World-Class Semiconductor Lab
-        content: 'Just opened last month!'
+      - title: 获奖证书
+        content: '快来加入我们吧!'
         align: right
         background:
           image:
