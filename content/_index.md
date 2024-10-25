@@ -53,7 +53,7 @@ sections:
           text_color_light: true
       spacing:
         padding: ['20px', '0', '20px', '0']
-      css_class: content-width
+      css_class: center
 
   - block: collection
     content:
