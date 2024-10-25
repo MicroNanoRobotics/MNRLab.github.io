@@ -1,57 +1,67 @@
 ---
 # Display name
-title: Alice Wu 吳恩達
+title: 白善明 Shanming Bai 
 
 # Full name (for SEO)
-first_name: Alice
-last_name: Wu
+first_name: Shanming
+last_name: Bai
 
 # Username (this should match the folder name)
 authors:
-  - 吳恩達
+  - 白善明
 
 # Is this the primary user of the site?
 superuser: false
 
 # Role/position
-role: Professor of Artificial Intelligence
+role: 机械工程专业博士研究生 PhD Students of Mechanical Engineering
 
 # Organizations/Affiliations
 organizations:
-  - name: Stanford University
+  - name: 北京理工大学 Beijing Institute of Technology
     url: ''
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: My research interests include Continuum Robots, Magnetically Controlled Robots, Nanorobots, and more.
 
 interests:
-  - Artificial Intelligence
-  - Computational Linguistics
-  - Information Retrieval
+  - 磁控连续体机器人
 
 education:
   courses:
-    - course: PhD in Artificial Intelligence
-      institution: Stanford University
-      year: 2012
-    - course: MEng in Artificial Intelligence
-      institution: Massachusetts Institute of Technology
-      year: 2009
-    - course: BSc in Artificial Intelligence
-      institution: Massachusetts Institute of Technology
-      year: 2008
+    - course: 机械工程专业 在读博士
+      institution: 北京理工大学机电学院
+      year: 2024-
+    - course: 仪器科学与技术专业 硕士
+      institution: 中北大学仪器与电子学院
+      year: 2021-2024
+    - course: 探测制导与控制技术专业 学士
+      institution: 中北大学机电工程学院
+      year: 2017-2021
 
 # Social/Academic Networking
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
 #   form "mailto:your-email@example.com" or "#contact" for contact widget.
 social:
+  - icon: weixin
+    icon_pack: fas
+    link: '15835844947'
   - icon: envelope
     icon_pack: fas
-    link: 'mailto:test@example.org'
-  - icon: twitter
-    icon_pack: fab
-    link: https://twitter.com/GeorgeCushen
+    link: 'baishanming@163.com'
+  - icon: QQ
+    icon_pack: fas
+    link: '249846509'
+  # - icon: 微博
+  #   icon_pack: fas
+  #   link: 'xxxxxx'
+  # - icon: 小红书
+  #   icon_pack: fas
+  #   link: 'xxxxxx'
+  # - icon: twitter
+  #   icon_pack: fab
+  #   link: https://twitter.com/GeorgeCushen
   - icon: google-scholar
     icon_pack: ai
     link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
@@ -65,15 +75,27 @@ social:
 #   link: files/cv.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
-email: ''
+email: 'baishanming@163.com'
 
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
   - Researchers
   - Visitors
+  - Postdocs
+  - PhD Students
+  - Masters Students
+  - Undergraduate Students
+  - Administration
+  - Visitors
+  - Alumni
+
 ---
 
-吳恩達 is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+白善明，北京理工大学机械工程专业博士研究生。他的主要研究方向包括连续体机器人、磁控机器人、纳米机器人等。
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+Shanming Bai is a PhD Students of Mechanical Engineering at the Micro nano Robotics Lab. His research interests include continuum robots, magnetically controlled robots, nanorobots, and more.
+
+“代表性成果”
+ [1] xzxxxx
+ [1] xzxxxx
