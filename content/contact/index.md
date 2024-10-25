@@ -21,8 +21,8 @@ sections:
         country: 中国
 
       coordinates:
-        latitude: '116.31073'
-        longitude: '39.95797'
+        latitude: '39.95797'
+        longitude: '116.31073'
       # directions: Enter Building 1 and take the stairs to Office 200 on Floor 2
       office_hours:
         - '上午：09：00 - 12：00'

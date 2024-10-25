@@ -8,7 +8,7 @@ sections:
   - block: hero
     content:
       title: |
-        “微纳机器人研究团队”
+        微纳机器人研究团队
         
       image:
         filename: wanghuaping2.jpg
@@ -53,7 +53,7 @@ sections:
           text_color_light: true
       spacing:
         padding: ['20px', '0', '20px', '0']
-      css_class: fullscreen
+      css_class: content-width
 
   - block: collection
     content:

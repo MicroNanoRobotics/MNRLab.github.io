@@ -3,7 +3,7 @@ title: 祝贺本团队博士研究生赵言锋在中科院一区期刊Research�
 date: 2024-05-27
 image:
   focal_point: 'top'
-authors: [白善明]
+authors: []
 ---
 Integrated Cross-Scale Manipulation and Modulable Encapsulation of Cell-Laden Hydrogel for Constructing Tissue-Mimicking Microstructures
 
