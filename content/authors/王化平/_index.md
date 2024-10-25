@@ -113,7 +113,7 @@ user_groups:
 
 9. Cui Juan, Wang Huaping*, Shi Qing, Paolo Dario, Huang Qiang, et al., “Permeable Hollow 3D Tissue-Like Constructs Engineered by On-Chip Hydrodynamic-Driven Assembly of Multicellular Hierarchical Micromodules”, Acta Biomaterialia, vol. 113, pp. 328-338, Sep. 2020. (IF: 9.7, 中科院1区)
 
-10.Cui Juan, Wang Huaping*, Zheng Zhiqiang, Shi Qing, Huang Qiang, Fukuda Toshio, et al., “Fabrication of Perfusable 3D hepatic Lobule-Like Constructs through Assembly of Multiple Cell Type Laden Hydrogel Microstructures,” Biofabrication, vol. 11, Jan. 2019. (IF: 9, 中科院1区)
+10. Cui Juan, Wang Huaping*, Zheng Zhiqiang, Shi Qing, Huang Qiang, Fukuda Toshio, et al., “Fabrication of Perfusable 3D hepatic Lobule-Like Constructs through Assembly of Multiple Cell Type Laden Hydrogel Microstructures,” Biofabrication, vol. 11, Jan. 2019. (IF: 9, 中科院1区)
 
 
 【教学工作】
