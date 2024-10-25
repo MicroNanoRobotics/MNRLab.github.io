@@ -1,6 +1,7 @@
 ---
 # Display name
-title: 王化平 Huaping Wang 
+title: 王化平
+ Huaping Wang 
 
 # Full Name (for SEO)
 first_name: Huaping
@@ -14,11 +15,13 @@ authors:
 superuser: true
 
 # Role/position
-role: 机械工程/机器人工程 教授/博导 Professor of Mechanical Engineering&Robot Engineering
+role: 机械工程/机器人工程 教授/博导
+ Professor of Mechanical Engineering&Robot Engineering
 
 # Organizations/Affiliations
 organizations:
-  - name: 北京理工大学 Beijing Institute of Technology
+  - name: 北京理工大学
+     Beijing Institute of Technology
     url: 'https://smen.bit.edu.cn/szdw/szml/znjqryjs/qb08/4ada85fc3d4e4ebd8d84480267e36754.htm'
 
 # Short bio (displayed in user profile at end of posts)
