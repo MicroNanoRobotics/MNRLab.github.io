@@ -121,49 +121,31 @@ user_groups:
 1、主要讲授课程:
 （1）本科生课程《MATLAB基础与机器人学应用（全英文）》、《数值计算与机器人应用》
 （2）研究生课程《生物医疗与微纳机器人技术》、《机器人前沿技术》
-
 2、指导本科毕业设计获得“北京市优秀毕业设计”；
-
 3、指导“挑战杯”全国大学生课外学术科技作品竞赛获特等奖；
-
 4、指导iCAN大学生创新创业大赛获全国总决赛一等奖；
-
 5、中国研究生机器人创新设计大赛获全国一等奖
 
 
 “荣誉奖励”
 
 1、2022年度国家优秀青年科学基金
-
 2、国际会议IEEE ICRA-2021自动化领域优秀论文奖（Best Application Paper in Automation，机器人领域Top1国际会议，中国大陆首次获得（1997-今），1600篇仅1篇）
-
 3、国际学术会议IEEE CYBER-2023优秀论文奖（Best Student Paper，Top 0.5%）
-
 4、2023年第四届中国机器人学术年会最佳海报奖
-
 5、国际学术会议IEEE CBS-2022优秀论文奖（Best Student Paper，Top 0.5%）
-
 6、国际会议IEEE RCAR-2021控制领域优秀论文奖（Best Application Paper in Control，Top 0.5%）
-
 7、国际会议 IEEE MARSS-2018最佳应用奖（Best Application Paper，Top 0.6%）
-
 8、国际会议 IEEE CYBER-2017优秀论文奖（Best Student Paper，Top 0.5%）
-
 9、国际会议 IEEE ROBIO-2017优秀论文提名奖（Best Paper Finalist，Top 2%）
 
 
 “社会兼职”
 
 1、Cyborg and Bionic Systems青年编委（Science合作期刊、中国卓越行动计划）
-
 2、Frontiers in Neurorobotics机器人与神经科学领域SCI国际期刊编委会成员
-
 3、IEEE RCAR-2021程序委员会联席主席
-
 4、IEEE CBS-2022宣传委员会联席主席
-
 5、中国计算机学会智能机器人专业委员会委员
-
-6.、中国微米纳米技术学会微纳机器人分会理事
-
+6、中国微米纳米技术学会微纳机器人分会理事
 7、中国指挥与控制学会智能控制与系统专业委员会委员
