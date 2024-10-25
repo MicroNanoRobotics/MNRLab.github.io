@@ -1,7 +1,6 @@
 ---
 # Display name
-title: 白善明
- Shanming Bai 
+title: 白善明 Shanming Bai 
 
 # Full name (for SEO)
 first_name: Shanming
@@ -15,13 +14,11 @@ authors:
 superuser: false
 
 # Role/position
-role: 机械工程专业博士研究生 
- PhD Students of Mechanical Engineering
+role: 机械工程专业博士研究生 PhD Students of Mechanical Engineering
 
 # Organizations/Affiliations
 organizations:
-  - name: 北京理工大学 
-     Beijing Institute of Technology
+  - name: 北京理工大学 Beijing Institute of Technology
     url: ''
 
 # Short bio (displayed in user profile at end of posts)
