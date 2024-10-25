@@ -9,13 +9,13 @@ sections:
     content:
       title: |
         微纳机器人研究团队
-        Micro Nano Robotics Lab
+        
       image:
         filename: wanghuaping2.jpg
       text: |
         <br>
         
-        本团队致力于磁驱软体机器人、微纳机器人、微尺度自动化等多领域研究工作...
+        The Lab is committed to magnetic drive software robots, micro and nano robots, micro-scale automation and other fields of research.
   
   - block: collection
     content:
