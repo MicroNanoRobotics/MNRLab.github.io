@@ -1,7 +1,7 @@
 ---
-title: Example Cover
+title: Research Platforms & Equipment
 
-event: Example Cover
+event: Photonic Professional GT2
 event_url: https://example.org
 
 # location: Wowchemy HQ
@@ -12,8 +12,8 @@ event_url: https://example.org
 #   postcode: '94305'
 #   country: United States
 
-summary: An example event.
-abstract: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellusac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam.'
+summary: An example event.Scientific 3D printer designed for ultra-precise and rapid scientific microfabrication
+abstract: 'Nanoscribes Photonic Professional GT2 uses Two-Photon Polymerization (2PP) to produce filigree structures of nearly any 3D shape by high-precision 3D printing: crystal lattices, porous scaffolds, naturally inspired patterns, smooth contours, sharp edges, undercuts and bridges are all manufacturable with submicron resolution. More than a thousand successful research projects by Nanoscribe customers and system users are evidence of the power of two-photon lithography'
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
