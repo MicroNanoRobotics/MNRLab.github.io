@@ -8,7 +8,7 @@ sections:
   - block: hero
     content:
       title: |
-        微纳机器人研究团队
+        “微纳机器人研究团队”
         
       image:
         filename: wanghuaping2.jpg

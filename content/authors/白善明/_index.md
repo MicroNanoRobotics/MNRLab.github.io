@@ -44,15 +44,13 @@ education:
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
 #   form "mailto:your-email@example.com" or "#contact" for contact widget.
 social:
-  - icon: weixin
-    icon_pack: fas
-    link: '15835844947'
+
   - icon: envelope
     icon_pack: fas
     link: 'baishanming@163.com'
-  - icon: QQ
-    icon_pack: fas
-    link: '249846509'
+  - icon: weixin
+    icon_pack: fab
+    link: '15835844947'
   # - icon: 微博
   #   icon_pack: fas
   #   link: 'xxxxxx'
@@ -80,8 +78,6 @@ email: 'baishanming@163.com'
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - Researchers
-  - Visitors
   - Postdocs
   - PhD Students
   - Masters Students
@@ -92,10 +88,12 @@ user_groups:
 
 ---
 
-白善明，北京理工大学机械工程专业博士研究生。他的主要研究方向包括连续体机器人、磁控机器人、纳米机器人等。
+白善明，北京理工大学机械工程专业博士研究生。主要从事的研究方向包括连续体机器人、磁控机器人、纳米机器人等。
 
 Shanming Bai is a PhD Students of Mechanical Engineering at the Micro nano Robotics Lab. His research interests include continuum robots, magnetically controlled robots, nanorobots, and more.
 
-“代表性成果”
- [1] xzxxxx
- [1] xzxxxx
+【代表性成果】
+ 
+1. xxxxxxx
+
+2. xxxxxxxx

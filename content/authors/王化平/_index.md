@@ -93,7 +93,7 @@ user_groups:
 
 王化平教授主要从事磁驱软体机器人、微纳机器人、微尺度自动化等领域研究，在多尺度机器人设计与集成、微纳生物目标交互、多机器人协同微操作等方向开展研究工作。主持国家优秀青年科学基金、北京市科技计划项目、北京市自然科学基金等。建立了基于宏微混合与多物理场驱动的微纳生物操作机器人系统，探索微尺度“人-机-环境”共融协同方法，实现了面向微尺度多目标生物操作与人工组织功能化构建的多机器人协同控制，为癌症、血栓等重大疾病精准治疗与器官修复提供了新思路，该研究处于国际领先水平。相关研究成果在Science Advances、Nature Communications、IEEE Trans.系列汇刊等发表SCI论文30余篇，申请中国/国际发明专利15项，获机器人领域top1国际学术会议ICRA-2021最佳自动化论文奖（中国大陆首次、1997-今）等9项国际学术奖励，出版学术专著2部并获批十三五国家重点出版规划项目、国家科学技术学术著作出版基金资助项目，担任Frontiers in Neurorobotics、Cyborg and Bionic Systems等国际期刊编委会成员。指导学生科技竞赛项目获中国研究生机器人创新设计大赛一等奖、第十七届“挑战杯”特等奖并获评优秀指导教师。
 
-“代表性成果”
+【代表性成果】
 
 1. Zheng Zhiqiang, Wang Huaping*, Demir Sinan Ozgun, Huang Qiang*, et al., “Programmable Aniso-Electrodeposited Modular Hydrogel Microrobots”, Science Advances, vol. 8(50): eade6135, Dec. 14, 2022. (IF: 13.6, 中科院1区)
 
@@ -116,7 +116,7 @@ user_groups:
 10.Cui Juan, Wang Huaping*, Zheng Zhiqiang, Shi Qing, Huang Qiang, Fukuda Toshio, et al., “Fabrication of Perfusable 3D hepatic Lobule-Like Constructs through Assembly of Multiple Cell Type Laden Hydrogel Microstructures,” Biofabrication, vol. 11, Jan. 2019. (IF: 9, 中科院1区)
 
 
-“教学工作”
+【教学工作】
 
 1、主要讲授课程:
 （1）本科生课程《MATLAB基础与机器人学应用（全英文）》、《数值计算与机器人应用》
@@ -127,7 +127,7 @@ user_groups:
 5、中国研究生机器人创新设计大赛获全国一等奖
 
 
-“荣誉奖励”
+【荣誉奖励】
 
 1、2022年度国家优秀青年科学基金
 2、国际会议IEEE ICRA-2021自动化领域优秀论文奖（Best Application Paper in Automation，机器人领域Top1国际会议，中国大陆首次获得（1997-今），1600篇仅1篇）
@@ -140,7 +140,7 @@ user_groups:
 9、国际会议 IEEE ROBIO-2017优秀论文提名奖（Best Paper Finalist，Top 2%）
 
 
-“社会兼职”
+【社会兼职】
 
 1、Cyborg and Bionic Systems青年编委（Science合作期刊、中国卓越行动计划）
 2、Frontiers in Neurorobotics机器人与神经科学领域SCI国际期刊编委会成员

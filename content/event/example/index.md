@@ -1,5 +1,5 @@
 ---
-title: Research Platforms & Equipment
+title: Nano scribe
 
 event: Photonic Professional GT2
 event_url: https://example.org

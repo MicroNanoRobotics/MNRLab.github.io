@@ -1,5 +1,5 @@
 ---
-title: Journal Cover
+title: Research Platforms & Equipment
 
 # Listing view
 view: compact
