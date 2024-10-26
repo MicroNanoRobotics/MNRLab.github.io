@@ -1,11 +1,11 @@
 ---
 title: "Integrated Cross-Scale Manipulation and Modulable Encapsulation of Cell-Laden Hydrogel for Constructing Tissue-Mimicking Microstructures"
 authors:
-- 王化平
-- Robert Ford
+- Yanfeng Zhao
+- Huaping Wang
 author_notes:
-- "Equal contribution"
-- "Equal contribution"
+- "The first author"
+- "Corresponding author"
 date: "2024-07-16T00:00:00Z"
 doi: "10.34133/research.0414"
 
@@ -34,7 +34,7 @@ featured: false
 # - name: ""
 #   url: ""
 url_pdf: ''
-url_code: 'https://github.com/HugoBlox/hugo-blox-builder'
+url_code: ''
 url_dataset: ''
 url_poster: ''
 url_project: ''
