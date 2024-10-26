@@ -94,6 +94,6 @@ Shanming Bai is a PhD Students of Mechanical Engineering at the Micro nano Robot
 
 【代表性成果】
  
-1. xxxxxxx
+1. Integration of triboelectric sensing and electromagnetic energy harvesting for self-adaptive vibration suppression, Nano Energy, 2023, SCI一区, IF: 19.069. 
 
-2. xxxxxxxx
+2. Electromagnetic-Triboelectric Energy Harvester Based on Vibration-to-Rotation Conversion for Human Motion Energy Exploitation, Applied Energy, 2022. SCI一区, IF: 11.446.
