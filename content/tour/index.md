@@ -37,6 +37,7 @@ sections:
             filters:
               brightness: 0.5
           position: center
+          size: contain
           color: '#555'
       - title: 获奖证书
         content: '快来加入我们吧!'
