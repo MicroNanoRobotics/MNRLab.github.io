@@ -28,6 +28,16 @@ sections:
               brightness: 0.5
           position: center
           color: '#555'
+      - title: 期刊封面
+        content: '本团队的代表性成果发表在国际知名杂志xxxxxxxxx'
+        align: left
+        background:
+          image:
+            filename: cover2.jpg
+            filters:
+              brightness: 0.5
+          position: center
+          color: '#555'
       - title: 获奖证书
         content: '快来加入我们吧!'
         align: right
