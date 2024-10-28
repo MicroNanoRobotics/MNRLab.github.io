@@ -1,5 +1,5 @@
 ---
-title: Research Platforms & Equipment
+title: Platforms & Equipment
 
 # Listing view
 view: compact

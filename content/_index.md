@@ -66,7 +66,7 @@ sections:
         publication_type: 'article-journal'
     design:
       view: citation
-      columns: '1'
+      columns: '5'
 
   - block: markdown
     content:
