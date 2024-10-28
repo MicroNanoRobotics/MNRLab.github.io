@@ -33,7 +33,7 @@ sections:
         align: left
         background:
           image:
-            filename: cover2.jpg
+            filename: cover3.jpg
             filters:
               brightness: 0.5
           position: center
