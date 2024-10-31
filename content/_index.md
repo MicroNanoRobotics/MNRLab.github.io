@@ -37,8 +37,8 @@ sections:
   
   - block: markdown
     content:
-      title: 期刊合辑
-      subtitle: 'xxxxxxxxx'
+      title: 
+      subtitle: ''
       text:
     design:
       columns: '1'
@@ -74,6 +74,7 @@ sections:
       subtitle:
       text: |
         {{% cta cta_link="./people/" cta_text="Meet the team →" %}}
+        
     design:
       columns: '1'
 ---

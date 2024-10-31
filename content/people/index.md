@@ -26,4 +26,16 @@ sections:
       show_interests: false
       show_role: true
       show_social: true
+
+  - block: markdown
+    content:
+      title: Photo Gallery
+      subtitle: Snapshots of Togetherness — Our Team Story
+      text: |
+          
+        {{< figure src="image1.jpg" caption="2024xx团建" >}}
+        {{< figure src="image5.jpg" caption="xxxx" >}}
+        {{< figure src="image3.jpg" caption="20xx留念" >}}
+    design:
+      columns: '1'
 ---
