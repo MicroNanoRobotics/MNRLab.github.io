@@ -42,38 +42,44 @@ sections:
       - title: 
         content: |  
           <div align="center">
-            <img src="47a0a3fa0709389dac09531ed82d58b.jpg" alt="图片描述" width="50%" height="auto">
+            <img src="47a0a3fa0709389dac09531ed82d58b.jpg" alt="图片描述" width="100%" height="auto">
           </div>
         align: center
         background:
           image:
-            filename: 47a0a3fa0709389dac09531ed82d58b.jpg
+            filename: 
             filters:
               brightness: 1
           position: center
 
       - title: 
-        content: 
+        content:  |  
+          <div align="center">
+            <img src="9648088d130e1e9ffd81e8ee2221fdb.jpg" alt="图片描述" width="100%" height="auto">
+          </div>
         align: center
         background:
           image:
-            filename: 9648088d130e1e9ffd81e8ee2221fdb.jpg
+            filename: 
             filters:
               brightness: 1
           position: center
 
       - title: 
-        content: 
+        content:   |  
+          <div align="center">
+            <img src="a36ff071733481491d387d05cb2a6aa.jpg" alt="图片描述" width="100%" height="auto">
+          </div>
         align: center
         background:
           image:
-            filename: a36ff071733481491d387d05cb2a6aa.jpg
+            filename: 
             filters:
               brightness: 1
           position: center
     design:
       # Slide height is automatic unless you force a specific height (e.g. '400px')
-      slide_height: '400px'
+      slide_height: ''
       is_fullscreen: true
       # Automatically transition through slides?
       loop: true
