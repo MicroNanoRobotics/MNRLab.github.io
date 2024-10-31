@@ -43,7 +43,7 @@ sections:
                   </div>
                   <div class="gallery-item">
                       ![alt text](9648088d130e1e9ffd81e8ee2221fdb.jpg)
-                      <p>xxxxxx</p>
+                      <p>xxxxxxx</p>
                   </div>
               </div>
 
