@@ -39,7 +39,7 @@ sections:
       # For the Showcase view, do you want to flip alternate rows?
       flip_alt_rows: true
       image: 
-        filename: 47a0a3fa0709389dac09531ed82d58b.jpg  
+        filename: cover3.jpg
         filename: a36ff071733481491d387d05cb2a6aa.jpg
         filename: 9648088d130e1e9ffd81e8ee2221fdb.jpg
         filters:
