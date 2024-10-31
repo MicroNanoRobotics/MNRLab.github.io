@@ -83,12 +83,10 @@ user_groups:
 
 ---
 
-董欣怡，北京理工大学机械工程专业博士研究生。主要从事的研究方向包括连续体机器人、磁控机器人、纳米机器人等。
+董欣怡，北京理工大学机械工程专业博士研究生。主要从事的研究方向为光固化生物打印。曾担任队长带领团队获北京市互联网+一等奖等多项双创奖项；曾获2022年优秀本科毕设。以第一作者发表会议论文1篇并获最佳论文奖。
 
 
 
 【代表性成果】
  
-1. Integration of triboelectric sensing and electromagnetic energy harvesting for self-adaptive vibration suppression, Nano Energy, 2023, SCI一区, IF: 19.069. 
-
-2. Electromagnetic-Triboelectric Energy Harvester Based on Vibration-to-Rotation Conversion for Human Motion Energy Exploitation, Applied Energy, 2022. SCI一区, IF: 11.446.
+1. X. Dong et al., “Holographic Feedback Controlled Micro-Stereolithography for Constructing Microstructures with Tuned Mechanical Property,” in 2024 7th International Symposium on Autonomous Systems (ISAS), Chongqing, China: IEEE, May 2024, pp. 1–6. doi: 10.1109/ISAS61044.2024.10552462.
