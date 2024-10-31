@@ -5,23 +5,7 @@ date: 2024-10-24
 type: landing
 
 sections:
-  - block: slider
-    content:
-      slides:
-      - title: 欢迎访问王化平教授团队主页
-        content: Welcome to the Official Site of Huaping Wang Research Team
-        align: center
-        background:
-          image:
-            filename: bg-triangles.svg
-            filters:
-              brightness: 0.7
-          position: right
-          color: '#666'
-    design:
-      # Slide height is automatic unless you force a specific height (e.g. '400px')
-      slide_height: '100'
-      is_fullscreen: true
+
 
   # - block: hero
   #     content:

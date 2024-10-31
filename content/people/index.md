@@ -109,7 +109,7 @@ sections:
           position: center
     design:
       # Slide height is automatic unless you force a specific height (e.g. '400px')
-      slide_height: '900'
+      slide_height: '400px'
       is_fullscreen: true
       # Automatically transition through slides?
       loop: true
