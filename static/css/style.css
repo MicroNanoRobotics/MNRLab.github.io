@@ -17,3 +17,4 @@
     width: 100%;
     height: auto;  /* 或设置固定高度 */
     object-fit: contain;  /* 根据需要使用 'cover' 或 'contain' */
+}
