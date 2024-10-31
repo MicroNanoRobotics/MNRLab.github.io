@@ -32,14 +32,20 @@ sections:
       title: Photo Gallery
       subtitle: Snapshots of Togetherness — Our Team Story
       text: |
-          ![alt text](47a0a3fa0709389dac09531ed82d58b.jpg)
-          20xx团建
-
-          ![alt text](a36ff071733481491d387d05cb2a6aa.jpg)
-          xxxxx
-
-          ![alt text](9648088d130e1e9ffd81e8ee2221fdb.jpg)
-          xxxxxx
+              <div class="gallery">
+                  <div class="gallery-item">
+                      ![alt text](47a0a3fa0709389dac09531ed82d58b.jpg)
+                      <p>20xx团建</p>
+                  </div>
+                  <div class="gallery-item">
+                      ![alt text](a36ff071733481491d387d05cb2a6aa.jpg)
+                      <p>xxxxx</p>
+                  </div>
+                  <div class="gallery-item">
+                      ![alt text](9648088d130e1e9ffd81e8ee2221fdb.jpg)
+                      <p>xxxxxx</p>
+                  </div>
+              </div>
 
     design:
       columns: '1'

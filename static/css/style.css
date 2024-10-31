@@ -1,0 +1,26 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;  /* 允许换行 */
+    justify-content: center;  /* 居中对齐 */
+}
+
+.gallery-item {
+    margin: 10px;  /* 图片之间的间距 */
+    text-align: center;  /* 文本居中对齐 */
+    flex: 1 1 calc(33.33% - 20px);  /* 每行显示三张图片 */
+    max-width: calc(33.33% - 20px);  /* 每行显示三张图片 */
+}
+
+@media (max-width: 768px) {
+    .gallery-item {
+        flex: 1 1 calc(50% - 20px);  /* 每行显示两张图片 */
+        max-width: calc(50% - 20px);  /* 每行显示两张图片 */
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-item {
+        flex: 1 1 100%;  /* 每行显示一张图片 */
+        max-width: 100%;  /* 每行显示一张图片 */
+    }
+}
