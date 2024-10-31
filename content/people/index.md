@@ -39,9 +39,7 @@ sections:
       slides:
       - title: 
         content: |
-         <div align="center">
-             <img src="47a0a3fa0709389dac09531ed82d58b.jpg" alt="图片描述" width="900" height="auto">
-         </div> 
+            ![alt text](47a0a3fa0709389dac09531ed82d58b.jpg)
         align: center
         background:
           image:
