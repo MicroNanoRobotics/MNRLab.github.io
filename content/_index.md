@@ -3,7 +3,9 @@
 title:
 date: 2024-10-24
 type: landing
-
+design:
+  # Default section spacing
+  spacing: "6rem"
 sections:
   - block: hero
       content:
@@ -26,16 +28,16 @@ sections:
             filename: bg-triangles.svg
             filters:
               brightness: 0.5
-  # - block: hero
-  #   content:
-  #     title: |
-  #       微纳机器人研究团队
+  - block: hero
+    content:
+      title: |
+        微纳机器人研究团队
         
-  #     image:
-  #       filename: wanghuaping2.jpg
-  #     text: |
-  #       <br>
-  #         The Lab is committed to magnetic drive software robots, micro and nano robots, micro-scale automation and other fields of research.
+      image:
+        filename: wanghuaping2.jpg
+      text: |
+        <br>
+          The Lab is committed to magnetic drive software robots, micro and nano robots, micro-scale automation and other fields of research.
   
   - block: collection
     content:
