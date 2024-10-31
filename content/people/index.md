@@ -45,8 +45,7 @@ sections:
               <img src="9648088d130e1e9ffd81e8ee2221fdb.jpg" alt="xxxxxx">
               <p>xxxxxx</p>
           </div>
-      </div>
-
+        </div>
     design:
       columns: '1'
       view: card
