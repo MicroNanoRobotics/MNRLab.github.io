@@ -27,8 +27,6 @@ sections:
       show_role: true
       show_social: true
 
-
-sections:
   - block: slider
     content:
       title: Photo Gallery
