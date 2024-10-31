@@ -120,4 +120,5 @@ sections:
       loop: true
       # Duration of transition between slides (in ms)
       interval: 2000
+      view: citation
 ---
