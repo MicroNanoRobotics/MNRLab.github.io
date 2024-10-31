@@ -18,6 +18,10 @@ sections:
               brightness: 0.7
           position: right
           color: '#666'
+    design:
+      # Slide height is automatic unless you force a specific height (e.g. '400px')
+      slide_width: ''
+      is_fullscreen: true
 
   # - block: hero
   #     content:
