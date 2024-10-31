@@ -27,31 +27,26 @@ sections:
       show_role: true
       show_social: true
 
-  - block: markdown
-    content:
-      title: Photo Gallery
-      subtitle: Snapshots of Togetherness — Our Team Story
-      text: 
-      
-      design:
-        columns: '1'
+
 
   - block: slider
     content:
+      title: Photo Gallery
+      subtitle: Snapshots of Togetherness — Our Team Story
       slides:
-      - title: 
-        content: 
-        align: 
+      - title: 1
+        content: 1
+        align: center
         background:
           image:
             filename: 47a0a3fa0709389dac09531ed82d58b.jpg
             filters:
               brightness: 1
-          position: right
+          position: center
 
-      - title: 
-        content: 
-        align: 
+      - title: 1
+        content: 1
+        align: center
         background:
           image:
             filename: 9648088d130e1e9ffd81e8ee2221fdb.jpg
@@ -59,9 +54,9 @@ sections:
               brightness: 1
           position: center
 
-      - title:
-        content: 
-        align: 
+      - title: 1
+        content: 1
+        align: center
         background:
           image:
             filename: a36ff071733481491d387d05cb2a6aa.jpg
