@@ -27,7 +27,11 @@ sections:
       show_role: true
       show_social: true
 
-
+  - block: markdown
+    content:
+      title: Photo Gallery
+      subtitle: Snapshots of Togetherness — Our Team Story
+      
   - block: slider
     content:
       title: Photo Gallery
