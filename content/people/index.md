@@ -32,6 +32,47 @@ sections:
       title: Photo Gallery
       subtitle: Snapshots of Togetherness — Our Team Story
 
+  - block: cta-image-paragraph
+    id: solutions
+    content:
+      items:
+        - title: 20xx团建聚餐
+          text: xxxxx
+          feature_icon: check
+          features:
+            - "xxxxx"
+            - "xxxxxx"
+            - "xxxxxxx"
+          # Upload image to `assets/media/` and reference the filename here
+          image: 47a0a3fa0709389dac09531ed82d58b.jpg
+
+        - title: 20xx毕业留念
+          text: xxxxx
+          feature_icon: check
+          features:
+            - "xxxxx"
+            - "xxxxxx"
+            - "xxxxxxx"
+          # Upload image to `assets/media/` and reference the filename here
+          image: a36ff071733481491d387d05cb2a6aa.jpg
+
+        - title: 20xx竞赛留念
+          text: 中国研究生创新机器人设计大赛
+          feature_icon: bolt
+          features:
+            - "xxx"
+            - "xxxxx"
+            - "xxxxxxxxxx"
+          # Upload image to `assets/media/` and reference the filename here
+          image: 9648088d130e1e9ffd81e8ee2221fdb.jpg
+          button:
+            text: Join
+            url: https://cpipc.acge.org.cn/cw/hp/2c9088a5696cbf370169a3f8934810be
+    design:
+      # Section background color (CSS class)
+      css_class: "bg-gray-100 dark:bg-gray-900"
+
+
   - block: slider
     content:
       title: Photo Gallery
@@ -75,5 +116,7 @@ sections:
       # Duration of transition between slides (in ms)
       interval: 2000
       view: card
+
+
 ---
 
