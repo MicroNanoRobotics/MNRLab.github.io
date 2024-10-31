@@ -32,9 +32,8 @@ sections:
       title: Photo Gallery
       subtitle: Snapshots of Togetherness — Our Team Story
       text: |
-      ![alt text](47a0a3fa0709389dac09531ed82d58b.jpg) ![alt text](a36ff071733481491d387d05cb2a6aa.jpg) ![alt text](9648088d130e1e9ffd81e8ee2221fdb.jpg)
-
-
-
+         ![alt text](47a0a3fa0709389dac09531ed82d58b.jpg) ![alt text](a36ff071733481491d387d05cb2a6aa.jpg) ![alt text](9648088d130e1e9ffd81e8ee2221fdb.jpg)
+      design:
+        columns: '1'
 
 ---
