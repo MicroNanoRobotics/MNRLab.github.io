@@ -61,20 +61,23 @@ sections:
   
   - block: markdown
     content:
-      title: 
-      subtitle: ''
-      text:
+      title: 期刊合辑
+      subtitle: 'xxxxxxxx'
+      text:  |  
+        <div align="center">
+          <img src="cover3.jpg" alt="" width="70%" height="auto">
+        </div>
     design:
       columns: '1'
-      background:
-        image: 
-          filename: cover3.jpg
-          filters:
-            brightness: 1
-          parallax: false
-          position: center
-          size: contain
-          text_color_light: true
+      # background:
+      #   image: 
+      #     filename: cover3.jpg
+      #     filters:
+      #       brightness: 1
+      #     parallax: false
+      #     position: center
+      #     size: contain
+      #     text_color_light: true
       spacing:
         padding: ['20px', '0', '20px', '0']
       css_class: fullscreen

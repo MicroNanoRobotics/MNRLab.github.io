@@ -53,9 +53,9 @@ sections:
       title:
       subtitle: ''
       text:  |  
-                <div align="center">
-                  <img src="contact.jpg" alt="" width="70%" height="auto">
-                </div>
+        <div align="center">
+          <img src="contact.jpg" alt="" width="70%" height="auto">
+        </div>
     design:
       columns: '1'
       # background:
