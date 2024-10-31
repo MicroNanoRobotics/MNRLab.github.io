@@ -32,7 +32,7 @@ sections:
       title: Photo Gallery
       subtitle: Snapshots of Togetherness — Our Team Story
       text: |
-            <div class="gallery">
+        <div class="gallery">
           <div class="gallery-item">
               <img src="47a0a3fa0709389dac09531ed82d58b.jpg" alt="20xx团建">
               <p>20xx团建</p>
