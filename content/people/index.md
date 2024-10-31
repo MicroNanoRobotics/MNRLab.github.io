@@ -41,8 +41,8 @@ sections:
           ![alt text](9648088d130e1e9ffd81e8ee2221fdb.jpg)
           xxxxxx
     design:
-      columns: '3'
-      view: showcase
+      columns: '1'
+      view: card
       # For the Showcase view, do you want to flip alternate rows?
       flip_alt_rows: true
 ---
