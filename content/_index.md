@@ -70,13 +70,59 @@ sections:
 
   - block: markdown
     content:
-      title:
-      subtitle:
+      title: Photo Gallery
+      subtitle: Snapshots of Togetherness — Our Team Story
       text: |
         {{% cta cta_link="./people/" cta_text="Meet the team →" %}}
         
     design:
       columns: '1'
 
+        
+    design:
+      columns: '1'
+  - block: slider
+    content:
+      title: Photo Gallery
+      subtitle: Snapshots of Togetherness — Our Team Story
+      slides:
+      - title: 
+        content: 
+        align: center
+        background:
+          image:
+            filename: 47a0a3fa0709389dac09531ed82d58b.jpg
+            filters:
+              brightness: 1
+          position: center
+
+      - title: 
+        content: 
+        align: center
+        background:
+          image:
+            filename: 9648088d130e1e9ffd81e8ee2221fdb.jpg
+            filters:
+              brightness: 1
+          position: center
+
+      - title: 
+        content: 
+        align: center
+        background:
+          image:
+            filename: a36ff071733481491d387d05cb2a6aa.jpg
+            filters:
+              brightness: 1
+          position: center
+    design:
+      # Slide height is automatic unless you force a specific height (e.g. '400px')
+      slide_width: '900'
+      is_fullscreen: true
+      # Automatically transition through slides?
+      loop: true
+      # Duration of transition between slides (in ms)
+      interval: 2000
+      view: card
 
 ---
