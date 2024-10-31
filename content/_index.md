@@ -47,11 +47,11 @@ sections:
             filename: bg-triangles.svg
             filters:
               brightness: 0.5
-      image:
-        filename: wanghuaping2.jpg
-      text: |
-        <br>
-          The Lab is committed to magnetic drive software robots, micro and nano robots, micro-scale automation and other fields of research.
+      # image:
+      #   filename: wanghuaping2.jpg
+      # text: |
+      #   <br>
+      #     The Lab is committed to magnetic drive software robots, micro and nano robots, micro-scale automation and other fields of research.
       
   
   - block: collection
