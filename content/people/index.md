@@ -28,7 +28,7 @@ sections:
       show_social: true
 
 
-
+sections:
   - block: slider
     content:
       title: Photo Gallery
@@ -66,7 +66,7 @@ sections:
     design:
       # Slide height is automatic unless you force a specific height (e.g. '400px')
       slide_height: ''
-      is_fullscreen: false
+      is_fullscreen: ture
       # Automatically transition through slides?
       loop: ture
       # Duration of transition between slides (in ms)
