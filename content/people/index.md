@@ -38,7 +38,7 @@ sections:
       subtitle: Snapshots of Togetherness — Our Team Story
       slides:
       - title: 
-        content: ![alt text](5b68a941264e8e8c90775fcce007924.jpg)
+        content: [def]
         align: center
         background:
           image:
@@ -76,3 +76,5 @@ sections:
       interval: 2000
       view: card
 ---
+
+[def]: 5b68a941264e8e8c90775fcce007924.jpg

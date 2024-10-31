@@ -70,8 +70,8 @@ sections:
 
   - block: markdown
     content:
-      title: Photo Gallery
-      subtitle: Snapshots of Togetherness — Our Team Story
+      title: 
+      subtitle: 
       text: |
         {{% cta cta_link="./people/" cta_text="Meet the team →" %}}
         
