@@ -20,7 +20,7 @@ sections:
           color: '#666'
     design:
       # Slide height is automatic unless you force a specific height (e.g. '400px')
-      slide_width: ''
+      slide_height: '400'
       is_fullscreen: true
 
   # - block: hero
