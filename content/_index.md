@@ -37,7 +37,7 @@ sections:
   
   - block: markdown
     content:
-      title:期刊合辑
+      title: 期刊合辑
       subtitle: 'xxxxxxxxx'
       text:
     design:
