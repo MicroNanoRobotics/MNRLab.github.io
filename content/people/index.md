@@ -32,10 +32,15 @@ sections:
       title: Photo Gallery
       subtitle: Snapshots of Togetherness — Our Team Story
       text: |
-          
-        {{< figure src="image1.jpg" caption="2024xx团建" >}}
-        {{< figure src="image5.jpg" caption="xxxx" >}}
-        {{< figure src="image3.jpg" caption="20xx留念" >}}
+          ![alt text](47a0a3fa0709389dac09531ed82d58b.jpg)
+          20xx团建
+
+          ![alt text](a36ff071733481491d387d05cb2a6aa.jpg)
+          xxxxx
+
+          ![alt text](9648088d130e1e9ffd81e8ee2221fdb.jpg)
+          xxxxxx
+
     design:
       columns: '1'
 ---
