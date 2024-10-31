@@ -5,27 +5,27 @@ date: 2024-10-24
 type: landing
 
 sections:
-  - block: hero
-      content:
-        title: 欢迎访问王化平教授团队主页
-        text: Welcome to the Official Site of Huaping Wang Research Team
-      primary_action:
-        text: Get Started
-        url: https://example.org
-        icon: rocket-launch
-      design:
-        spacing:
-          padding: [0, 0, 0, 0]
-          margin: [0, 0, 0, 0]
-        # For full-screen, add `min-h-screen` below
-        css_class: "dark"
-        background:
-          color: "navy"
-          image:
-            # Add your image background to `assets/media/`.
-            filename: bg-triangles.svg
-            filters:
-              brightness: 0.5
+  # - block: hero
+  #     content:
+  #       title: 欢迎访问王化平教授团队主页
+  #       text: Welcome to the Official Site of Huaping Wang Research Team
+  #     primary_action:
+  #       text: Get Started
+  #       url: https://example.org
+  #       icon: rocket-launch
+  #     design:
+  #       spacing:
+  #         padding: [0, 0, 0, 0]
+  #         margin: [0, 0, 0, 0]
+  #       # For full-screen, add `min-h-screen` below
+  #       css_class: "dark"
+  #       background:
+  #         color: "navy"
+  #         image:
+  #           # Add your image background to `assets/media/`.
+  #           filename: bg-triangles.svg
+  #           filters:
+  #             brightness: 0.5
   - block: hero
     content:
       title: |
