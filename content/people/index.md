@@ -31,14 +31,14 @@ sections:
     content:
       title: Photo Gallery
       subtitle: Snapshots of Togetherness — Our Team Story
-      
+
   - block: slider
     content:
       title: Photo Gallery
       subtitle: Snapshots of Togetherness — Our Team Story
       slides:
       - title: 
-        content: 
+        content: ![alt text](5b68a941264e8e8c90775fcce007924.jpg)
         align: center
         background:
           image:
