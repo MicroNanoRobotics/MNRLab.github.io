@@ -30,12 +30,27 @@ sections:
     content:
       title: |
         微纳机器人研究团队
-        
+
+      design:
+        spacing:
+          padding: [0, 0, 0, 0]
+          margin: [0, 0, 0, 0]
+        # For full-screen, add `min-h-screen` below
+        css_class: "dark"
+        background:
+          color: "navy"
+          image:
+            # Add your image background to `assets/media/`.
+            filename: bg-triangles.svg
+            filters:
+              brightness: 0.5
+              
       image:
         filename: wanghuaping2.jpg
       text: |
         <br>
           The Lab is committed to magnetic drive software robots, micro and nano robots, micro-scale automation and other fields of research.
+      
   
   - block: collection
     content:
