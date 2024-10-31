@@ -78,43 +78,25 @@ sections:
     design:
       columns: '1'
 
-        
-    design:
-      columns: '1'
+
   - block: slider
     content:
       title: Photo Gallery
       subtitle: Snapshots of Togetherness — Our Team Story
       slides:
       - title: 
-        content: 
+        content: ![alt text](47a0a3fa0709389dac09531ed82d58b.jpg)47a0a3fa0709389dac09531ed82d58b.jpg
         align: center
-        background:
-          image:
-            filename: 47a0a3fa0709389dac09531ed82d58b.jpg
-            filters:
-              brightness: 1
-          position: center
 
       - title: 
-        content: 
+        content: 9648088d130e1e9ffd81e8ee2221fdb.jpg
         align: center
-        background:
-          image:
-            filename: 9648088d130e1e9ffd81e8ee2221fdb.jpg
-            filters:
-              brightness: 1
-          position: center
+
 
       - title: 
-        content: 
+        content: a36ff071733481491d387d05cb2a6aa.jpg
         align: center
-        background:
-          image:
-            filename: a36ff071733481491d387d05cb2a6aa.jpg
-            filters:
-              brightness: 1
-          position: center
+
     design:
       # Slide height is automatic unless you force a specific height (e.g. '400px')
       slide_width: '900'
