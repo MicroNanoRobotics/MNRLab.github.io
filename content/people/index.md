@@ -37,6 +37,8 @@ sections:
 
   - block: slider
     content:
+      title: Photo Gallery
+      subtitle: Snapshots of Togetherness — Our Team Story
       slides:
       - title: 
         content: 
