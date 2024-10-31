@@ -1,26 +1,19 @@
 .gallery {
     display: flex;
-    flex-wrap: wrap;  /* 允许换行 */
-    justify-content: center;  /* 居中对齐 */
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
 }
 
 .gallery-item {
-    margin: 10px;  /* 图片之间的间距 */
-    text-align: center;  /* 文本居中对齐 */
-    flex: 1 1 calc(33.33% - 20px);  /* 每行显示三张图片 */
-    max-width: calc(33.33% - 20px);  /* 每行显示三张图片 */
+    margin: 10px;
+    text-align: center;
+    flex: 0 0 calc(33.33% - 20px);
+    max-width: calc(33.33% - 20px);
+    overflow: hidden;
 }
 
-@media (max-width: 768px) {
-    .gallery-item {
-        flex: 1 1 calc(50% - 20px);  /* 每行显示两张图片 */
-        max-width: calc(50% - 20px);  /* 每行显示两张图片 */
-    }
-}
-
-@media (max-width: 480px) {
-    .gallery-item {
-        flex: 1 1 100%;  /* 每行显示一张图片 */
-        max-width: 100%;  /* 每行显示一张图片 */
-    }
-}
+.gallery-item img {
+    width: 100%;
+    height: auto;  /* 或设置固定高度 */
+    object-fit: contain;  /* 根据需要使用 'cover' 或 'contain' */
