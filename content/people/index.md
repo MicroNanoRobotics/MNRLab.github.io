@@ -38,12 +38,11 @@ sections:
       subtitle: Snapshots of Togetherness — Our Team Story
       slides:
       - title: 
-        content: |
-            ![alt text](47a0a3fa0709389dac09531ed82d58b.jpg)
+        content: 
         align: center
         background:
           image:
-            filename: 
+            filename: 47a0a3fa0709389dac09531ed82d58b.jpg
             filters:
               brightness: 1
           position: center
@@ -69,8 +68,8 @@ sections:
           position: center
     design:
       # Slide height is automatic unless you force a specific height (e.g. '400px')
-      slide_width: '900'
-      is_fullscreen: true
+      slide_height: '900'
+      is_fullscreen: flase
       # Automatically transition through slides?
       loop: true
       # Duration of transition between slides (in ms)
