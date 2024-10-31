@@ -9,10 +9,10 @@ sections:
       content:
         title: 欢迎访问王化平教授团队主页
         text: Welcome to the Official Site of Huaping Wang Research Team
-      primary_action:
-        text: Get Started
-        url: https://example.org
-        icon: rocket-launch
+      # primary_action:
+      #   text: Get Started
+      #   url: https://example.org
+      #   icon: rocket-launch
       design:
         spacing:
           padding: [0, 0, 0, 0]
