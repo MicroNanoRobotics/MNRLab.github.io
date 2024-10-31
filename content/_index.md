@@ -65,7 +65,7 @@ sections:
       subtitle: 'xxxxxxxx'
       text:  |  
         <div align="center">
-          <img src="cover3.jpg" alt="" width="70%" height="auto">
+          <img src="cover3.jpg" alt="" width="100%" height="auto">
         </div>
     design:
       columns: '1'
