@@ -28,8 +28,10 @@ sections:
   #             brightness: 0.5
   - block: hero
     content:
-      title: |
-        微纳机器人研究团队
+      title: 欢迎访问王化平教授团队主页
+      text: Welcome to the Official Site of Huaping Wang Research Team
+      # title: |
+      #   微纳机器人研究团队
       primary_action:
         text: Get Started
         url: https://example.org
