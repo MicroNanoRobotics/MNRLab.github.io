@@ -25,19 +25,19 @@ organizations:
 bio: 
 
 interests:
-  - 磁控连续体机器人
+  - 光固化生物打印
 
 education:
   courses:
-    - course: 机械工程专业 在读博士
+    - course: 机械工程专业 硕博连读
       institution: 北京理工大学机电学院
-      year: 2024-
-    - course: 仪器科学与技术专业 硕士
-      institution: 中北大学仪器与电子学院
-      year: 2021-2024
-    - course: 探测制导与控制技术专业 学士
-      institution: 中北大学机电工程学院
-      year: 2017-2021
+      year: 2023-
+    - course: 机械工程专业 硕士研究生
+      institution: 北京理工大学机电学院
+      year: 2022-2023
+    - course: 工学 学士
+      institution: 北京理工大学 徐特立学院
+      year: 2018-2022
 
 # Social/Academic Networking
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
