@@ -31,7 +31,10 @@ sections:
     content:
       title: Photo Gallery
       subtitle: Snapshots of Togetherness — Our Team Story
+    
   - block: slider
+    title: Photo Gallery
+    subtitle: Snapshots of Togetherness — Our Team Story
     content:
       title: Photo Gallery
       subtitle: Snapshots of Togetherness — Our Team Story
@@ -42,12 +45,7 @@ sections:
             <img src="47a0a3fa0709389dac09531ed82d58b.jpg" alt="" width="70%" height="auto">
           </div>
         align: center
-        background:
-          image:
-            filename: 
-            filters:
-              brightness: 1
-          position: center
+
 
       - title: 
         content:  |  
@@ -55,12 +53,7 @@ sections:
             <img src="9648088d130e1e9ffd81e8ee2221fdb.jpg" alt="" width="70%" height="auto">
           </div>
         align: center
-        background:
-          image:
-            filename: 
-            filters:
-              brightness: 1
-          position: center
+
 
       - title: 
         content:   |  
@@ -68,12 +61,7 @@ sections:
             <img src="a36ff071733481491d387d05cb2a6aa.jpg" alt="" width="70%" height="auto">
           </div>
         align: center
-        background:
-          image:
-            filename: 
-            filters:
-              brightness: 1
-          position: center
+
     design:
       # Slide height is automatic unless you force a specific height (e.g. '400px')
       slide_height: ''
