@@ -32,21 +32,17 @@ sections:
       title: Photo Gallery
       subtitle: Snapshots of Togetherness — Our Team Story
       text: |
-            <div class="gallery">
-                      <div class="gallery-item">
-                          <img src="47a0a3fa0709389dac09531ed82d58b.jpg" alt="20xx团建">
-                          <p>20xx团建</p>
-                      </div>
-                      <div class="gallery-item">
-                          <img src="a36ff071733481491d387d05cb2a6aa.jpg" alt="xxxxx">
-                          <p>xxxxx</p>
-                      </div>
-                      <div class="gallery-item">
-                          <img src="9648088d130e1e9ffd81e8ee2221fdb.jpg" alt="xxxxxx">
-                          <p>xxxxxx</p>
-                      </div>
-                  </div>
+          ![alt text](47a0a3fa0709389dac09531ed82d58b.jpg)
+          20xx团建
 
+          ![alt text](a36ff071733481491d387d05cb2a6aa.jpg)
+          xxxxx
+
+          ![alt text](9648088d130e1e9ffd81e8ee2221fdb.jpg)
+          xxxxxx
     design:
       columns: '1'
+      view: showcase
+      # For the Showcase view, do you want to flip alternate rows?
+      flip_alt_rows: true
 ---
