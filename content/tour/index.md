@@ -57,7 +57,7 @@ sections:
           url: ../contact/
     design:
       # Slide height is automatic unless you force a specific height (e.g. '400px')
-      slide_width: '70%'
+      slide_width: ''
       is_fullscreen: true
       # Automatically transition through slides?
       loop: true
