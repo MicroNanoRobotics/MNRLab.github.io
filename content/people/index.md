@@ -33,6 +33,7 @@ sections:
       subtitle: Snapshots of Togetherness — Our Team Story
 
   - block: cta-image-paragraph
+    id: solutions
     content:
       items:
         - title: 20xx团建聚餐
