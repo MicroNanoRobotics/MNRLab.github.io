@@ -31,6 +31,7 @@ sections:
   - block: hero
     content:
       title: |
+       <br>
         王化平教授课题组
 
       image:
