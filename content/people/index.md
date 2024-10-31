@@ -31,9 +31,6 @@ sections:
     content:
       title: Photo Gallery
       subtitle: Snapshots of Togetherness — Our Team Story
-
-
-
   - block: slider
     content:
       title: Photo Gallery
@@ -42,7 +39,7 @@ sections:
       - title: 
         content: |  
           <div align="center">
-            <img src="47a0a3fa0709389dac09531ed82d58b.jpg" alt="图片描述" width="100%" height="auto">
+            <img src="47a0a3fa0709389dac09531ed82d58b.jpg" alt="" width="70%" height="auto">
           </div>
         align: center
         background:
@@ -55,7 +52,7 @@ sections:
       - title: 
         content:  |  
           <div align="center">
-            <img src="9648088d130e1e9ffd81e8ee2221fdb.jpg" alt="图片描述" width="100%" height="auto">
+            <img src="9648088d130e1e9ffd81e8ee2221fdb.jpg" alt="" width="70%" height="auto">
           </div>
         align: center
         background:
@@ -68,7 +65,7 @@ sections:
       - title: 
         content:   |  
           <div align="center">
-            <img src="a36ff071733481491d387d05cb2a6aa.jpg" alt="图片描述" width="100%" height="auto">
+            <img src="a36ff071733481491d387d05cb2a6aa.jpg" alt="" width="70%" height="auto">
           </div>
         align: center
         background:
