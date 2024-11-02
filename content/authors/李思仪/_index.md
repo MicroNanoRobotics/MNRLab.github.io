@@ -86,6 +86,9 @@ user_groups:
 
 李思仪，北京理工大学机械工程专业博士研究生。主要从事的研究方向包括连续体机器人控制、机械臂控制等。
 
+【代表性成果】
+
+1. LI S, PENG G, XU D, et al. A multifeature fusion model for surface roughness measurement of cold-rolled strip steel based on laser speckle[J]. Measurement, 2024, 227: 114319.
 
  
 
