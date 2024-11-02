@@ -15,7 +15,7 @@ sections:
     design:
       columns: '1'
 
-- block: slider
+  - block: slider
     content:
       title: 
       subtitle: 
@@ -59,7 +59,7 @@ sections:
       text:
     design:
       columns: '1'
-- block: slider
+  - block: slider
     content:
       title: 
       subtitle: 
