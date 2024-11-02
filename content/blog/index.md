@@ -28,7 +28,7 @@ sections:
         align: top
         background:
           image:
-            filename: 
+            filename: bak
             filters:
               brightness: 0.5
           position: center
@@ -90,5 +90,12 @@ sections:
             <img src="image-4.png" alt="系统及光路图" width="80%" height="auto">
           </div>
         align: top
-      
+    design:
+      # Slide height is automatic unless you force a specific height (e.g. '400px')
+      slide_height: '200px'
+      is_fullscreen: true
+      # Automatically transition through slides?
+      loop: true
+      # Duration of transition between slides (in ms)
+      interval: 2000
 ---
