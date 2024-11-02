@@ -24,6 +24,7 @@ sections:
           <div align="center">
             <img src="image-2.png" alt="多形变单元一体化集成制造" width="70%" height="auto">
           </div>
+  
     design:
       columns: '1'
       
@@ -44,6 +45,7 @@ sections:
           <div align="center">
             <img src="image-4.png" alt="系统及光路图" width="70%" height="auto">
           </div>
+
     design:
       columns: '1'
       
