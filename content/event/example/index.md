@@ -1,8 +1,8 @@
 ---
 title: Nano scribe
 
-event: Photonic Professional GT2
-event_url: https://example.org
+# event: Photonic Professional GT2
+# event_url: https://example.org
 
 # location: Wowchemy HQ
 # address:
