@@ -12,6 +12,10 @@ sections:
       text:
       count: 5
       filters:
+        folders:
+          - R1
+        publication_type: 
+      filters:
         author: ''
         category: ''
         exclude_featured: false
@@ -19,7 +23,7 @@ sections:
         tag: ''
       offset: 0
       order: desc
-      page_type: blog
+      # page_type: R1
     design:
       view: card
       columns: '1'
