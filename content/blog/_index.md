@@ -10,19 +10,19 @@ sections:
       title: Research
       subtitle:
       text:
-      count: 5
+      count: 2
       filters:
         folders:
           - R1
         publication_type: 
-      filters:
-        author: ''
-        category: ''
-        exclude_featured: false
-        publication_type: ''
-        tag: ''
-      offset: 0
-      order: desc
+      # filters:
+      #   author: ''
+      #   category: ''
+      #   exclude_featured: false
+      #   publication_type: ''
+      #   tag: ''
+      # offset: 0
+      # order: desc
       # page_type: R1
     design:
       view: card
