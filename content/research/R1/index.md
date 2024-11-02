@@ -1,6 +1,6 @@
 ---
 title: 磁驱微机器人系统
-
+date: 2024-05-27
 
 image:
   focal_point: 'top'
