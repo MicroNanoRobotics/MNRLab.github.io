@@ -13,7 +13,7 @@ main:
   - name: Team
     url: people
     weight: 30
-  - name: Research & Platforms
+  - name: Platforms
     url: event
     weight: 40
   - name: Publications
@@ -21,4 +21,7 @@ main:
     weight: 50
   - name: Contact
     url: contact
+    weight: 60
+  - name: Research
+    url: blog
     weight: 60
