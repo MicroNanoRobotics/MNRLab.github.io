@@ -21,7 +21,7 @@ abstract: 'Nanoscribes Photonic Professional GT2 uses Two-Photon Polymerization 
 # date_end: '2030-06-01T15:00:00Z'
 # all_day: false
 
-Schedule page publish date (NOT talk date).
+# Schedule page publish date (NOT talk date).
 publishDate: '2018-12-01'
 
 authors: []
