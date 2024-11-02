@@ -24,4 +24,4 @@ main:
     weight: 60
   - name: Research
     url: blog
-    weight: 60
+    weight: 70
