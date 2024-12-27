@@ -84,7 +84,7 @@ user_groups:
   - Undergraduate Students
   - Administration
   - Visitors
-  - Alumni
+
 
 ---
 
