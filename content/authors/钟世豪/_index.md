@@ -81,7 +81,6 @@ email: 'xxxxx'
 user_groups:
   - Postdocs
   - PhD Students
-  - Undergraduate Students
   - Administration
   - Visitors
 

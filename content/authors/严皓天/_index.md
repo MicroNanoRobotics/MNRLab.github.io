@@ -1,20 +1,20 @@
 ---
 # Display name
-title: 袁岩 Yan Yuan
+title: 严皓天 Haotian Yan
 
 # Full name (for SEO)
-first_name: Yan
-last_name: Yuan
+first_name: Haotian 
+last_name: Yan
 
 # Username (this should match the folder name)
 authors:
-  - 袁岩
+  - 严皓天
 
 # Is this the primary user of the site?
 superuser: false
 
 # Role/position
-role: 机械工程专业硕士研究生 Masters Students of Mechanical Engineering
+role: 机械电子工程专业本科生
 
 # Organizations/Affiliations
 organizations:
@@ -25,17 +25,14 @@ organizations:
 bio: 
 
 interests:
-  - 磁控连续体机器人
-  - 机械臂控制
+  - 软体微纳磁控机器人设计
+  - 多模态微机器人设计和控制
 
 education:
   courses:
-    - course: 机械工程专业 在读硕士
+    - course: 机械电子工程专业 学士在读
       institution: 北京理工大学机电学院
-      year: 2024-
-    - course: 机械电子工程专业 学士
-      institution: 北京理工大学机电学院
-      year: 2020-2024
+      year: 2021-（2025）
 
 
 # Social/Academic Networking
@@ -77,12 +74,12 @@ email: 'xxx'
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - Masters Students
+  - Undergraduate Students
 
 
 ---
 
-袁岩（优质版），北京理工大学机械工程专业硕士研究生。主要从事的研究方向包括连续体机器人控制、机械臂控制等。
+严皓天（运动版），北京理工大学机械电子工程专业本科生，保研至王化平教授课题组，目前研究方向包括软体微纳磁控机器人设计、多模态微机器人设计和控制等。具备较强的综合运动能力，热爱篮球、羽毛球、游泳、乒乓球等一系列体育运动。
 
 
 
