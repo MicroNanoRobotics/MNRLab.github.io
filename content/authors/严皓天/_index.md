@@ -14,7 +14,7 @@ authors:
 superuser: false
 
 # Role/position
-role: 机械电子工程专业本科生
+role: 机械电子工程专业本科生 Undergraduate students of Mechanical Engineering
 
 # Organizations/Affiliations
 organizations:
