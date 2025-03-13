@@ -83,7 +83,7 @@ user_groups:
 
 ---
 
-白善明，北京理工大学机械工程专业博士研究生。主要从事的研究方向包括连续体机器人、磁控机器人等。
+白善明（哈哈版），北京理工大学机械工程专业博士研究生。主要从事的研究方向包括连续体机器人、磁控机器人等。
 
 Shanming Bai is a PhD Students of Mechanical Engineering at the Micro nano Robotics Lab. His research interests include continuum robots, magnetically controlled robots, and more.
 

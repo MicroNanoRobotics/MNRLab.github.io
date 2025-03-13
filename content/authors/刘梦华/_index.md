@@ -92,7 +92,7 @@ user_groups:
 
 ---
 
-刘梦华，北京理工大学先进制造专业博士研究生。主要从事的方向包括微纳加工与微纳制造、仿人机器人、功能化生物微流控芯片等。具备较强的沟通表达能力和英文口语交流能力，热爱社交、爬山和旅行等一系列户外活动。
+刘梦华（毕业版），北京理工大学先进制造专业博士研究生。主要从事的方向包括微纳加工与微纳制造、仿人机器人、功能化生物微流控芯片等。具备较强的沟通表达能力和英文口语交流能力，热爱社交、爬山和旅行等一系列户外活动。
 
 代表性成果：
 1. Menghua Liu, Huaping Wang, et al. A TPP-Based Microfluidic Chip Design and Fabrication Method for Optimizing Discrete Directed Growth of Nerve Cell[J], Cyborg and Bionic Systems, 2024. SCI一区, IF: 10.5.
