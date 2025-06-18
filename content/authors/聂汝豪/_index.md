@@ -30,9 +30,12 @@ interests:
 
 education:
   courses:
-    - course: 机器人工程专业 在读硕士
+    - course: 机械工程专业 在读博士
       institution: 北京理工大学机电学院
-      year: 2023-
+      year: 2025-
+    - course: 机器人工程专业 硕士研究生
+      institution: 北京理工大学机电学院
+      year: 2023-2025
     - course: 机器人工程专业 学士
       institution: 北京科技大学机械工程学院
       year: 2019-2023
