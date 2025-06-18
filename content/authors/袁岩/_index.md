@@ -14,7 +14,7 @@ authors:
 superuser: false
 
 # Role/position
-role: 机械工程专业硕士研究生 Masters Students of Mechanical Engineering
+role: 机械工程专业硕士研究生 Masters Student of Mechanical Engineering
 
 # Organizations/Affiliations
 organizations:

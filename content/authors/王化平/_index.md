@@ -91,7 +91,7 @@ user_groups:
   - Principal Investigators
 ---
 
-王化平教授主要从事磁驱软体机器人、微纳机器人、微尺度自动化等领域研究，在多尺度机器人设计与集成、微纳生物目标交互、多机器人协同微操作等方向开展研究工作。主持国家优秀青年科学基金、北京市科技计划项目、北京市自然科学基金等。建立了基于宏微混合与多物理场驱动的微纳生物操作机器人系统，探索微尺度“人-机-环境”共融协同方法，实现了面向微尺度多目标生物操作与人工组织功能化构建的多机器人协同控制，为癌症、血栓等重大疾病精准治疗与器官修复提供了新思路，该研究处于国际领先水平。相关研究成果在Science Advances、Nature Communications、IEEE Trans.系列汇刊等发表SCI论文30余篇，申请中国/国际发明专利15项，获机器人领域top1国际学术会议ICRA-2021最佳自动化论文奖（中国大陆首次、1997-今）等9项国际学术奖励，出版学术专著2部并获批十三五国家重点出版规划项目、国家科学技术学术著作出版基金资助项目，担任Frontiers in Neurorobotics、Cyborg and Bionic Systems等国际期刊编委会成员。指导学生科技竞赛项目获中国研究生机器人创新设计大赛一等奖、第十七届“挑战杯”特等奖并获评优秀指导教师。
+王化平教授主要从事磁驱软体机器人、微纳机器人、微尺度自动化等领域研究，在多尺度机器人设计与集成、微纳生物目标交互、多机器人协同微操作等方向开展研究工作。主持国家自然科学基金优秀青年基金、面上项目、科技部重点研发计划青年科学家项目，北京市科技计划项目、区域联合重点项目等。建立了基于宏微混合与多物理场驱动的微纳生物操作机器人系统，探索微尺度“人-机-环境”共融协同方法，实现了面向微尺度多目标生物操作与人工组织功能化构建的多机器人协同控制，为癌症、血栓等重大疾病精准治疗与器官修复提供了新思路，该研究处于国际领先水平。相关研究成果在Science Advances、Nature Communications、IEEE Trans.系列汇刊等发表SCI论文30余篇，申请中国/国际发明专利20余项，获机器人领域top1国际学术会议ICRA-2021最佳自动化论文奖（中国大陆首次、1997-今）等10余项国际学术奖励，出版学术专著2部并获批十三五国家重点出版规划项目、国家科学技术学术著作出版基金资助项目，担任IEEE Transactions on Automation Science and Engineering、Cyborg and Bionic Systems、Smartbot等国际期刊编委会成员。指导学生科技竞赛项目获中国研究生机器人创新设计大赛一等奖、第十七届“挑战杯”特等奖并获评优秀指导教师。
 
 【代表性成果】
 
@@ -131,21 +131,26 @@ user_groups:
 
 1. 2022年度国家优秀青年科学基金
 2. 国际会议IEEE ICRA-2021自动化领域优秀论文奖（Best Application Paper in Automation，机器人领域Top1国际会议，中国大陆首次获得（1997-今），1600篇仅1篇）
-3. 国际学术会议IEEE CYBER-2023优秀论文奖（Best Student Paper，Top 0.5%）
-4. 2023年第四届中国机器人学术年会最佳海报奖
-5. 国际学术会议IEEE CBS-2022优秀论文奖（Best Student Paper，Top 0.5%）
-6. 国际会议IEEE RCAR-2021控制领域优秀论文奖（Best Application Paper in Control，Top 0.5%）
-7. 国际会议 IEEE MARSS-2018最佳应用奖（Best Application Paper，Top 0.6%）
-8. 国际会议 IEEE CYBER-2017优秀论文奖（Best Student Paper，Top 0.5%）
-9. 国际会议 IEEE ROBIO-2017优秀论文提名奖（Best Paper Finalist，Top 2%）
+3. 国际学术会议ICAIS&ISAS 2024 最佳论文奖（Best Paper Award）
+4. 国际学术会议IEEE CYBER-2023优秀论文奖（Best Student Paper，Top 0.5%）
+5. 2023年第四届中国机器人学术年会最佳海报奖
+6. 国际学术会议IEEE CBS-2022优秀论文奖（Best Student Paper，Top 0.5%）
+7. 国际会议IEEE RCAR-2021控制领域优秀论文奖（Best Application Paper in Control，Top 0.5%）
+8. 国际会议 IEEE MARSS-2018最佳应用奖（Best Application Paper，Top 0.6%）
+9. 国际会议 IEEE CYBER-2017优秀论文奖（Best Student Paper，Top 0.5%）
+10. 国际会议 IEEE ROBIO-2017优秀论文提名奖（Best Paper Finalist，Top 2%）
+
 
 
 【社会兼职】
 
-1. Cyborg and Bionic Systems青年编委（Science合作期刊、中国卓越行动计划）
-2. Frontiers in Neurorobotics机器人与神经科学领域SCI国际期刊编委会成员
-3. IEEE RCAR-2021程序委员会联席主席
-4. IEEE CBS-2022宣传委员会联席主席
-5. 中国计算机学会智能机器人专业委员会委员
-6. 中国微米纳米技术学会微纳机器人分会理事
-7. 中国指挥与控制学会智能控制与系统专业委员会委员
+1. IEEE Transactions on Automation Science and Engineering 副主编
+2. Cyborg and Bionic Systems青年编委（Science合作期刊、中国卓越行动计划）
+3. Smartbot青年编委
+4. Frontiers in Neurorobotics编委会成员
+5. IEEE RCAR-2021程序委员会联席主席
+6. IEEE CBS-2022宣传委员会联席主席
+7. 中国计算机学会智能机器人专业委员会委员
+8. 中国微米纳米技术学会微纳机器人分会理事
+9. 中国指挥与控制学会智能控制与系统专业委员会委员
+10. 中国自动化学会具身智能专业委员会委员

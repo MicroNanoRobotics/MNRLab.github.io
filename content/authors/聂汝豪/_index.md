@@ -14,7 +14,7 @@ authors:
 superuser: false
 
 # Role/position
-role: 机器人工程专业硕士研究生 Masters Students of Robotics Engineering
+role: 机械工程专业博士研究生 PhD Student of Mechanical Engineering
 
 # Organizations/Affiliations
 organizations:
@@ -77,14 +77,14 @@ email: 'xxx'
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - Masters Students
+  - PhD Students
 
 
 ---
 
-聂汝豪，北京理工大学机器人工程专业硕士研究生。主要从事的研究方向包括微型机器人、软体机器人、折纸机器人等。
+聂汝豪，北京理工大学机械工程专业博士研究生。主要从事的研究方向包括微型机器人、软体机器人、折纸机器人等。
 
- Ruhao Nie is a Master's student in Robotics Engineering at Beijing Institute of Technology. His research interests include miniature robot, soft robotics, origami robotics, and more.
+ Ruhao Nie is a PhD Student of Mechanical Engineering at Beijing Institute of Technology. His research interests include miniature robot, soft robotics, origami robotics, and more.
 
 
 

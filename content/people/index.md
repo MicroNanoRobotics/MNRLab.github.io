@@ -40,6 +40,27 @@ sections:
       - title: Photo Gallery
         content: |  
           <div align="center">
+            <img src="004.jpg" alt="" width="70%" height="auto">
+          </div>
+        align: top
+
+      - title: Photo Gallery
+        content: |  
+          <div align="center">
+            <img src="001.jpg" alt="" width="70%" height="auto">
+          </div>
+        align: top
+      
+      - title: Photo Gallery
+        content: |  
+          <div align="center">
+            <img src="003.jpg" alt="" width="70%" height="auto">
+          </div>
+        align: top
+      
+      - title: Photo Gallery
+        content: |  
+          <div align="center">
             <img src="asd111.jpg" alt="" width="70%" height="auto">
           </div>
         align: top

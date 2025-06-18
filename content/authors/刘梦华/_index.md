@@ -14,7 +14,7 @@ authors:
 superuser: false
 
 # Role/position
-role: 先进制造专业博士研究生 PhD Students of Advanced manufacturing
+role: 先进制造专业博士研究生 PhD Student of Advanced manufacturing
 
 # Organizations/Affiliations
 organizations:
