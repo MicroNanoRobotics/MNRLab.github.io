@@ -1,4 +1,4 @@
-name: Build and Deploy Hugo Blox Site
+name: Build Hugo Blox Site
 
 on:
   push:
@@ -15,8 +15,10 @@ jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
 
+    # 环境变量全部指定到工作区，避免 /tmp 权限问题
     env:
       HUGO_CACHE_DIR: ${{ github.workspace }}/.hugo_cache
+      HUGO_BLOX_CACHE_DIR: ${{ github.workspace }}/.hugo_blox_cache
       GOPATH: ${{ github.workspace }}/.gopath
       GOMODCACHE: ${{ github.workspace }}/.gopath/pkg/mod
 
@@ -24,16 +26,12 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Prepare Hugo cache in /tmp
+      - name: Prepare workspace cache directories
         run: |
-          echo "Cleaning /tmp/hugo_cache_runner..."
-          sudo rm -rf /tmp/hugo_cache_runner
-          sudo mkdir -p /tmp/hugo_cache_runner
-          sudo chown -R $(whoami):$(whoami) /tmp/hugo_cache_runner
-          echo "Workspace cache dirs..."
-          mkdir -p "${HUGO_CACHE_DIR}" "${GOMODCACHE}"
-          sudo chown -R $(whoami):$(whoami) "${HUGO_CACHE_DIR}" "${GOMODCACHE}"
-          ls -ld /tmp/hugo_cache_runner "${HUGO_CACHE_DIR}" "${GOMODCACHE}"
+          mkdir -p "${HUGO_CACHE_DIR}" "${HUGO_BLOX_CACHE_DIR}" "${GOMODCACHE}"
+          sudo chown -R $(whoami):$(whoami) "${HUGO_CACHE_DIR}" "${HUGO_BLOX_CACHE_DIR}" "${GOMODCACHE}"
+          echo "Cache directories prepared:"
+          ls -ld "${HUGO_CACHE_DIR}" "${HUGO_BLOX_CACHE_DIR}" "${GOMODCACHE}"
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
@@ -44,12 +42,23 @@ jobs:
         run: |
           export GOPATH="${GOPATH}"
           export GOMODCACHE="${GOMODCACHE}"
+          export HUGO_CACHE_DIR="${HUGO_CACHE_DIR}"
+          export HUGO_BLOX_CACHE_DIR="${HUGO_BLOX_CACHE_DIR}"
           hugo mod clean || true
           hugo mod get
           hugo mod tidy
 
-      - name: Build site
+      - name: Build Hugo site
         run: |
           hugo --minify -v
           echo "Build finished. public/ contents:"
           ls -la ./public || true
+
+      # 以下部署步骤可选，先确认 build 成功再打开
+      #- name: Upload artifact for GitHub Pages
+      #  uses: actions/upload-pages-artifact@v3
+      #  with:
+      #    path: ./public
+      #
+      #- name: Deploy to GitHub Pages
+      #  uses: actions/deploy-pages@v3
