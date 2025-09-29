@@ -2,9 +2,12 @@ name: Deploy website to GitHub Pages
 
 env:
   WC_HUGO_VERSION: '0.135.0'
-  # 强制 Hugo 使用工作目录下的缓存，而不是 /tmp
+  # 使用工作区内可写目录作为缓存（不要用 /tmp）
   HUGO_CACHE_DIR: ${{ github.workspace }}/.hugo_cache
+  GOPATH: ${{ github.workspace }}/.gopath
   GOMODCACHE: ${{ github.workspace }}/.gopath/pkg/mod
+  # 允许 go 在 module cache 写入
+  GOFLAGS: -modcacherw
 
 on:
   push:
@@ -24,11 +27,42 @@ jobs:
   build:
     if: github.repository_owner != 'HugoBlox'
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+
+      - name: Ensure workspace cache dirs exist
+        run: |
+          mkdir -p "${GOMODCACHE}" "${HUGO_CACHE_DIR}"
+          # initial safe ownership and perms
+          sudo chown -R $(whoami):$(whoami) "${GOMODCACHE}" "${HUGO_CACHE_DIR}"
+          sudo chmod -R u+rwX "${GOMODCACHE}" "${HUGO_CACHE_DIR}"
+          echo "Initial dirs:"
+          ls -ld "${GOMODCACHE}" "${HUGO_CACHE_DIR}" || true
+
+      - name: Restore module cache (workspace path)
+        uses: actions/cache@v4
+        with:
+          path: |
+            ${{ github.workspace }}/.gopath/pkg/mod
+          key: ${{ runner.os }}-hugomod-${{ hashFiles('**/go.mod') }}
+          restore-keys: |
+            ${{ runner.os }}-hugomod-
+
+      - name: Fix ownership & perms of module cache after restore (critical)
+        run: |
+          echo "Fixing ownership/permissions of GOMODCACHE and removing stale hugo_stats.json..."
+          sudo chown -R $(whoami):$(whoami) "${GOMODCACHE}" || true
+          sudo chmod -R u+rwX "${GOMODCACHE}" || true
+          # remove any stale hugo_stats.json that could block writes
+          find "${GOMODCACHE}" -type f -name 'hugo_stats.json' -exec rm -f {} \; || true
+          echo "After fix:"
+          ls -ld "${GOMODCACHE}" || true
+          # show a few entries for sanity check
+          find "${GOMODCACHE}" -maxdepth 3 -type d -print | sed -n '1,20p' || true
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
@@ -36,35 +70,33 @@ jobs:
           hugo-version: ${{ env.WC_HUGO_VERSION }}
           extended: true
 
-      - name: Prepare cache directories
-        run: |
-          mkdir -p "${HUGO_CACHE_DIR}" "${GOMODCACHE}"
-          echo "Cache directories ready"
-          ls -ld "${HUGO_CACHE_DIR}" "${GOMODCACHE}"
-
-      - uses: actions/cache@v4
-        with:
-          path: |
-            .hugo_cache
-            .gopath/pkg/mod
-          key: ${{ runner.os }}-hugomod-${{ hashFiles('**/go.mod') }}
-          restore-keys: |
-            ${{ runner.os }}-hugomod-
-
-      - name: Hugo modules tidy
-        run: |
-          hugo mod tidy
-
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
 
+      - name: Hugo modules: clean, get & tidy
+        env:
+          HUGO_CACHE_DIR: ${{ env.HUGO_CACHE_DIR }}
+          GOPATH: ${{ env.GOPATH }}
+          GOMODCACHE: ${{ env.GOMODCACHE }}
+          GOFLAGS: ${{ env.GOFLAGS }}
+        run: |
+          export GOPATH="${GOPATH}"
+          export GOMODCACHE="${GOMODCACHE}"
+          export GOFLAGS="${GOFLAGS}"
+          echo "Using GOMODCACHE=${GOMODCACHE}"
+          hugo mod clean || true
+          hugo mod get
+          hugo mod tidy
+
       - name: Build with Hugo
         env:
           HUGO_ENVIRONMENT: production
+          HUGO_CACHE_DIR: ${{ env.HUGO_CACHE_DIR }}
         run: |
-          echo "Using Hugo cache: $HUGO_CACHE_DIR"
           hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+          echo "Build done. public/ files:"
+          ls -la ./public || true
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
