@@ -2,6 +2,9 @@ name: Deploy website to GitHub Pages
 
 env:
   WC_HUGO_VERSION: '0.135.0'
+  HUGO_ENVIRONMENT: production
+  HUGO_CACHE_DIR: ${{ github.workspace }}/.hugo_cache
+  GOMODCACHE: ${{ github.workspace }}/.gomodcache
 
 on:
   push:
@@ -33,13 +36,17 @@ jobs:
           hugo-version: ${{ env.WC_HUGO_VERSION }}
           extended: true
 
+      - name: Prepare Hugo directories
+        run: |
+          mkdir -p "${HUGO_CACHE_DIR}" "${GOMODCACHE}"
+          echo "Using HUGO_CACHE_DIR=${HUGO_CACHE_DIR}"
+          echo "Using GOMODCACHE=${GOMODCACHE}"
+
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
 
       - name: Build with Hugo
-        env:
-          HUGO_ENVIRONMENT: production
         run: |
           hugo mod clean
           hugo mod tidy
