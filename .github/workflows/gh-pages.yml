@@ -15,7 +15,7 @@ jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
 
-    # ---- 关键：把这些 env 放在 job 级别，确保从第一步开始生效 ----
+    # 从一开始就让所有步骤看到这些 env，避免任何时序问题
     env:
       HUGO_CACHE_DIR: ${{ github.workspace }}/.hugo_cache
       GOPATH: ${{ github.workspace }}/.gopath
@@ -25,13 +25,21 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Ensure workspace cache dirs exist and are owned by runner
-        # This step creates the directories and chowns them so subsequent steps can write
+      - name: Remove old /tmp hugo cache (if exists) and ensure workspace cache dirs
         run: |
-          echo "Making sure caches exist and are writable..."
+          echo "Checking for old /tmp/hugo_cache_runner and removing if present (safe cleanup)..."
+          if [ -d /tmp/hugo_cache_runner ]; then
+            echo "/tmp/hugo_cache_runner exists. Removing it to avoid permission conflicts."
+            sudo rm -rf /tmp/hugo_cache_runner || true
+          else
+            echo "/tmp/hugo_cache_runner not present."
+          fi
+
+          echo "Creating workspace cache dirs and ensuring runner owns them..."
           mkdir -p "${HUGO_CACHE_DIR}" "${GOMODCACHE}"
           sudo chown -R "$(whoami):$(whoami)" "${HUGO_CACHE_DIR}" "${GOMODCACHE}"
-          ls -ld "${HUGO_CACHE_DIR}" "${GOMODCACHE}"
+          echo "After setup, directory listing:"
+          ls -ld "${HUGO_CACHE_DIR}" "${GOMODCACHE}" /tmp || true
 
       - name: Setup Hugo (install)
         uses: peaceiris/actions-hugo@v3
@@ -43,6 +51,8 @@ jobs:
           # ensure go uses our GOPATH/GOMODCACHE (env already set at job level)
           export GOPATH="${GOPATH}"
           export GOMODCACHE="${GOMODCACHE}"
+          echo "Using GOPATH=${GOPATH}"
+          echo "Using GOMODCACHE=${GOMODCACHE}"
           hugo mod clean || true
           hugo mod get
           hugo mod tidy
