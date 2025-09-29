@@ -1,0 +1,44 @@
+name: Build Hugo Site (Minimal)
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    env:
+      HUGO_CACHE_DIR: ${{ github.workspace }}/.hugo_cache
+      GOPATH: ${{ github.workspace }}/.gopath
+      GOMODCACHE: ${{ github.workspace }}/.gopath/pkg/mod
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Prepare workspace cache directories
+        run: |
+          mkdir -p "${HUGO_CACHE_DIR}" "${GOMODCACHE}"
+          sudo chown -R "$(whoami):$(whoami)" "${HUGO_CACHE_DIR}" "${GOMODCACHE}"
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.125.0'
+
+      - name: Hugo modules: clean & get
+        run: |
+          export GOPATH="${GOPATH}"
+          export GOMODCACHE="${GOMODCACHE}"
+          hugo mod clean || true
+          hugo mod get
+          hugo mod tidy
+
+      - name: Build site
+        run: |
+          hugo --minify -v
+          echo "Build finished. public/ contents:"
+          ls -la ./public || true
