@@ -1,7 +1,7 @@
 name: Deploy website to GitHub Pages
 
 env:
-  WC_HUGO_VERSION: '0.135.0'
+  WC_HUGO_VERSION: '0.150.1'  # 升级 Hugo 版本
   HUGO_ENVIRONMENT: production
   HUGO_CACHE_DIR: ${{ github.workspace }}/.hugo_cache
   GOMODCACHE: ${{ github.workspace }}/.gomodcache
@@ -25,34 +25,46 @@ jobs:
     if: github.repository_owner != 'HugoBlox'
     runs-on: ubuntu-latest
     steps:
+      # 1. Checkout 仓库
       - name: Checkout
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
+      # 2. 安装 Hugo Extended
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: ${{ env.WC_HUGO_VERSION }}
           extended: true
 
+      # 3. 准备 Hugo 缓存目录
       - name: Prepare Hugo directories
         run: |
           mkdir -p "${HUGO_CACHE_DIR}" "${GOMODCACHE}"
           echo "Using HUGO_CACHE_DIR=${HUGO_CACHE_DIR}"
           echo "Using GOMODCACHE=${GOMODCACHE}"
 
+      # 4. 配置 GitHub Pages
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
 
+      # 5. 清理 Hugo 模块缓存并整理依赖
+      - name: Clean Hugo modules
+        run: |
+          hugo mod clean
+          hugo mod tidy
+          hugo mod vendor
+
+      # 6. 构建 Hugo 站点
       - name: Build with Hugo
         env:
           HUGO_ENVIRONMENT: production
         run: |
           hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/" --ignoreVendorPaths=""
 
-
+      # 7. 上传生成的 public 文件夹
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
