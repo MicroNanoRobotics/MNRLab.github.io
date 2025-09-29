@@ -3,7 +3,7 @@ name: Build and Deploy Hugo to GitHub Pages
 on:
   push:
     branches:
-      - main   # <- 如果你的默认分支不是 main，改成你的分支名
+      - main   # <- 如需改成 master，请修改这里
   workflow_dispatch:
 
 permissions:
@@ -23,14 +23,13 @@ jobs:
         run: |
           export HUGO_CACHE_DIR="${GITHUB_WORKSPACE}/.hugo_cache"
           mkdir -p "$HUGO_CACHE_DIR"
-          # ensure runner user owns it
           sudo chown -R "$(whoami):$(whoami)" "$HUGO_CACHE_DIR"
           echo "HUGO_CACHE_DIR=$HUGO_CACHE_DIR" >> $GITHUB_ENV
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: '0.125.0'  # 按需修改
+          hugo-version: '0.125.0'  # 按需修改为你使用的 Hugo 版本
 
       - name: Hugo modules: clean & get
         env:
