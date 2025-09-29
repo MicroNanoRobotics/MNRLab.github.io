@@ -2,7 +2,7 @@ name: Deploy website to GitHub Pages
 
 env:
   WC_HUGO_VERSION: '0.135.0'
-  # 最小改动：指定 Hugo/Blox 缓存目录在工作区，避免 /tmp 权限问题
+  # 将 Hugo/Blox 缓存放在工作区，避免 /tmp 权限问题
   HUGO_CACHE_DIR: ${{ github.workspace }}/.hugo_cache
   HUGO_BLOX_CACHE_DIR: ${{ github.workspace }}/.hugo_blox_cache
   GOPATH: ${{ github.workspace }}/.gopath
@@ -38,9 +38,10 @@ jobs:
           hugo-version: ${{ env.WC_HUGO_VERSION }}
           extended: true
 
+      # 修改 cache 路径到工作区，避免 /tmp 权限问题
       - uses: actions/cache@v4
         with:
-          path: /tmp/hugo_cache_runner/
+          path: ${{ github.workspace }}/.hugo_cache
           key: ${{ runner.os }}-hugomod-${{ hashFiles('**/go.mod') }}
           restore-keys: |
             ${{ runner.os }}-hugomod-
