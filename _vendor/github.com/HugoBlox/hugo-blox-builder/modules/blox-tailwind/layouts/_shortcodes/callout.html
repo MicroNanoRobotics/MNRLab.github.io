@@ -1,0 +1,36 @@
+{{/*
+    DEPRECATED: This shortcode is deprecated in favor of standard Markdown alert syntax.
+    
+    Instead of:
+        {{< callout note >}}
+        Your content here
+        {{< /callout >}}
+    
+    Use standard GitHub/Obsidian alert syntax:
+        > [!NOTE]
+        > Your content here
+    
+    This provides better portability across Markdown platforms.
+    
+    Docs: https://docs.hugoblox.com/reference/markdown/#callouts
+
+    Parameters
+    ----------
+    #0 : optional, positional
+        Name of the icon to display in the callout component.
+        Default Hugo Blox Builder available options include "note" and "warning".
+        Otherwise, you can add your own icon to assets/media/icons/ and reference its name when calling the shortcode.
+*/}}
+
+{{/* Log deprecation warning */}}
+{{ partial "functions/logger" (dict "page" .Page "level" "warn" "message" "The callout shortcode is deprecated. Use standard Markdown alert syntax instead: > [!NOTE]") }}
+
+{{/* Get callout type from parameter */}}
+{{ $type := (.Get 0) | default "note" }}
+
+{{/* Use shared callout renderer */}}
+{{ partial "functions/render_callout" (dict 
+  "type" $type 
+  "content" (.Inner | markdownify | emojify) 
+  "source" "shortcode"
+) }}
