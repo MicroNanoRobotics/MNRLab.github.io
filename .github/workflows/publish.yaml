@@ -47,10 +47,11 @@ jobs:
         uses: actions/configure-pages@v5
 
       - name: Build with Hugo
+        env:
+          HUGO_ENVIRONMENT: production
         run: |
-          hugo mod clean
-          hugo mod tidy
-          hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+          hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/" --ignoreVendorPaths=""
+
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
