@@ -14,64 +14,40 @@ permissions:
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
+
+    # ---- 关键：把这些 env 放在 job 级别，确保从第一步开始生效 ----
+    env:
+      HUGO_CACHE_DIR: ${{ github.workspace }}/.hugo_cache
+      GOPATH: ${{ github.workspace }}/.gopath
+      GOMODCACHE: ${{ github.workspace }}/.gopath/pkg/mod
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Hugo + Go cache dirs (avoid /tmp permission issues)
+      - name: Ensure workspace cache dirs exist and are owned by runner
+        # This step creates the directories and chowns them so subsequent steps can write
         run: |
-          # put caches inside workspace (not /tmp)
-          export HUGO_CACHE_DIR="${GITHUB_WORKSPACE}/.hugo_cache"
-          export GOPATH="${GITHUB_WORKSPACE}/.gopath"
-          export GOMODCACHE="${GOPATH}/pkg/mod"
+          echo "Making sure caches exist and are writable..."
+          mkdir -p "${HUGO_CACHE_DIR}" "${GOMODCACHE}"
+          sudo chown -R "$(whoami):$(whoami)" "${HUGO_CACHE_DIR}" "${GOMODCACHE}"
+          ls -ld "${HUGO_CACHE_DIR}" "${GOMODCACHE}"
 
-          mkdir -p "$HUGO_CACHE_DIR" "$GOMODCACHE"
-          # ensure runner user owns them
-          sudo chown -R "$(whoami):$(whoami)" "$HUGO_CACHE_DIR" "$GOMODCACHE"
-
-          # Export to environment for following steps
-          echo "HUGO_CACHE_DIR=$HUGO_CACHE_DIR" >> $GITHUB_ENV
-          echo "GOPATH=$GOPATH" >> $GITHUB_ENV
-          echo "GOMODCACHE=$GOMODCACHE" >> $GITHUB_ENV
-
-          # small verification output for debugging
-          echo "==== Verify env and dirs ===="
-          echo "HUGO_CACHE_DIR env: $HUGO_CACHE_DIR"
-          echo "GOPATH env: $GOPATH"
-          echo "GOMODCACHE env: $GOMODCACHE"
-          echo "hugo config cachedir (may be empty until hugo reads HUGO_CACHE_DIR):"
-          hugo config | grep cachedir || true
-          echo "go env GOPATH GOMODCACHE:"
-          go env GOPATH GOMODCACHE || true
-          echo "Check created directories:"
-          ls -ld "$HUGO_CACHE_DIR" "$GOMODCACHE" || true
-        env:
-          HUGO_CACHE_DIR: ${{ github.workspace }}/.hugo_cache
-          GOPATH: ${{ github.workspace }}/.gopath
-          GOMODCACHE: ${{ github.workspace }}/.gopath/pkg/mod
-
-      - name: Setup Hugo
+      - name: Setup Hugo (install)
         uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: '0.125.0'
 
       - name: 'Hugo modules: clean & get (use workspace caches)'
-        env:
-          HUGO_CACHE_DIR: ${{ env.HUGO_CACHE_DIR }}
-          GOPATH: ${{ env.GOPATH }}
-          GOMODCACHE: ${{ env.GOMODCACHE }}
         run: |
-          hugo mod clean || true
+          # ensure go uses our GOPATH/GOMODCACHE (env already set at job level)
           export GOPATH="${GOPATH}"
           export GOMODCACHE="${GOMODCACHE}"
+          hugo mod clean || true
           hugo mod get
           hugo mod tidy
 
       - name: Build site
-        env:
-          HUGO_CACHE_DIR: ${{ env.HUGO_CACHE_DIR }}
-          GOPATH: ${{ env.GOPATH }}
-          GOMODCACHE: ${{ env.GOMODCACHE }}
         run: |
           hugo --minify -v
           echo "Build finished. public/ contents:"
