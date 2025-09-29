@@ -48,7 +48,6 @@ jobs:
 
       - name: 'Hugo modules: clean & get (use workspace caches)'
         run: |
-          # ensure go uses our GOPATH/GOMODCACHE (env already set at job level)
           export GOPATH="${GOPATH}"
           export GOMODCACHE="${GOMODCACHE}"
           echo "Using GOPATH=${GOPATH}"
@@ -64,9 +63,9 @@ jobs:
           ls -la ./public || true
 
       - name: Upload artifact for GitHub Pages
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
 
       - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v3
