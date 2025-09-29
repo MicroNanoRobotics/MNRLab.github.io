@@ -2,12 +2,12 @@ name: Deploy website to GitHub Pages
 
 env:
   WC_HUGO_VERSION: '0.135.0'
-  # Hugo/Blox 缓存放在工作区，避免 /tmp 权限问题
+  # 放在工作区，确保可写
   HUGO_CACHE_DIR: ${{ github.workspace }}/.hugo_cache
   HUGO_BLOX_CACHE_DIR: ${{ github.workspace }}/.hugo_blox_cache
   GOPATH: ${{ github.workspace }}/.gopath
   GOMODCACHE: ${{ github.workspace }}/.gopath/pkg/mod
-  # 允许 Go module 缓存目录可写，解决 Hugo Blox 写 hugo_stats.json 权限问题
+  # 允许 Go 在 module cache 写入文件（hugo_stats.json）
   GOFLAGS: -modcacherw
 
 on:
@@ -28,11 +28,37 @@ jobs:
   build:
     if: github.repository_owner != 'HugoBlox'
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+
+      # <- 确保工作区缓存目录存在并归 runner 所有（第一次创建）
+      - name: Prepare workspace cache directories (ensure writable)
+        run: |
+          mkdir -p "${HUGO_CACHE_DIR}" "${HUGO_BLOX_CACHE_DIR}" "${GOMODCACHE}"
+          sudo chown -R $(whoami):$(whoami) "${HUGO_CACHE_DIR}" "${HUGO_BLOX_CACHE_DIR}" "${GOMODCACHE}"
+          echo "After initial mkdir/chown:"
+          ls -ld "${HUGO_CACHE_DIR}" "${HUGO_BLOX_CACHE_DIR}" "${GOMODCACHE}" || true
+
+      # 缓存 GOMODCACHE（使用工作区路径，**不要使用 /tmp/**）
+      - name: Restore module cache
+        uses: actions/cache@v4
+        with:
+          path: ${{ github.workspace }}/.gopath/pkg/mod
+          key: ${{ runner.os }}-hugomod-${{ hashFiles('**/go.mod') }}
+          restore-keys: |
+            ${{ runner.os }}-hugomod-
+
+      # <- **重要**：cache 恢复后再次 chown，避免缓存归属不是 runner 导致写失败
+      - name: Fix ownership of module cache after restore
+        run: |
+          echo "Fixing owner of GOMODCACHE and related caches..."
+          sudo chown -R $(whoami):$(whoami) "${GOMODCACHE}" "${HUGO_CACHE_DIR}" "${HUGO_BLOX_CACHE_DIR}" || true
+          echo "Owner and perms now:"
+          ls -ld "${GOMODCACHE}" "${HUGO_CACHE_DIR}" "${HUGO_BLOX_CACHE_DIR}" || true
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
@@ -40,23 +66,35 @@ jobs:
           hugo-version: ${{ env.WC_HUGO_VERSION }}
           extended: true
 
-      # 使用工作区缓存，避免 /tmp 权限问题
-      - uses: actions/cache@v4
-        with:
-          path: ${{ github.workspace }}/.hugo_cache
-          key: ${{ runner.os }}-hugomod-${{ hashFiles('**/go.mod') }}
-          restore-keys: |
-            ${{ runner.os }}-hugomod-
-
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
 
+      - name: Hugo modules: clean & get
+        env:
+          HUGO_CACHE_DIR: ${{ env.HUGO_CACHE_DIR }}
+          GOPATH: ${{ env.GOPATH }}
+          GOMODCACHE: ${{ env.GOMODCACHE }}
+          GOFLAGS: ${{ env.GOFLAGS }}
+        run: |
+          # ensure go uses our GOMODCACHE/GOPATH
+          export GOPATH="${GOPATH}"
+          export GOMODCACHE="${GOMODCACHE}"
+          export GOFLAGS="${GOFLAGS}"
+          echo "go env (selected):"
+          go env GOPATH GOMODCACHE GOMODCACHE >/dev/null || true
+          hugo mod clean || true
+          hugo mod get
+          hugo mod tidy
+
       - name: Build with Hugo
         env:
           HUGO_ENVIRONMENT: production
+          HUGO_CACHE_DIR: ${{ env.HUGO_CACHE_DIR }}
         run: |
           hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+          echo "Built public/ listing:"
+          ls -la ./public || true
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
