@@ -46,7 +46,7 @@ hugo server
 
 - 仓库：`MicroNanoRobotics/MNRLab.github.io`
 - 分支：`main`
-- 站点域名：`micronanorobotics.github.io`
+- CMS 登录认证站点：`zesty-marigold-84172f.netlify.app`
 - 未开启 Open Authoring：任何电脑都可打开后台页面，但只有拥有仓库写权限的 GitHub 账号能登录修改
 - 配置文件：`data/decap_cms_config.yaml`
 - 不保存任何 token、secret、OAuth client secret 或个人凭证

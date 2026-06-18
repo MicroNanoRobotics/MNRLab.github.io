@@ -32,12 +32,14 @@ backend:
   name: github
   repo: MicroNanoRobotics/MNRLab.github.io
   branch: main
-  site_domain: micronanorobotics.github.io
+  site_domain: zesty-marigold-84172f.netlify.app
 ```
 
 当前没有开启 Open Authoring。任何电脑都可以打开 `/admin/` 后台页面，但只有拥有本仓库写权限的 GitHub 账号才能登录并修改内容。也就是说，只要你的 GitHub 账号是仓库 owner 或 collaborator，就可以在任意电脑登录后台维护网站；其他账号不能写入。
 
-GitHub Pages 本身不提供 Decap CMS 所需的 GitHub OAuth 登录代理，因此仍需要一个 OAuth proxy 才能完成浏览器登录。推荐做法是：
+GitHub Pages 本身不提供 Decap CMS 所需的 GitHub OAuth 登录代理，因此本项目使用 Netlify 站点 `zesty-marigold-84172f.netlify.app` 作为后台登录认证站点。前台正式访问仍可以继续使用 GitHub Pages。
+
+如果未来更换 Netlify 站点，推荐做法是：
 
 1. 创建 GitHub OAuth App。
 2. 部署一个 Decap CMS GitHub OAuth proxy。
@@ -49,9 +51,7 @@ backend:
   name: github
   repo: MicroNanoRobotics/MNRLab.github.io
   branch: main
-  site_domain: micronanorobotics.github.io
-  base_url: https://your-oauth-proxy.example.com
-  auth_endpoint: auth
+  site_domain: your-netlify-site.netlify.app
 ```
 
 不要把 client secret、token 或个人密码写入本仓库。
