@@ -1,0 +1,21 @@
+{{- define "main" -}}
+<article class="mnr-gallery-single">
+  <header class="mnr-gallery-hero">
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.summary }}<p>{{ . }}</p>{{ end }}
+    {{ with .Params.event }}<p class="mnr-gallery-meta">{{ . }}{{ with $.Params.location }} · {{ . }}{{ end }}</p>{{ end }}
+  </header>
+
+  {{ with .Content }}
+    <div class="article-container article-style">{{ . }}</div>
+  {{ end }}
+
+  <div class="mnr-gallery-photo-grid">
+    {{ range .Params.images }}
+      <figure>
+        <img src="{{ . | relURL }}" alt="{{ $.Title }}" loading="lazy">
+      </figure>
+    {{ end }}
+  </div>
+</article>
+{{- end -}}

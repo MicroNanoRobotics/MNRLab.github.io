@@ -11,6 +11,90 @@ media_folder: static/uploads
 public_folder: /uploads
 
 collections:
+  - name: site_pages
+    label: Site Pages
+    files:
+      - file: content/tour/index.md
+        label: Tour Page
+        name: tour
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Date, name: date, widget: datetime, required: false }
+          - { label: Page Type, name: type, widget: hidden, default: landing }
+          - label: Sections
+            name: sections
+            widget: list
+            required: false
+            fields:
+              - { label: Block Type, name: block, widget: select, options: [hero, slider, collection, markdown] }
+              - label: Content
+                name: content
+                widget: object
+                required: false
+                fields:
+                  - { label: Title, name: title, widget: string, required: false }
+                  - { label: Subtitle, name: subtitle, widget: string, required: false }
+                  - { label: Text, name: text, widget: markdown, required: false }
+                  - { label: Count, name: count, widget: number, value_type: int, required: false }
+                  - { label: Page Type, name: page_type, widget: string, required: false }
+                  - label: Image
+                    name: image
+                    widget: object
+                    required: false
+                    fields:
+                      - { label: Filename, name: filename, widget: string, required: false }
+                  - label: Filters
+                    name: filters
+                    widget: object
+                    required: false
+                    fields:
+                      - { label: Author, name: author, widget: string, required: false }
+                      - { label: Category, name: category, widget: string, required: false }
+                      - { label: Tag, name: tag, widget: string, required: false }
+                      - { label: Publication Type, name: publication_type, widget: string, required: false }
+                      - { label: Exclude Featured, name: exclude_featured, widget: boolean, default: false, required: false }
+                  - label: Slides
+                    name: slides
+                    widget: list
+                    required: false
+                    fields:
+                      - { label: Slide Title, name: title, widget: string, required: false }
+                      - { label: Content, name: content, widget: markdown, required: false }
+                      - { label: Align, name: align, widget: select, options: [left, center, right, top], required: false }
+                      - label: Background
+                        name: background
+                        widget: object
+                        required: false
+                        fields:
+                          - label: Image
+                            name: image
+                            widget: object
+                            required: false
+                            fields:
+                              - { label: Filename, name: filename, widget: string, required: false }
+                          - { label: Position, name: position, widget: string, required: false }
+                          - { label: Color, name: color, widget: string, required: false }
+                  - label: Link
+                    name: link
+                    widget: object
+                    required: false
+                    fields:
+                      - { label: Text, name: text, widget: string, required: false }
+                      - { label: URL, name: url, widget: string, required: false }
+                      - { label: Icon, name: icon, widget: string, required: false }
+                      - { label: Icon Pack, name: icon_pack, widget: string, required: false }
+              - label: Design
+                name: design
+                widget: object
+                required: false
+                fields:
+                  - { label: View, name: view, widget: string, required: false }
+                  - { label: Columns, name: columns, widget: string, required: false }
+                  - { label: Slide Width, name: slide_width, widget: string, required: false }
+                  - { label: Full Screen, name: is_fullscreen, widget: boolean, required: false }
+                  - { label: Loop, name: loop, widget: boolean, required: false }
+                  - { label: Interval, name: interval, widget: number, value_type: int, required: false }
+
   - name: publications
     label: Publications
     label_singular: Publication
@@ -55,7 +139,13 @@ collections:
           - { label: Patent, value: patent }
           - { label: Manuscript, value: manuscript }
       - { label: Tags, name: tags, widget: list, required: false }
-      - { label: Projects, name: projects, widget: list, required: false }
+      - { label: Patent Type, name: patent_type, widget: string, required: false }
+      - { label: Patent Country, name: country, widget: string, required: false }
+      - { label: Application Number, name: application_number, widget: string, required: false }
+      - { label: Publication Number, name: publication_number, widget: string, required: false }
+      - { label: Grant Number, name: grant_number, widget: string, required: false }
+      - { label: Patent Status, name: status, widget: select, required: false, options: [申请中, 已公开, 已授权, 转化中] }
+      - { label: Certificate PDF, name: certificate_pdf, widget: file, required: false }
       - { label: Featured, name: featured, widget: boolean, default: false, required: false }
       - label: Image
         name: image
@@ -158,7 +248,7 @@ collections:
           - { label: Icon Pack, name: icon_pack, widget: select, required: false, options: [fas, far, fab, ai] }
           - { label: Link, name: link, widget: string, required: false }
       - { label: Avatar Upload, name: avatar, widget: image, required: false }
-      - { label: Weight, name: weight, widget: number, value_type: int, required: false }
+      - { label: Team Order (置顶填 1，普通成员填 100), name: weight, widget: number, value_type: int, default: 100, required: false }
       - { label: Superuser, name: superuser, widget: boolean, default: false, required: false }
       - { label: Highlight Name, name: highlight_name, widget: boolean, default: false, required: false }
       - { label: Body, name: body, widget: markdown, required: false }
@@ -190,7 +280,6 @@ collections:
           - { label: Focal Point, name: focal_point, widget: string, default: Smart, required: false }
           - { label: Preview Only, name: preview_only, widget: boolean, default: false, required: false }
       - { label: Related Publications, name: related_publications, widget: list, required: false }
-      - { label: Related Projects, name: related_projects, widget: list, required: false }
       - { label: Body, name: body, widget: markdown, required: true }
 
   - name: facilities
@@ -228,45 +317,11 @@ collections:
       - { label: Weight, name: weight, widget: number, value_type: int, required: false }
       - { label: Body, name: body, widget: markdown, required: true }
 
-  - name: projects
-    label: Projects
-    label_singular: Project
-    folder: content/projects
-    path: "{{slug}}/index"
-    create: true
-    editor:
-      preview: false
-    media_folder: static/uploads/projects
-    public_folder: /uploads/projects
-    fields:
-      - { label: Title, name: title, widget: string }
-      - { label: Summary, name: summary, widget: text, required: false }
-      - { label: Start Date, name: start_date, widget: datetime, required: false }
-      - { label: End Date, name: end_date, widget: datetime, required: false }
-      - { label: Funding Source, name: funding_source, widget: string, required: false }
-      - { label: Grant Number, name: grant_number, widget: string, required: false }
-      - { label: Principal Investigator, name: principal_investigator, widget: string, required: false }
-      - { label: Participants, name: participants, widget: list, required: false }
-      - { label: Status, name: status, widget: select, required: false, options: [在研, 已结题, 申请中] }
-      - { label: Related Publications, name: related_publications, widget: list, required: false }
-      - { label: Related Patents, name: related_patents, widget: list, required: false }
-      - label: Image
-        name: image
-        widget: object
-        required: false
-        collapsed: true
-        fields:
-          - { label: Filename, name: filename, widget: image, required: false }
-          - { label: Caption, name: caption, widget: string, required: false }
-          - { label: Focal Point, name: focal_point, widget: string, default: Smart, required: false }
-          - { label: Preview Only, name: preview_only, widget: boolean, default: false, required: false }
-      - { label: Body, name: body, widget: markdown, required: true }
-
-  - name: patents
-    label: Patents
+  - name: publication_patents
+    label: Patents (under Publications)
     label_singular: Patent
-    folder: content/patents
-    path: "{{slug}}/index"
+    folder: content/publication
+    path: "patent-{{slug}}/index"
     create: true
     editor:
       preview: false
@@ -274,9 +329,12 @@ collections:
     public_folder: /uploads/patents
     fields:
       - { label: Title, name: title, widget: string }
-      - { label: Inventors, name: inventors, widget: list, required: false }
+      - { label: Inventors, name: authors, widget: list, required: true }
       - { label: Date, name: date, widget: datetime, required: false }
-      - { label: Year, name: year, widget: number, value_type: int, required: false }
+      - { label: Publish Date, name: publishDate, widget: datetime, required: false }
+      - { label: Publication Type, name: publication_types, widget: hidden, default: [patent] }
+      - { label: Publication, name: publication, widget: hidden, default: Patent }
+      - { label: Publication Short, name: publication_short, widget: hidden, default: Patent }
       - { label: Patent Type, name: patent_type, widget: string, required: false }
       - { label: Country, name: country, widget: string, required: false }
       - { label: Application Number, name: application_number, widget: string, required: false }
@@ -284,8 +342,10 @@ collections:
       - { label: Grant Number, name: grant_number, widget: string, required: false }
       - { label: Status, name: status, widget: select, required: false, options: [申请中, 已公开, 已授权, 转化中] }
       - { label: Abstract, name: abstract, widget: text, required: false }
-      - { label: Related Projects, name: related_projects, widget: list, required: false }
+      - { label: Summary, name: summary, widget: text, required: false }
       - { label: Certificate PDF, name: certificate_pdf, widget: file, required: false }
+      - { label: PDF, name: url_pdf, widget: file, required: false }
+      - { label: Tags, name: tags, widget: list, required: false }
       - { label: Featured, name: featured, widget: boolean, default: false, required: false }
       - label: Image
         name: image

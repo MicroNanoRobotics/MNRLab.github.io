@@ -1,0 +1,32 @@
+{{- define "main" -}}
+<section class="mnr-gallery-page">
+  <div class="mnr-gallery-hero">
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.summary }}<p>{{ . }}</p>{{ end }}
+  </div>
+
+  <div class="mnr-gallery-grid">
+    {{ range .Pages.ByDate.Reverse }}
+      {{ $cover := "" }}
+      {{ with .Params.images }}
+        {{ $cover = index . 0 }}
+      {{ end }}
+      <article class="mnr-gallery-card">
+        <a href="{{ .RelPermalink }}">
+          <div class="mnr-gallery-cover">
+            {{ if $cover }}
+              <img src="{{ $cover | relURL }}" alt="{{ .Title }}" loading="lazy">
+            {{ else }}
+              <div class="mnr-gallery-placeholder"></div>
+            {{ end }}
+          </div>
+          <div class="mnr-gallery-card-body">
+            <h2>{{ .Title }}</h2>
+            {{ with .Params.summary }}<p>{{ . }}</p>{{ end }}
+          </div>
+        </a>
+      </article>
+    {{ end }}
+  </div>
+</section>
+{{- end -}}

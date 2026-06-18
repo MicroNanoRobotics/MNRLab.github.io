@@ -17,9 +17,11 @@
 - People 团队成员
 - Research 研究方向
 - Platforms / Facilities 平台设备
-- Projects 科研项目
-- Patents 专利成果
+- Patents 专利成果（归入 Publications 内容体系）
 - Gallery 实验室相册
+- Tour 页面
+
+Projects 已从当前后台和菜单中移除；如后续需要恢复，可以重新添加 `content/projects` 与 CMS collection。
 
 ## GitHub 登录配置
 

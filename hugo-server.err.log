@@ -1,2 +1,0 @@
-WARN  module with path "github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-netlify" is imported for the same version "v1.1.2-0.20240509231741-c3d23d929bc6" more than once
-WARN  skipping template file "F:\\MNRLab.github.io\\_vendor\\github.com\\HugoBlox\\hugo-blox-builder\\modules\\blox-seo\\layouts\\_default\\_markup\\sitemap.xml": unrecognized render hook template

@@ -23,14 +23,16 @@ main:
     url: facilities
     weight: 50
   - name: Publications
-    url: publication
+    identifier: publications
     weight: 60
+  - name: Publications
+    url: publication
+    parent: publications
+    weight: 1
   - name: Patents
-    url: patents
-    weight: 65
-  - name: Projects
-    url: projects
-    weight: 67
+    url: publication-type/patent
+    parent: publications
+    weight: 2
   - name: Gallery
     url: gallery
     weight: 68

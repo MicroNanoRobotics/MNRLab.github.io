@@ -18,7 +18,7 @@ The integrated [**Wowchemy**](https://hugoblox.com) website builder and CMS make
 
 ## 网站维护说明
 
-本仓库已在原 Hugo Blox / Wowchemy Research Group Template 基础上增加 Decap CMS 轻后台，后台入口为 `/admin/`。后台支持维护论文、新闻、团队成员、研究方向、平台设备、科研项目、专利和相册内容。
+本仓库已在原 Hugo Blox / Wowchemy Research Group Template 基础上增加 Decap CMS 轻后台，后台入口为 `/admin/`。后台支持维护 Tour 页面、论文、专利（归入 Publications）、新闻、团队成员、研究方向、平台设备和相册内容。
 
 常用维护文档：
 

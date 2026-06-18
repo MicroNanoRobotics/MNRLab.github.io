@@ -73,6 +73,8 @@ email: 'xxx'
 
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
+weight: 100
+
 user_groups:
   - Masters Students
 

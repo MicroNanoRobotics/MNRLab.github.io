@@ -1,113 +1,63 @@
 ---
-# Leave the homepage title empty to use the site title
+# Leave the homepage title empty to use the site title.
 title:
 date: 2024-10-24
 type: landing
 
 sections:
-
-
-  # - block: hero
-  #     content:
-  #       title: 欢迎访问王化平教授团队主页
-  #       text: Welcome to the Official Site of Huaping Wang Research Team
-  #     primary_action:
-  #       text: Get Started
-  #       url: https://example.org
-  #       icon: rocket-launch
-  #     design:
-  #       spacing:
-  #         padding: [0, 0, 0, 0]
-  #         margin: [0, 0, 0, 0]
-  #       # For full-screen, add `min-h-screen` below
-  #       css_class: "dark"
-  #       background:
-  #         color: "navy"
-  #         image:
-  #           # Add your image background to `assets/media/`.
-  #           filename: bg-triangles.svg
-  #           filters:
-  #             brightness: 0.5
-  - block: hero
+  - block: slider
     content:
-      title: |
-       <br>
-        王化平教授课题组
-
-      image:
-        filename: wanghuaping2.jpg
-      text: |
-        <br>
-          微纳机器人研究团队
-        <br>
-          The Lab is committed to magnetic drive software robots, micro and nano robots, micro-scale automation and other fields of research.
-      
-  
-  - block: collection
-    content:
-      title: Latest News
-      subtitle:
-      text:
-      count: 5
-      filters:
-        author: ''
-        category: ''
-        exclude_featured: false
-        publication_type: ''
-        tag: ''
-      offset: 0
-      order: desc
-      page_type: post
+      slides:
+        - title: 欢迎访问微纳机器人研究小组
+          content: 👋 Welcome to the Micro Nano Robotics Lab...
+          align: center
+          background:
+            image:
+              filename: contact.jpg
+              filters:
+                brightness: 0.7
+            position: right
+            color: '#666'
+        - title: 期刊封面
+          content: '本团队的代表性成果发表在国际知名杂志xxxxxxxxx'
+          align: left
+          background:
+            image:
+              filename: coders.jpg
+              filters:
+                brightness: 0.5
+            position: center
+            color: '#555'
+        - title: 期刊封面
+          content: '本团队的代表性成果发表在国际知名杂志xxxxxxxxx'
+          align: left
+          background:
+            image:
+              filename: cover3.jpg
+              filters:
+                brightness: 0.5
+            position: center
+            size: contain
+            css_class: fullscreen
+            color: '#555'
+        - title: 获奖证书
+          content: '快来加入我们吧!'
+          align: right
+          background:
+            image:
+              filename: welcome.jpg
+              filters:
+                brightness: 0.5
+            position: center
+            color: '#333'
+          link:
+            icon: graduation-cap
+            icon_pack: fas
+            text: Join Us
+            url: contact/
     design:
-      view: card
-      columns: '1'
-  
-  - block: markdown
-    content:
-      title: 期刊合辑
-      subtitle: 'xxxxxxxx'
-      text:  |  
-        <div align="center">
-          <img src="cover3.jpg" alt="" width="100%" height="auto">
-        </div>
-    design:
-      columns: '1'
-      # background:
-      #   image: 
-      #     filename: cover3.jpg
-      #     filters:
-      #       brightness: 1
-      #     parallax: false
-      #     position: center
-      #     size: contain
-      #     text_color_light: true
-      spacing:
-        padding: ['20px', '0', '20px', '0']
-      css_class: fullscreen
-
-  - block: collection
-    content:
-      title: Latest article
-      text: ""
-      count: 5
-      filters:
-        folders:
-          - publication
-        publication_type: 'article-journal'
-    design:
-      view: citation
-      columns: '5'
-
-  - block: markdown
-    content:
-      title: 
-      subtitle: 
-      text: |
-        {{% cta cta_link="./people/" cta_text="Meet the team →" %}}
-        
-    design:
-      columns: '1'
-
-
-
+      slide_width: ''
+      is_fullscreen: true
+      loop: true
+      interval: 2000
 ---

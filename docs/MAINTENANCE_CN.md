@@ -85,9 +85,9 @@ publish_mode: editorial_workflow
 - 成员：`content/authors/<slug>/_index.md`
 - 研究方向：`content/research/<slug>/index.md`
 - 平台设备：`content/facilities/<slug>/index.md`
-- 科研项目：`content/projects/<slug>/index.md`
-- 专利：`content/patents/<slug>/index.md`
+- 专利：`content/publication/<slug>/index.md`，并设置 `publication_types: ["patent"]`
 - 相册：`content/gallery/<slug>/index.md`
+- Tour 页面：`content/tour/index.md`
 
 旧页面不会删除：
 
@@ -107,8 +107,9 @@ publish_mode: editorial_workflow
 - `static/uploads/people/`
 - `static/uploads/research/`
 - `static/uploads/facilities/`
-- `static/uploads/projects/`
 - `static/uploads/gallery/`
+
+Projects 当前不作为独立菜单和后台模块维护。Patents 当前归入 Publications，下拉菜单中从 Publications 进入专利分类。
 
 前台访问路径通常是 `/uploads/<类型>/<文件名>`。Hugo Blox 对论文 PDF 等按钮会通过 `relURL` 处理，部署到 GitHub Pages 子路径时通常能随 `baseURL` 工作。
 

@@ -1,0 +1,47 @@
+{{- define "main" -}}
+{{ $pages := .Pages.ByWeight }}
+<section class="mnr-research-page">
+  <aside class="mnr-research-nav" aria-label="Research directions">
+    {{ range $pages }}
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    {{ end }}
+  </aside>
+
+  <div class="mnr-research-hero">
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.description }}
+      <p>{{ . }}</p>
+    {{ else with .Params.summary }}
+      <p>{{ . }}</p>
+    {{ end }}
+  </div>
+
+  <div class="mnr-research-grid">
+    {{ range $pages }}
+      {{ $imageURL := "" }}
+      {{ $imageAlt := .Title }}
+      {{ $featured := partial "blox-core/functions/get_featured_image.html" . }}
+      {{ with $featured }}
+        {{ $processed := .Fill "900x520 Smart" }}
+        {{ $imageURL = $processed.RelPermalink }}
+      {{ end }}
+      <article class="mnr-research-card">
+        <a class="mnr-research-card-link" href="{{ .RelPermalink }}">
+          <div class="mnr-research-card-copy">
+            <h2>{{ .Title }}</h2>
+            {{ with .Params.summary }}<p>{{ . }}</p>{{ end }}
+            <span>Read More</span>
+          </div>
+          <div class="mnr-research-card-image">
+            {{ if $imageURL }}
+              <img src="{{ $imageURL }}" alt="{{ $imageAlt }}" loading="lazy">
+            {{ else }}
+              <div class="mnr-research-image-placeholder"></div>
+            {{ end }}
+          </div>
+        </a>
+      </article>
+    {{ end }}
+  </div>
+</section>
+{{- end -}}
