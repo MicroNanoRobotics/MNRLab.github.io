@@ -13,7 +13,7 @@ cms_collection: conference_en
 translationKey: publication-conference-paper
 title: An example conference paper
 authors:
-  - 白善明
+  - 王化平
 date: 2013-07-01T00:00:00.000Z
 publishDate: 2017-01-01T00:00:00.000Z
 publication_types:
