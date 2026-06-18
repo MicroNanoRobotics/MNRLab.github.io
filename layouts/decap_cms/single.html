@@ -41,6 +41,14 @@
   </div>
 
   <script>
+    (() => {
+      const cmsHost = 'zesty-marigold-84172f.netlify.app';
+      if (window.location.hostname !== cmsHost) {
+        window.location.replace(`https://${cmsHost}/admin/`);
+      }
+    })();
+  </script>
+  <script>
     window.CMS_MANUAL_INIT = false;
   </script>
   <script src="https://cdn.jsdelivr.net/npm/decap-cms@3/dist/decap-cms.js"></script>
