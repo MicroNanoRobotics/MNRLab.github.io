@@ -12,9 +12,10 @@ cms_language: en
 cms_collection: conference_en
 translationKey: publication-conference-paper
 title: An example conference paper
-authors: []
-date: 2013-07-01T00:00:00Z
-publishDate: 2017-01-01T00:00:00Z
+authors:
+  - 白善明
+date: 2013-07-01T00:00:00.000Z
+publishDate: 2017-01-01T00:00:00.000Z
 publication_types:
   - paper-conference
 publication: In *Wowchemy Conference*
