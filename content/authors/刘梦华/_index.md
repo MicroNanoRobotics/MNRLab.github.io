@@ -36,7 +36,7 @@ education:
     - course: 机械工程专业 博士联合培养
       institution: 荷语鲁汶大学工程科学学院
       year: 2024-2025
-    - course: 先进制造专业 在读博士
+    - course: 先进制造专业 博士
       institution: 北京理工大学机电学院
       year: 2019-2025
 
