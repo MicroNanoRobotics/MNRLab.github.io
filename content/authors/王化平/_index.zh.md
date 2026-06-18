@@ -1,36 +1,21 @@
 ---
-cms_language: zh
-translationKey: author-王化平
-# Display name
-title: 王化平 Huaping Wang 
-
-# Full Name (for SEO)
-first_name: Huaping
-last_name: Wang
-
-# Username (this should match the folder name)
-authors:
-  - 王化平
-
-# Is this the primary user of the site?
-superuser: true
-
-# Role/position
-role: 机械工程/机器人工程 教授/博导 Professor of Mechanical Engineering&Robot Engineering
-
-# Organizations/Affiliations
 organizations:
   - name: 北京理工大学 Beijing Institute of Technology
-    url: 'https://smen.bit.edu.cn/szdw/szml/znjqryjs/qb08/4ada85fc3d4e4ebd8d84480267e36754.htm'
-
-# Short bio (displayed in user profile at end of posts)
+    url: https://smen.bit.edu.cn/szdw/szml/znjqryjs/qb08/4ada85fc3d4e4ebd8d84480267e36754.htm
+superuser: true
+authors:
+  - 王化平
+cms_language: zh
+translationKey: author-王化平
+title: 王化平 Huaping Wang
+role: 机械工程/机器人工程 教授/博导 Professor of Mechanical Engineering&Robot Engineering
+user_groups:
+  - Principal Investigators
 bio: My research interests include Robotics and micro and nano biotechnology
-
 interests:
   - 多尺度机器人设计与集成
   - 微纳生物目标交互
   - 多机器人协同微操作
-
 education:
   courses:
     - course: 教授、博士生导师
@@ -50,22 +35,17 @@ education:
       year: 2010-2015
     - course: 微机电系统专业 访问学者
       institution: 日本名古屋大学微纳系统工程系
-      year: 2012-2014    
+      year: 2012-2014
     - course: 机电工程专业 交换生
       institution: 香港理工大学电子与信息工程系
       year: 2009.01-2009.07
     - course: 机械电子工程专业 学士
       institution: 北京理工大学机电学院
       year: 2006-2010
-
-# Social/Academic Networking
-# For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
-#   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
-#   form "mailto:your-email@example.com" or "#contact" for contact widget.
 social:
   - icon: envelope
     icon_pack: fas
-    link: 'wanghuaping@bit.edu.cn'
+    link: wanghuaping@bit.edu.cn
   - icon: weixin
     icon_pack: fab
     link: xxx
@@ -75,24 +55,14 @@ social:
   - icon: github
     icon_pack: fab
     link: xxx
-# Link to a PDF of your resume/CV from the About widget.
-# To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
-# - icon: cv
-#   icon_pack: ai
-#   link: files/cv.pdf
-
-# Enter email to display Gravatar (if Gravatar enabled in Config)
-email: 'wanghuaping@bit.edu.cn'
-
-# Highlight the author in author lists? (true/false)
+group_order:
+  - order: 1
+    group: Principal Investigators
+last_name: Wang
 highlight_name: true
-
-# Organizational groups that you belong to (for People widget)
-#   Set this to `[]` or comment out if you are not using People widget.
 weight: 100
-
-user_groups:
-  - Principal Investigators
+first_name: Huaping
+email: wanghuaping@bit.edu.cn
 ---
 
 王化平教授主要从事磁驱软体机器人、微纳机器人、微尺度自动化等领域研究，在多尺度机器人设计与集成、微纳生物目标交互、多机器人协同微操作等方向开展研究工作。主持国家自然科学基金优秀青年基金、面上项目、科技部重点研发计划青年科学家项目，北京市科技计划项目、区域联合重点项目等。建立了基于宏微混合与多物理场驱动的微纳生物操作机器人系统，探索微尺度“人-机-环境”共融协同方法，实现了面向微尺度多目标生物操作与人工组织功能化构建的多机器人协同控制，为癌症、血栓等重大疾病精准治疗与器官修复提供了新思路，该研究处于国际领先水平。相关研究成果在Science Advances、Nature Communications、IEEE Trans.系列汇刊等发表SCI论文30余篇，申请中国/国际发明专利20余项，获机器人领域top1国际学术会议ICRA-2021最佳自动化论文奖（中国大陆首次、1997-今）等10余项国际学术奖励，出版学术专著2部并获批十三五国家重点出版规划项目、国家科学技术学术著作出版基金资助项目，担任IEEE Transactions on Automation Science and Engineering、Cyborg and Bionic Systems、Smartbot等国际期刊编委会成员。指导学生科技竞赛项目获中国研究生机器人创新设计大赛一等奖、第十七届“挑战杯”特等奖并获评优秀指导教师。
