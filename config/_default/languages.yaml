@@ -11,9 +11,9 @@ zh:
   languageCode: zh-cn
   languageName: 中文
   weight: 2
-  title: 微纳机器人实验室
+  title: 王化平课题组
   params:
-    description: 微纳机器人实验室官方网站
+    description: 王化平课题组官方网站
   menu:
     main:
       - name: 首页

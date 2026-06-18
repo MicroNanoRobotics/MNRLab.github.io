@@ -11,23 +11,133 @@
   {{ end }}
 
   {{ with .Params.images }}
-    <section class="mnr-gallery-slider" aria-label="Gallery slideshow">
-      {{ range . }}
-        {{ $imageURL := strings.TrimPrefix "/" . }}
-        <figure>
-          <img src="{{ $imageURL | relURL }}" alt="{{ $.Title }}" loading="lazy">
-        </figure>
+    <section class="mnr-gallery-slideshow" aria-label="Gallery slideshow" data-gallery-slideshow>
+      <div class="mnr-gallery-slides">
+        {{ range $index, $image := . }}
+          {{ $imageURL := strings.TrimPrefix "/" $image }}
+          <figure class="mnr-gallery-slide{{ if eq $index 0 }} is-active{{ end }}">
+            <img src="{{ $imageURL | relURL }}" alt="{{ $.Title }}" loading="{{ if eq $index 0 }}eager{{ else }}lazy{{ end }}">
+          </figure>
+        {{ end }}
+      </div>
+      {{ if gt (len .) 1 }}
+        <button class="mnr-gallery-control mnr-gallery-control-prev" type="button" aria-label="Previous photo" data-gallery-prev>&lsaquo;</button>
+        <button class="mnr-gallery-control mnr-gallery-control-next" type="button" aria-label="Next photo" data-gallery-next>&rsaquo;</button>
       {{ end }}
     </section>
   {{ end }}
 
-  <div class="mnr-gallery-photo-grid">
-    {{ range .Params.images }}
-      {{ $imageURL := strings.TrimPrefix "/" . }}
-      <figure>
-        <img src="{{ $imageURL | relURL }}" alt="{{ $.Title }}" loading="lazy">
-      </figure>
-    {{ end }}
-  </div>
+  {{ with .Params.images }}
+    <div class="mnr-gallery-photo-grid" data-gallery-grid>
+      {{ range $index, $image := . }}
+        {{ $imageURL := strings.TrimPrefix "/" . }}
+        <figure>
+          <button class="mnr-gallery-thumb" type="button" data-gallery-index="{{ $index }}" data-gallery-src="{{ $imageURL | relURL }}" aria-label="Open photo {{ add $index 1 }}">
+            <img src="{{ $imageURL | relURL }}" alt="{{ $.Title }}" loading="lazy">
+          </button>
+        </figure>
+      {{ end }}
+    </div>
+  {{ end }}
+
+  {{ with .Params.images }}
+    {{ $firstImageURL := strings.TrimPrefix "/" (index . 0) }}
+    <div class="mnr-gallery-lightbox" data-gallery-lightbox aria-hidden="true">
+      <button class="mnr-gallery-lightbox-close" type="button" aria-label="Close photo" data-gallery-close>&times;</button>
+      <button class="mnr-gallery-lightbox-nav mnr-gallery-lightbox-prev" type="button" aria-label="Previous photo" data-lightbox-prev>&lsaquo;</button>
+      <img src="{{ $firstImageURL | relURL }}" alt="{{ $.Title }}" data-gallery-lightbox-image>
+      <button class="mnr-gallery-lightbox-nav mnr-gallery-lightbox-next" type="button" aria-label="Next photo" data-lightbox-next>&rsaquo;</button>
+    </div>
+
+    <script>
+      (() => {
+        const root = document.currentScript.closest('.mnr-gallery-single');
+        if (!root) return;
+
+        const slides = Array.from(root.querySelectorAll('.mnr-gallery-slide'));
+        const prev = root.querySelector('[data-gallery-prev]');
+        const next = root.querySelector('[data-gallery-next]');
+        let slideIndex = 0;
+        let timer = null;
+
+        const showSlide = (index) => {
+          if (!slides.length) return;
+          slideIndex = (index + slides.length) % slides.length;
+          slides.forEach((slide, currentIndex) => {
+            slide.classList.toggle('is-active', currentIndex === slideIndex);
+          });
+        };
+
+        const restartAutoplay = () => {
+          if (timer) window.clearInterval(timer);
+          if (slides.length > 1) {
+            timer = window.setInterval(() => showSlide(slideIndex + 1), 3500);
+          }
+        };
+
+        prev?.addEventListener('click', () => {
+          showSlide(slideIndex - 1);
+          restartAutoplay();
+        });
+
+        next?.addEventListener('click', () => {
+          showSlide(slideIndex + 1);
+          restartAutoplay();
+        });
+
+        restartAutoplay();
+
+        const thumbs = Array.from(root.querySelectorAll('[data-gallery-src]'));
+        const lightbox = root.querySelector('[data-gallery-lightbox]');
+        const lightboxImage = root.querySelector('[data-gallery-lightbox-image]');
+        const close = root.querySelector('[data-gallery-close]');
+        const lightboxPrev = root.querySelector('[data-lightbox-prev]');
+        const lightboxNext = root.querySelector('[data-lightbox-next]');
+        let activeImage = 0;
+
+        const showLightboxImage = (index) => {
+          if (!thumbs.length || !lightboxImage) return;
+          activeImage = (index + thumbs.length) % thumbs.length;
+          const thumb = thumbs[activeImage];
+          lightboxImage.src = thumb.dataset.gallerySrc;
+        };
+
+        const openLightbox = (index) => {
+          if (!lightbox) return;
+          showLightboxImage(index);
+          lightbox.classList.add('is-open');
+          lightbox.setAttribute('aria-hidden', 'false');
+          document.documentElement.classList.add('mnr-gallery-modal-open');
+          close?.focus();
+        };
+
+        const closeLightbox = () => {
+          if (!lightbox) return;
+          lightbox.classList.remove('is-open');
+          lightbox.setAttribute('aria-hidden', 'true');
+          document.documentElement.classList.remove('mnr-gallery-modal-open');
+        };
+
+        thumbs.forEach((thumb, index) => {
+          thumb.addEventListener('click', () => openLightbox(index));
+        });
+
+        close?.addEventListener('click', closeLightbox);
+        lightbox?.addEventListener('click', (event) => {
+          if (event.target === lightbox) closeLightbox();
+        });
+
+        lightboxPrev?.addEventListener('click', () => showLightboxImage(activeImage - 1));
+        lightboxNext?.addEventListener('click', () => showLightboxImage(activeImage + 1));
+
+        document.addEventListener('keydown', (event) => {
+          if (!lightbox?.classList.contains('is-open')) return;
+          if (event.key === 'Escape') closeLightbox();
+          if (event.key === 'ArrowLeft') showLightboxImage(activeImage - 1);
+          if (event.key === 'ArrowRight') showLightboxImage(activeImage + 1);
+        });
+      })();
+    </script>
+  {{ end }}
 </article>
 {{- end -}}

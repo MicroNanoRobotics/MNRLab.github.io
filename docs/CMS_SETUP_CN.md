@@ -32,9 +32,15 @@ backend:
   name: github
   repo: MicroNanoRobotics/MNRLab.github.io
   branch: main
+  site_domain: micronanorobotics.github.io
+  open_authoring: true
 ```
 
-GitHub Pages 需要一个 OAuth proxy 才能完成浏览器登录。推荐做法是：
+当前已开启 `open_authoring: true`。这表示任何有 GitHub 账号的人，只要能完成后台登录，就可以从任意电脑打开 `/admin/` 提交内容修改建议；没有仓库写权限的人提交的内容会走 fork / pull request 或审核流程，管理员审核后再发布。
+
+如果希望某些成员可以直接发布，请把他们加入 GitHub 仓库 Collaborators，并给予写权限。不要做匿名免登录编辑，公开网站不能安全地允许任何访客直接写入仓库。
+
+GitHub Pages 本身不提供 Decap CMS 所需的 GitHub OAuth 登录代理，因此仍需要一个 OAuth proxy 才能完成浏览器登录。推荐做法是：
 
 1. 创建 GitHub OAuth App。
 2. 部署一个 Decap CMS GitHub OAuth proxy。
@@ -46,7 +52,10 @@ backend:
   name: github
   repo: MicroNanoRobotics/MNRLab.github.io
   branch: main
+  site_domain: micronanorobotics.github.io
+  open_authoring: true
   base_url: https://your-oauth-proxy.example.com
+  auth_endpoint: auth
 ```
 
 不要把 client secret、token 或个人密码写入本仓库。
