@@ -1,5 +1,6 @@
 ---
 title: Latest News
+translationKey: news
 
 # Listing view
 view: compact

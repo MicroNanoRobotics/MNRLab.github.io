@@ -1,22 +1,65 @@
 # Languages
-#   Create a section for each of your site's languages.
-#   Documentation: https://docs.hugoblox.com/reference/language/
+# English is the default language at the site root. Chinese is served under /zh/.
 
-# Default language
 en:
   languageCode: en-us
-  # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
-  #contentDir: content/en
+  languageName: English
+  weight: 1
+  title: Micro Nano Robotics Lab
 
-# Uncomment the lines below to configure your website in a second language.
-# zh:
-#   languageCode: zh-Hans
-#  contentDir: content/zh
-#  title: Chinese website title...
-#  params:
-#    description: Site description in Chinese...
-#  menu:
-#    main:
-#      - name: 传
-#        url: '#about'
-#        weight: 1
+zh:
+  languageCode: zh-cn
+  languageName: 中文
+  weight: 2
+  title: 微纳机器人实验室
+  params:
+    description: 微纳机器人实验室官方网站
+  menu:
+    main:
+      - name: 首页
+        url: ""
+        weight: 1
+      - name: 实验室导览
+        url: tour
+        weight: 10
+      - name: 新闻动态
+        url: post
+        weight: 20
+      - name: 研究方向
+        url: research
+        weight: 30
+      - name: 团队成员
+        url: people
+        weight: 40
+      - name: 平台设备
+        url: facilities
+        weight: 50
+      - name: 论文成果
+        identifier: publications
+        weight: 60
+      - name: 全部成果
+        url: publication
+        parent: publications
+        weight: 1
+      - name: 期刊论文
+        url: publication-type/article-journal
+        parent: publications
+        weight: 2
+      - name: 书籍
+        url: publication-type/book
+        parent: publications
+        weight: 3
+      - name: 会议论文
+        url: publication-type/paper-conference
+        parent: publications
+        weight: 4
+      - name: 专利成果
+        url: publication-type/patent
+        parent: publications
+        weight: 5
+      - name: 实验室相册
+        url: gallery
+        weight: 68
+      - name: 联系我们
+        url: contact
+        weight: 70

@@ -1,15 +1,15 @@
 ---
-# Leave the homepage title empty to use the site title.
 title:
 date: 2024-10-24
 type: landing
+translationKey: home
 
 sections:
   - block: slider
     content:
       slides:
-        - title: 欢迎访问微纳机器人研究小组
-          content: 👋 Welcome to the Micro Nano Robotics Lab...
+        - title: Welcome to the Micro Nano Robotics Lab
+          content: Research in microrobotics, micro-nano manipulation, and micro-scale automation.
           align: center
           background:
             image:
@@ -18,8 +18,8 @@ sections:
                 brightness: 0.7
             position: right
             color: '#666'
-        - title: 期刊封面
-          content: '本团队的代表性成果发表在国际知名杂志xxxxxxxxx'
+        - title: Featured Journal Covers
+          content: Representative research outputs from the lab.
           align: left
           background:
             image:
@@ -28,8 +28,8 @@ sections:
                 brightness: 0.5
             position: center
             color: '#555'
-        - title: 期刊封面
-          content: '本团队的代表性成果发表在国际知名杂志xxxxxxxxx'
+        - title: Featured Research
+          content: Selected papers and covers from recent publications.
           align: left
           background:
             image:
@@ -40,8 +40,8 @@ sections:
             size: contain
             css_class: fullscreen
             color: '#555'
-        - title: 获奖证书
-          content: '快来加入我们吧!'
+        - title: Join Us
+          content: We welcome motivated students and collaborators.
           align: right
           background:
             image:
@@ -53,7 +53,7 @@ sections:
           link:
             icon: graduation-cap
             icon_pack: fas
-            text: Join Us
+            text: Contact Us
             url: contact/
     design:
       slide_width: ''

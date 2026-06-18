@@ -2,27 +2,24 @@
 title: Tour
 date: 2024-10-24
 type: landing
+translationKey: tour
 
 sections:
   - block: hero
     content:
       title: |
        <br>
-        王化平教授课题组
+        Micro Nano Robotics Lab
 
       image:
         filename: wanghuaping2.jpg
       text: |
         <br>
-          微纳机器人研究团队
-        <br>
-          The Lab is committed to magnetic drive software robots, micro and nano robots, micro-scale automation and other fields of research.
+          The lab is committed to magnetic soft robots, micro and nano robots, micro-scale automation, and related interdisciplinary research.
 
   - block: collection
     content:
       title: Latest News
-      subtitle:
-      text:
       count: 5
       filters:
         author: ''
@@ -39,8 +36,8 @@ sections:
 
   - block: markdown
     content:
-      title: 期刊合辑
-      subtitle: 'xxxxxxxx'
+      title: Journal Covers
+      subtitle: Selected research highlights
       text: |
         <div align="center">
           <img src="cover3.jpg" alt="" width="100%" height="auto">
@@ -53,7 +50,7 @@ sections:
 
   - block: collection
     content:
-      title: Latest article
+      title: Latest Articles
       text: ""
       count: 5
       filters:
@@ -66,8 +63,6 @@ sections:
 
   - block: markdown
     content:
-      title:
-      subtitle:
       text: |
         {{% cta cta_link="../people/" cta_text="Meet the team ->" %}}
     design:

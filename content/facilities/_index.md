@@ -1,6 +1,7 @@
 ---
 title: Platforms
 summary: Shared platforms, equipment, and facilities for lab research.
+translationKey: facilities
 view: card
 aliases:
   - /platforms/

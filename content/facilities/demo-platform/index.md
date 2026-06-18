@@ -1,20 +1,24 @@
 ---
-title: "Demo: Platform equipment entry"
-summary: "A demo platform entry for validating the CMS workflow."
+translationKey: facility-demo-platform
+title: Nanoscribe Photonic Professional GT2
+summary: This legacy platform URL is kept for compatibility and points to the Nanoscribe microfabrication platform.
 category: Microfabrication
-location: Demo room
-responsible_person: Demo manager
+location: Micro Nano Robotics Lab
+responsible_person: Lab manager
 equipment_list:
-  - Demo equipment 1
-  - Demo equipment 2
+  - Two-Photon Polymerization (2PP) microfabrication
+  - Submicron-resolution 3D printing
 image:
   caption: ""
   focal_point: Smart
   preview_only: false
 gallery: []
-weight: 100
+weight: 9999
+build:
+  render: always
+  list: never
 ---
 
-This demo page confirms that platform and facility records can be added from `/admin`.
+This legacy platform page is kept so old links continue to work.
 
-Replace this text with instrument capabilities, booking rules, and responsible contact information.
+Please see the current Nanoscribe platform page: [Nanoscribe Photonic Professional GT2](/facilities/nanoscribe/).

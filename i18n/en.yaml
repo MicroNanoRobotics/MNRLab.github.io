@@ -1,0 +1,46 @@
+- id: read_more
+  translation: Read more
+- id: recent_news
+  translation: Recent News
+- id: publications
+  translation: Publications
+- id: authors
+  translation: Authors
+- id: tags
+  translation: Tags
+- id: categories
+  translation: Categories
+- id: contact
+  translation: Contact
+- id: search
+  translation: Search
+- id: share
+  translation: Share
+- id: date
+  translation: Date
+- id: abstract
+  translation: Abstract
+- id: btn_doi
+  translation: DOI
+- id: btn_pdf
+  translation: PDF
+- id: btn_code
+  translation: Code
+- id: btn_dataset
+  translation: Dataset
+- id: btn_project
+  translation: Project
+- id: patent
+  translation: Patent
+- id: people
+  translation: People
+- id: research
+  translation: Research
+- id: platforms
+  translation: Platforms
+- id: projects
+  translation: Projects
+- id: gallery
+  translation: Gallery
+- id: view_album
+  translation: View album

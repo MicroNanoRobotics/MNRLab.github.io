@@ -13,8 +13,9 @@
   {{ with .Params.images }}
     <section class="mnr-gallery-slider" aria-label="Gallery slideshow">
       {{ range . }}
+        {{ $imageURL := strings.TrimPrefix "/" . }}
         <figure>
-          <img src="{{ . | relURL }}" alt="{{ $.Title }}" loading="lazy">
+          <img src="{{ $imageURL | relURL }}" alt="{{ $.Title }}" loading="lazy">
         </figure>
       {{ end }}
     </section>
@@ -22,8 +23,9 @@
 
   <div class="mnr-gallery-photo-grid">
     {{ range .Params.images }}
+      {{ $imageURL := strings.TrimPrefix "/" . }}
       <figure>
-        <img src="{{ . | relURL }}" alt="{{ $.Title }}" loading="lazy">
+        <img src="{{ $imageURL | relURL }}" alt="{{ $.Title }}" loading="lazy">
       </figure>
     {{ end }}
   </div>

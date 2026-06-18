@@ -11,11 +11,12 @@
       {{ with .Params.images }}
         {{ $cover = index . 0 }}
       {{ end }}
+      {{ $coverURL := strings.TrimPrefix "/" $cover }}
       <article class="mnr-gallery-card mnr-gallery-year-card">
         <a href="{{ .RelPermalink }}">
           <div class="mnr-gallery-cover">
             {{ if $cover }}
-              <img src="{{ $cover | relURL }}" alt="{{ .Title }}" loading="lazy">
+              <img src="{{ $coverURL | relURL }}" alt="{{ .Title }}" loading="lazy">
             {{ else }}
               <div class="mnr-gallery-placeholder"></div>
             {{ end }}
@@ -23,7 +24,7 @@
           <div class="mnr-gallery-card-body">
             <h2>{{ .Params.year | default .Title }}</h2>
             {{ with .Params.summary }}<p>{{ . }}</p>{{ end }}
-            <span>View Album</span>
+            <span>{{ i18n "view_album" }}</span>
           </div>
         </a>
       </article>

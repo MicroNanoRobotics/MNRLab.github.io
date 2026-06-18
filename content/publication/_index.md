@@ -1,5 +1,6 @@
 ---
 title: Publications
+translationKey: publications
 
 # Listing view
 view: citation

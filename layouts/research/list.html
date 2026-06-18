@@ -24,7 +24,7 @@
           <div class="mnr-research-card-copy">
             <h2>{{ .Title }}</h2>
             {{ with .Params.summary }}<p>{{ . }}</p>{{ end }}
-            <span>Read More</span>
+            <span>{{ i18n "read_more" }}</span>
           </div>
           <div class="mnr-research-card-image">
             {{ if $imageURL }}

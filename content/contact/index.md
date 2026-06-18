@@ -1,49 +1,34 @@
 ---
 title: Contact
 date: 2024-10-24
-
 type: landing
+translationKey: contact
 
 sections:
   - block: contact
     content:
       title: Contact
       text: |-
-        竭诚欢迎机械、控制、材料、生物等相关专业的学生报考！
-
-
+        We welcome students from mechanical engineering, control, materials, biology, and related fields.
       email: wanghuaping@bit.edu.cn
       phone: 010-68917765
       address:
-        street: 北京理工大学中关村校区国防科技园6号楼714
-        city: 北京
+        street: Room 714, Building 6, National Defense Science and Technology Park, Zhongguancun Campus, Beijing Institute of Technology
+        city: Beijing
         region: CN
-        country: 中国
-
+        country: China
       coordinates:
         latitude: '39.95797'
         longitude: '116.31073'
-      # directions: Enter Building 1 and take the stairs to Office 200 on Floor 2
       office_hours:
-        - '上午：09：00 - 12：00'
-        - '下午：14：00 - 18：00'
-      # appointment_url: 'https://calendly.com'
-      #contact_links:
-      #  - icon: comments
-      #    icon_pack: fas
-      #    name: Discuss on Forum
-      #    link: 'https://discourse.gohugo.io'
-    
-      # Automatically link email and phone or display as text?
+        - 'Morning: 09:00 - 12:00'
+        - 'Afternoon: 14:00 - 18:00'
       autolink: true
-    
-      # Email form provider
       form:
         provider: netlify
         formspree:
           id:
         netlify:
-          # Enable CAPTCHA challenge to reduce spam?
           captcha: false
     design:
       columns: '1'
@@ -56,7 +41,7 @@ sections:
     design:
       columns: '1'
       background:
-        image: 
+        image:
           filename: contact.jpg
           filters:
             brightness: 1
