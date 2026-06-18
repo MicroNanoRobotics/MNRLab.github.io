@@ -17,26 +17,7 @@
 }
 
 .mnr-research-page {
-  display: grid;
-  grid-template-columns: 210px minmax(0, 1fr);
-  gap: 2.5rem;
-}
-
-.mnr-research-nav {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-  padding-top: 0.5rem;
-}
-
-.mnr-research-nav a {
-  color: #14306f;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.mnr-research-nav a:hover {
-  color: #2563eb;
+  display: block;
 }
 
 .mnr-research-hero,
@@ -61,7 +42,6 @@
 }
 
 .mnr-research-grid {
-  grid-column: 1 / -1;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 3.5rem;
@@ -150,8 +130,56 @@
 }
 
 .mnr-gallery-card-body h2 {
-  font-size: 1.25rem;
+  color: #2563eb;
+  font-size: 1.75rem;
+  font-weight: 500;
   margin-bottom: 0.5rem;
+}
+
+.mnr-gallery-card-body span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 108px;
+  height: 38px;
+  margin-top: 0.75rem;
+  padding: 0 1rem;
+  border-radius: 999px;
+  background: #2563eb;
+  color: #fff;
+  font-weight: 600;
+}
+
+.mnr-gallery-year-card .mnr-gallery-cover {
+  aspect-ratio: 16 / 10;
+}
+
+.mnr-gallery-slider {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(280px, 72%);
+  gap: 1rem;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  padding: 0 1.5rem 1rem;
+  margin: 2rem auto 1rem;
+  max-width: 1180px;
+}
+
+.mnr-gallery-slider figure {
+  aspect-ratio: 16 / 9;
+  margin: 0;
+  background: #eee;
+  overflow: hidden;
+  scroll-snap-align: center;
+}
+
+.mnr-gallery-slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .mnr-gallery-photo-grid {
@@ -174,21 +202,14 @@
 }
 
 @media (max-width: 991.98px) {
-  .mnr-research-page {
-    display: block;
-  }
-
-  .mnr-research-nav {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 2rem;
-  }
-
   .mnr-research-grid,
   .mnr-gallery-grid,
   .mnr-gallery-photo-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .mnr-gallery-slider {
+    grid-auto-columns: 86%;
   }
 }
 

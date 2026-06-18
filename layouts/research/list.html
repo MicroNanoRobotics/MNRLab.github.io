@@ -1,12 +1,6 @@
 {{- define "main" -}}
 {{ $pages := .Pages.ByWeight }}
 <section class="mnr-research-page">
-  <aside class="mnr-research-nav" aria-label="Research directions">
-    {{ range $pages }}
-      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-    {{ end }}
-  </aside>
-
   <div class="mnr-research-hero">
     <h1>{{ .Title }}</h1>
     {{ with .Params.description }}

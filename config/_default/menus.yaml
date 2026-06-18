@@ -29,10 +29,22 @@ main:
     url: publication
     parent: publications
     weight: 1
+  - name: Journal Articles
+    url: publication-type/article-journal
+    parent: publications
+    weight: 2
+  - name: Books
+    url: publication-type/book
+    parent: publications
+    weight: 3
+  - name: Conference Papers
+    url: publication-type/paper-conference
+    parent: publications
+    weight: 4
   - name: Patents
     url: publication-type/patent
     parent: publications
-    weight: 2
+    weight: 5
   - name: Gallery
     url: gallery
     weight: 68

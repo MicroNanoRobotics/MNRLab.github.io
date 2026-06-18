@@ -17,8 +17,8 @@
 - People 团队成员
 - Research 研究方向
 - Platforms / Facilities 平台设备
-- Patents 专利成果（归入 Publications 内容体系）
-- Gallery 实验室相册
+- Journal Articles / Books / Conference Papers / Patents（均归入 Publications 内容体系）
+- Gallery by Year 按年份维护实验室相册
 - Tour 页面
 
 Projects 已从当前后台和菜单中移除；如后续需要恢复，可以重新添加 `content/projects` 与 CMS collection。
@@ -75,6 +75,17 @@ publish_mode: editorial_workflow
 管理员可以在后台审核后发布内容。若当前认证方案不支持该模式，删除这一行即可改为直接提交模式。
 
 建议实验室长期维护时使用审核模式，尤其是允许学生提交新闻、论文或相册内容时。
+
+## Team 组内排序
+
+团队成员在 People collection 中维护。`User Groups` 决定成员属于哪些分类，`Group Order` 决定成员在每个分类里的顺序。
+
+例如同一位成员属于 `PhD Students` 和 `Alumni`，可以分别添加两条排序：
+
+- `group: PhD Students`，`order: 2`
+- `group: Alumni`，`order: 10`
+
+数字越小越靠前。没有填写的分类会使用默认排序。
 
 ## 媒体上传路径
 

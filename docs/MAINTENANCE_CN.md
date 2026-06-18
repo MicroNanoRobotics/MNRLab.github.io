@@ -85,8 +85,8 @@ publish_mode: editorial_workflow
 - 成员：`content/authors/<slug>/_index.md`
 - 研究方向：`content/research/<slug>/index.md`
 - 平台设备：`content/facilities/<slug>/index.md`
-- 专利：`content/publication/<slug>/index.md`，并设置 `publication_types: ["patent"]`
-- 相册：`content/gallery/<slug>/index.md`
+- 论文、书籍、会议论文、专利：都在 `content/publication/<slug>/index.md`，通过 `publication_types` 区分
+- 相册：`content/gallery/<year>/index.md`，按年份组织
 - Tour 页面：`content/tour/index.md`
 
 旧页面不会删除：
@@ -109,7 +109,9 @@ publish_mode: editorial_workflow
 - `static/uploads/facilities/`
 - `static/uploads/gallery/`
 
-Projects 当前不作为独立菜单和后台模块维护。Patents 当前归入 Publications，下拉菜单中从 Publications 进入专利分类。
+Projects 当前不作为独立菜单和后台模块维护。Patents 当前归入 Publications，下拉菜单中可进入总览、Journal Articles、Books、Conference Papers 和 Patents 分类。
+
+Team 成员排序在后台 People collection 的 `Group Order` 中维护。每条记录包含一个分组名和一个顺序号，数字越小越靠前；同一个人可以为不同分组设置不同顺序。
 
 前台访问路径通常是 `/uploads/<类型>/<文件名>`。Hugo Blox 对论文 PDF 等按钮会通过 `relURL` 处理，部署到 GitHub Pages 子路径时通常能随 `baseURL` 工作。
 

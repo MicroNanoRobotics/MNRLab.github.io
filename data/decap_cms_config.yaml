@@ -159,6 +159,114 @@ collections:
           - { label: Preview Only, name: preview_only, widget: boolean, default: false, required: false }
       - { label: Body, name: body, widget: markdown, required: false }
 
+  - name: publication_journal_articles
+    label: Journal Articles
+    label_singular: Journal Article
+    folder: content/publication
+    path: "journal-{{slug}}/index"
+    create: true
+    editor:
+      preview: false
+    media_folder: static/uploads/publications
+    public_folder: /uploads/publications
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Authors, name: authors, widget: list, required: true }
+      - { label: Date, name: date, widget: datetime, required: true }
+      - { label: Publish Date, name: publishDate, widget: datetime, required: false }
+      - { label: Publication Types, name: publication_types, widget: hidden, default: [article-journal] }
+      - { label: Journal, name: publication, widget: string, required: false }
+      - { label: Journal Short, name: publication_short, widget: string, required: false }
+      - { label: Abstract, name: abstract, widget: text, required: false }
+      - { label: Summary, name: summary, widget: text, required: false }
+      - { label: DOI, name: doi, widget: string, required: false }
+      - { label: PDF, name: url_pdf, widget: file, required: false }
+      - { label: Tags, name: tags, widget: list, required: false }
+      - { label: Featured, name: featured, widget: boolean, default: false, required: false }
+      - label: Image
+        name: image
+        widget: object
+        required: false
+        collapsed: true
+        fields:
+          - { label: Filename, name: filename, widget: image, required: false }
+          - { label: Caption, name: caption, widget: string, required: false }
+          - { label: Focal Point, name: focal_point, widget: string, default: Smart, required: false }
+          - { label: Preview Only, name: preview_only, widget: boolean, default: false, required: false }
+      - { label: Body, name: body, widget: markdown, required: false }
+
+  - name: publication_books
+    label: Books
+    label_singular: Book
+    folder: content/publication
+    path: "book-{{slug}}/index"
+    create: true
+    editor:
+      preview: false
+    media_folder: static/uploads/publications
+    public_folder: /uploads/publications
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Authors, name: authors, widget: list, required: true }
+      - { label: Date, name: date, widget: datetime, required: true }
+      - { label: Publish Date, name: publishDate, widget: datetime, required: false }
+      - { label: Publication Types, name: publication_types, widget: hidden, default: [book] }
+      - { label: Publisher / Book Title, name: publication, widget: string, required: false }
+      - { label: Short Title, name: publication_short, widget: string, required: false }
+      - { label: Abstract, name: abstract, widget: text, required: false }
+      - { label: Summary, name: summary, widget: text, required: false }
+      - { label: DOI / ISBN, name: doi, widget: string, required: false }
+      - { label: PDF, name: url_pdf, widget: file, required: false }
+      - { label: Tags, name: tags, widget: list, required: false }
+      - { label: Featured, name: featured, widget: boolean, default: false, required: false }
+      - label: Image
+        name: image
+        widget: object
+        required: false
+        collapsed: true
+        fields:
+          - { label: Filename, name: filename, widget: image, required: false }
+          - { label: Caption, name: caption, widget: string, required: false }
+          - { label: Focal Point, name: focal_point, widget: string, default: Smart, required: false }
+          - { label: Preview Only, name: preview_only, widget: boolean, default: false, required: false }
+      - { label: Body, name: body, widget: markdown, required: false }
+
+  - name: publication_conference_papers
+    label: Conference Papers
+    label_singular: Conference Paper
+    folder: content/publication
+    path: "conference-{{slug}}/index"
+    create: true
+    editor:
+      preview: false
+    media_folder: static/uploads/publications
+    public_folder: /uploads/publications
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Authors, name: authors, widget: list, required: true }
+      - { label: Date, name: date, widget: datetime, required: true }
+      - { label: Publish Date, name: publishDate, widget: datetime, required: false }
+      - { label: Publication Types, name: publication_types, widget: hidden, default: [paper-conference] }
+      - { label: Conference, name: publication, widget: string, required: false }
+      - { label: Conference Short, name: publication_short, widget: string, required: false }
+      - { label: Abstract, name: abstract, widget: text, required: false }
+      - { label: Summary, name: summary, widget: text, required: false }
+      - { label: DOI, name: doi, widget: string, required: false }
+      - { label: PDF, name: url_pdf, widget: file, required: false }
+      - { label: Tags, name: tags, widget: list, required: false }
+      - { label: Featured, name: featured, widget: boolean, default: false, required: false }
+      - label: Image
+        name: image
+        widget: object
+        required: false
+        collapsed: true
+        fields:
+          - { label: Filename, name: filename, widget: image, required: false }
+          - { label: Caption, name: caption, widget: string, required: false }
+          - { label: Focal Point, name: focal_point, widget: string, default: Smart, required: false }
+          - { label: Preview Only, name: preview_only, widget: boolean, default: false, required: false }
+      - { label: Body, name: body, widget: markdown, required: false }
+
   - name: posts
     label: News
     label_singular: News Item
@@ -248,7 +356,25 @@ collections:
           - { label: Icon Pack, name: icon_pack, widget: select, required: false, options: [fas, far, fab, ai] }
           - { label: Link, name: link, widget: string, required: false }
       - { label: Avatar Upload, name: avatar, widget: image, required: false }
-      - { label: Team Order (置顶填 1，普通成员填 100), name: weight, widget: number, value_type: int, default: 100, required: false }
+      - label: Group Order
+        name: group_order
+        widget: list
+        required: false
+        summary: "{{fields.group}}: {{fields.order}}"
+        fields:
+          - label: Group
+            name: group
+            widget: select
+            options:
+              - Principal Investigators
+              - Postdocs
+              - PhD Students
+              - Masters Students
+              - Undergraduate Students
+              - Administration
+              - Visitors
+              - Alumni
+          - { label: Order in this group (数字越小越靠前), name: order, widget: number, value_type: int, default: 100 }
       - { label: Superuser, name: superuser, widget: boolean, default: false, required: false }
       - { label: Highlight Name, name: highlight_name, widget: boolean, default: false, required: false }
       - { label: Body, name: body, widget: markdown, required: false }
@@ -360,8 +486,8 @@ collections:
       - { label: Body, name: body, widget: markdown, required: false }
 
   - name: gallery
-    label: Gallery
-    label_singular: Gallery Album
+    label: Gallery by Year
+    label_singular: Gallery Year
     folder: content/gallery
     path: "{{slug}}/index"
     create: true
@@ -370,9 +496,10 @@ collections:
     media_folder: static/uploads/gallery
     public_folder: /uploads/gallery
     fields:
-      - { label: Title, name: title, widget: string }
+      - { label: Year Title, name: title, widget: string }
+      - { label: Year, name: year, widget: string, required: true }
       - { label: Date, name: date, widget: datetime, required: false }
-      - { label: Event, name: event, widget: string, required: false }
+      - { label: Event / Album Name, name: event, widget: string, required: false }
       - { label: Location, name: location, widget: string, required: false }
       - label: Images
         name: images

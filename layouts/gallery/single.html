@@ -10,6 +10,16 @@
     <div class="article-container article-style">{{ . }}</div>
   {{ end }}
 
+  {{ with .Params.images }}
+    <section class="mnr-gallery-slider" aria-label="Gallery slideshow">
+      {{ range . }}
+        <figure>
+          <img src="{{ . | relURL }}" alt="{{ $.Title }}" loading="lazy">
+        </figure>
+      {{ end }}
+    </section>
+  {{ end }}
+
   <div class="mnr-gallery-photo-grid">
     {{ range .Params.images }}
       <figure>
