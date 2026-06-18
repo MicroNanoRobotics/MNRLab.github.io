@@ -16,6 +16,31 @@ Easily write technical content with plain text Markdown, LaTeX math, diagrams, R
 
 The integrated [**Wowchemy**](https://hugoblox.com) website builder and CMS makes it easy to create a beautiful website for free. Edit your site in the CMS (or your favorite editor), generate it with [Hugo](https://github.com/gohugoio/hugo), and deploy with GitHub or Netlify. Customize anything on your site with widgets, light/dark themes, and language packs.
 
+## 网站维护说明
+
+本仓库已在原 Hugo Blox / Wowchemy Research Group Template 基础上增加 Decap CMS 轻后台，后台入口为 `/admin/`。后台支持维护论文、新闻、团队成员、研究方向、平台设备、科研项目、专利和相册内容。
+
+常用维护文档：
+
+- [中文维护总览](docs/MAINTENANCE_CN.md)
+- [后台登录与 OAuth 配置](docs/CMS_SETUP_CN.md)
+- [论文成果维护流程](docs/PUBLICATION_WORKFLOW_CN.md)
+
+本地构建检查：
+
+```powershell
+hugo --minify --ignoreVendorPaths=""
+```
+
+本地后台测试：
+
+```powershell
+npx decap-server
+hugo server
+```
+
+生产环境的 GitHub 登录需要配置 Decap CMS 支持的 GitHub OAuth proxy 或等价认证服务。不要把 token、secret、OAuth client secret 或个人凭证提交到仓库。
+
 - 👉 [**Get Started**](https://hugoblox.com/hugo-themes/)
 - 📚 [View the **documentation**](https://docs.hugoblox.com/)
 - 💬 [Chat with the **Wowchemy research community**](https://discord.gg/z8wNYzb) or [**Hugo community**](https://discourse.gohugo.io)

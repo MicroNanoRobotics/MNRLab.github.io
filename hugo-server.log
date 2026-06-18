@@ -1,0 +1,21 @@
+Watching for changes in F:\MNRLab.github.io\{_vendor,assets,content,data,hugo-blox,static}
+Watching for config changes in F:\MNRLab.github.io\config\_default, F:\MNRLab.github.io\_vendor\github.com\HugoBlox\hugo-blox-builder\modules\blox-plugin-decap-cms\config.yaml, F:\MNRLab.github.io\_vendor\github.com\HugoBlox\hugo-blox-builder\modules\blox-plugin-netlify\config.yaml, F:\MNRLab.github.io\_vendor\github.com\HugoBlox\hugo-blox-builder\modules\blox-bootstrap\v5\hugo.yaml, F:\MNRLab.github.io\_vendor\github.com\HugoBlox\hugo-blox-builder\modules\blox-core\config.yaml, F:\MNRLab.github.io\_vendor\github.com\HugoBlox\hugo-blox-builder\modules\blox-seo\config.yaml, F:\MNRLab.github.io\_vendor\github.com\HugoBlox\hugo-blox-builder\modules\blox-tailwind\hugo.yaml, F:\MNRLab.github.io\_vendor\github.com\HugoBlox\hugo-blox-builder\modules\blox-analytics\hugo.yaml, F:\MNRLab.github.io\go.mod
+Start building sites … 
+hugo v0.150.1-ce44a8e835e6934292acda936e5b43b70f451af9+extended windows/amd64 BuildDate=2025-09-25T10:26:04Z VendorInfo=gohugoio
+
+
+                  │ EN  
+─────────┼── 
+ Pages            │ 135 
+ Paginator pages  │   3 
+ Non-page files   │  52 
+ Static files     │  19 
+ Processed images │  65 
+ Aliases          │  15 
+ Cleaned          │   0 
+
+Built in 273 ms
+Environment: "development"
+Serving pages from disk
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1) 
+Press Ctrl+C to stop

@@ -1,0 +1,323 @@
+# Decap CMS configuration consumed by the Hugo Blox Decap CMS plugin.
+# The generated file is published at /admin/config.yml.
+backend:
+  name: github
+  repo: MicroNanoRobotics/MNRLab.github.io
+  branch: main
+  squash_merges: true
+
+publish_mode: editorial_workflow
+media_folder: static/uploads
+public_folder: /uploads
+
+collections:
+  - name: publications
+    label: Publications
+    label_singular: Publication
+    folder: content/publication
+    path: "{{slug}}/index"
+    create: true
+    editor:
+      preview: false
+    media_folder: static/uploads/publications
+    public_folder: /uploads/publications
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Authors, name: authors, widget: list, required: true }
+      - { label: Author Notes, name: author_notes, widget: list, required: false }
+      - { label: Publication Date, name: date, widget: datetime, required: true }
+      - { label: Publish Date, name: publishDate, widget: datetime, required: false }
+      - { label: Publication, name: publication, widget: string, required: false }
+      - { label: Publication Short, name: publication_short, widget: string, required: false }
+      - { label: Abstract, name: abstract, widget: text, required: false }
+      - { label: Summary, name: summary, widget: text, required: false }
+      - { label: DOI, name: doi, widget: string, required: false }
+      - { label: PDF, name: url_pdf, widget: file, required: false }
+      - { label: Code URL, name: url_code, widget: string, required: false }
+      - { label: Dataset URL, name: url_dataset, widget: string, required: false }
+      - { label: Project URL, name: url_project, widget: string, required: false }
+      - { label: External Link, name: external_link, widget: string, required: false }
+      - { label: Supplementary PDF, name: url_supplement, widget: file, required: false }
+      - label: Publication Types
+        name: publication_types
+        widget: select
+        multiple: true
+        required: true
+        default: [article-journal]
+        options:
+          - { label: Journal Article, value: article-journal }
+          - { label: Conference Paper, value: paper-conference }
+          - { label: Preprint, value: paper }
+          - { label: Report, value: report }
+          - { label: Book, value: book }
+          - { label: Book Chapter, value: chapter }
+          - { label: Thesis, value: thesis }
+          - { label: Patent, value: patent }
+          - { label: Manuscript, value: manuscript }
+      - { label: Tags, name: tags, widget: list, required: false }
+      - { label: Projects, name: projects, widget: list, required: false }
+      - { label: Featured, name: featured, widget: boolean, default: false, required: false }
+      - label: Image
+        name: image
+        widget: object
+        required: false
+        collapsed: true
+        fields:
+          - { label: Filename, name: filename, widget: image, required: false }
+          - { label: Caption, name: caption, widget: string, required: false }
+          - { label: Focal Point, name: focal_point, widget: string, default: Smart, required: false }
+          - { label: Preview Only, name: preview_only, widget: boolean, default: false, required: false }
+      - { label: Body, name: body, widget: markdown, required: false }
+
+  - name: posts
+    label: News
+    label_singular: News Item
+    folder: content/post
+    path: "{{slug}}/index"
+    create: true
+    editor:
+      preview: false
+    media_folder: static/uploads/news
+    public_folder: /uploads/news
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Date, name: date, widget: datetime }
+      - { label: Summary, name: summary, widget: text, required: false }
+      - { label: Authors, name: authors, widget: list, required: false }
+      - { label: Tags, name: tags, widget: list, required: false }
+      - { label: Categories, name: categories, widget: list, required: false }
+      - { label: Featured, name: featured, widget: boolean, default: false, required: false }
+      - { label: Draft, name: draft, widget: boolean, default: false, required: false }
+      - label: Image
+        name: image
+        widget: object
+        required: false
+        collapsed: true
+        fields:
+          - { label: Filename, name: filename, widget: image, required: false }
+          - { label: Caption, name: caption, widget: string, required: false }
+          - { label: Focal Point, name: focal_point, widget: string, default: Smart, required: false }
+          - { label: Preview Only, name: preview_only, widget: boolean, default: false, required: false }
+      - { label: Body, name: body, widget: markdown, required: true }
+
+  - name: authors
+    label: People
+    label_singular: Person
+    folder: content/authors
+    path: "{{slug}}/_index"
+    create: true
+    editor:
+      preview: false
+    media_folder: static/uploads/people
+    public_folder: /uploads/people
+    fields:
+      - { label: Display Name, name: title, widget: string }
+      - { label: Full Name, name: name, widget: string, required: false }
+      - { label: Role, name: role, widget: string, required: false }
+      - label: User Groups
+        name: user_groups
+        widget: select
+        multiple: true
+        required: false
+        options:
+          - Principal Investigator
+          - Principal Investigators
+          - Faculty
+          - Postdoctoral Researchers
+          - Postdocs
+          - PhD Students
+          - Master Students
+          - Masters Students
+          - Undergraduate Students
+          - Administration
+          - Visitors
+          - Alumni
+      - { label: Short Bio, name: bio, widget: text, required: false }
+      - { label: Interests, name: interests, widget: list, required: false }
+      - label: Education
+        name: education
+        widget: object
+        required: false
+        collapsed: true
+        fields:
+          - label: Courses
+            name: courses
+            widget: list
+            required: false
+            fields:
+              - { label: Course, name: course, widget: string, required: false }
+              - { label: Institution, name: institution, widget: string, required: false }
+              - { label: Year, name: year, widget: string, required: false }
+      - { label: Email, name: email, widget: string, required: false }
+      - label: Social Links
+        name: social
+        widget: list
+        required: false
+        fields:
+          - { label: Icon, name: icon, widget: string, required: false }
+          - { label: Icon Pack, name: icon_pack, widget: select, required: false, options: [fas, far, fab, ai] }
+          - { label: Link, name: link, widget: string, required: false }
+      - { label: Avatar Upload, name: avatar, widget: image, required: false }
+      - { label: Weight, name: weight, widget: number, value_type: int, required: false }
+      - { label: Superuser, name: superuser, widget: boolean, default: false, required: false }
+      - { label: Highlight Name, name: highlight_name, widget: boolean, default: false, required: false }
+      - { label: Body, name: body, widget: markdown, required: false }
+
+  - name: research
+    label: Research
+    label_singular: Research Direction
+    folder: content/research
+    path: "{{slug}}/index"
+    create: true
+    editor:
+      preview: false
+    media_folder: static/uploads/research
+    public_folder: /uploads/research
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Summary, name: summary, widget: text, required: false }
+      - { label: Date, name: date, widget: datetime, required: false }
+      - { label: Weight, name: weight, widget: number, value_type: int, required: false }
+      - { label: Featured, name: featured, widget: boolean, default: false, required: false }
+      - label: Image
+        name: image
+        widget: object
+        required: false
+        collapsed: true
+        fields:
+          - { label: Filename, name: filename, widget: image, required: false }
+          - { label: Caption, name: caption, widget: string, required: false }
+          - { label: Focal Point, name: focal_point, widget: string, default: Smart, required: false }
+          - { label: Preview Only, name: preview_only, widget: boolean, default: false, required: false }
+      - { label: Related Publications, name: related_publications, widget: list, required: false }
+      - { label: Related Projects, name: related_projects, widget: list, required: false }
+      - { label: Body, name: body, widget: markdown, required: true }
+
+  - name: facilities
+    label: Platforms / Facilities
+    label_singular: Facility
+    folder: content/facilities
+    path: "{{slug}}/index"
+    create: true
+    editor:
+      preview: false
+    media_folder: static/uploads/facilities
+    public_folder: /uploads/facilities
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Summary, name: summary, widget: text, required: false }
+      - { label: Category, name: category, widget: string, required: false }
+      - { label: Location, name: location, widget: string, required: false }
+      - { label: Responsible Person, name: responsible_person, widget: string, required: false }
+      - { label: Equipment List, name: equipment_list, widget: list, required: false }
+      - label: Image
+        name: image
+        widget: object
+        required: false
+        collapsed: true
+        fields:
+          - { label: Filename, name: filename, widget: image, required: false }
+          - { label: Caption, name: caption, widget: string, required: false }
+          - { label: Focal Point, name: focal_point, widget: string, default: Smart, required: false }
+          - { label: Preview Only, name: preview_only, widget: boolean, default: false, required: false }
+      - label: Gallery
+        name: gallery
+        widget: list
+        required: false
+        field: { label: Image, name: image, widget: image }
+      - { label: Weight, name: weight, widget: number, value_type: int, required: false }
+      - { label: Body, name: body, widget: markdown, required: true }
+
+  - name: projects
+    label: Projects
+    label_singular: Project
+    folder: content/projects
+    path: "{{slug}}/index"
+    create: true
+    editor:
+      preview: false
+    media_folder: static/uploads/projects
+    public_folder: /uploads/projects
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Summary, name: summary, widget: text, required: false }
+      - { label: Start Date, name: start_date, widget: datetime, required: false }
+      - { label: End Date, name: end_date, widget: datetime, required: false }
+      - { label: Funding Source, name: funding_source, widget: string, required: false }
+      - { label: Grant Number, name: grant_number, widget: string, required: false }
+      - { label: Principal Investigator, name: principal_investigator, widget: string, required: false }
+      - { label: Participants, name: participants, widget: list, required: false }
+      - { label: Status, name: status, widget: select, required: false, options: [在研, 已结题, 申请中] }
+      - { label: Related Publications, name: related_publications, widget: list, required: false }
+      - { label: Related Patents, name: related_patents, widget: list, required: false }
+      - label: Image
+        name: image
+        widget: object
+        required: false
+        collapsed: true
+        fields:
+          - { label: Filename, name: filename, widget: image, required: false }
+          - { label: Caption, name: caption, widget: string, required: false }
+          - { label: Focal Point, name: focal_point, widget: string, default: Smart, required: false }
+          - { label: Preview Only, name: preview_only, widget: boolean, default: false, required: false }
+      - { label: Body, name: body, widget: markdown, required: true }
+
+  - name: patents
+    label: Patents
+    label_singular: Patent
+    folder: content/patents
+    path: "{{slug}}/index"
+    create: true
+    editor:
+      preview: false
+    media_folder: static/uploads/patents
+    public_folder: /uploads/patents
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Inventors, name: inventors, widget: list, required: false }
+      - { label: Date, name: date, widget: datetime, required: false }
+      - { label: Year, name: year, widget: number, value_type: int, required: false }
+      - { label: Patent Type, name: patent_type, widget: string, required: false }
+      - { label: Country, name: country, widget: string, required: false }
+      - { label: Application Number, name: application_number, widget: string, required: false }
+      - { label: Publication Number, name: publication_number, widget: string, required: false }
+      - { label: Grant Number, name: grant_number, widget: string, required: false }
+      - { label: Status, name: status, widget: select, required: false, options: [申请中, 已公开, 已授权, 转化中] }
+      - { label: Abstract, name: abstract, widget: text, required: false }
+      - { label: Related Projects, name: related_projects, widget: list, required: false }
+      - { label: Certificate PDF, name: certificate_pdf, widget: file, required: false }
+      - { label: Featured, name: featured, widget: boolean, default: false, required: false }
+      - label: Image
+        name: image
+        widget: object
+        required: false
+        collapsed: true
+        fields:
+          - { label: Filename, name: filename, widget: image, required: false }
+          - { label: Caption, name: caption, widget: string, required: false }
+          - { label: Focal Point, name: focal_point, widget: string, default: Smart, required: false }
+          - { label: Preview Only, name: preview_only, widget: boolean, default: false, required: false }
+      - { label: Body, name: body, widget: markdown, required: false }
+
+  - name: gallery
+    label: Gallery
+    label_singular: Gallery Album
+    folder: content/gallery
+    path: "{{slug}}/index"
+    create: true
+    editor:
+      preview: false
+    media_folder: static/uploads/gallery
+    public_folder: /uploads/gallery
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Date, name: date, widget: datetime, required: false }
+      - { label: Event, name: event, widget: string, required: false }
+      - { label: Location, name: location, widget: string, required: false }
+      - label: Images
+        name: images
+        widget: list
+        required: false
+        field: { label: Image, name: image, widget: image }
+      - { label: Summary, name: summary, widget: text, required: false }
+      - { label: Body, name: body, widget: markdown, required: false }
