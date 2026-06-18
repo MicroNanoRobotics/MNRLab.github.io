@@ -47,7 +47,7 @@ hugo server
 - 仓库：`MicroNanoRobotics/MNRLab.github.io`
 - 分支：`main`
 - 站点域名：`micronanorobotics.github.io`
-- 已开启 Open Authoring：任何 GitHub 用户登录后可提交修改建议，管理员审核后发布
+- 未开启 Open Authoring：任何电脑都可打开后台页面，但只有拥有仓库写权限的 GitHub 账号能登录修改
 - 配置文件：`data/decap_cms_config.yaml`
 - 不保存任何 token、secret、OAuth client secret 或个人凭证
 
@@ -59,7 +59,7 @@ GitHub Pages 自身不提供 OAuth 登录代理，因此需要额外配置一种
 
 OAuth secret 只能放在 OAuth 服务端或托管平台环境变量里，不能提交到仓库。
 
-如果希望课题组成员直接发布内容，请在 GitHub 仓库中把对应账号加入 Collaborators 并给予写权限。如果只是希望外部人员也能提交修改，当前 `open_authoring: true` 会让他们通过 GitHub 登录后提交建议，由管理员审核合并。
+如果希望课题组成员直接发布内容，请在 GitHub 仓库中把对应账号加入 Collaborators 并给予写权限。不在仓库权限列表中的账号即使能打开 `/admin/` 页面，也不能修改网站内容。
 
 ## 内容审核流程
 

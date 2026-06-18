@@ -5,7 +5,6 @@ backend:
   repo: MicroNanoRobotics/MNRLab.github.io
   branch: main
   site_domain: micronanorobotics.github.io
-  open_authoring: true
   squash_merges: true
   # GitHub Pages still needs a Decap-compatible OAuth proxy for online login.
   # After deploying one, uncomment and set these two lines:
