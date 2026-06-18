@@ -1,4 +1,5 @@
 ---
+cms_language: zh
 translationKey: facility-demo-platform
 title: Nanoscribe 双光子微纳 3D 打印系统
 summary: 该旧平台路径用于兼容旧链接，当前内容请查看 Nanoscribe 平台页面。

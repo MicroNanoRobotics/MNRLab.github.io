@@ -1,4 +1,5 @@
 ---
+cms_language: en
 translationKey: news-24-10-12
 title: 学术交流会
 date: 2024-10-12

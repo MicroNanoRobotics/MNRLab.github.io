@@ -1,4 +1,6 @@
 ---
+cms_language: zh
+cms_collection: patent_zh
 translationKey: publication-P-1
 title: "一种靶向投递的微T型机器人装置及应用方法"
 authors:

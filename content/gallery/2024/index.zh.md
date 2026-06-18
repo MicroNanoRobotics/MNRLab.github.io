@@ -1,4 +1,5 @@
 ---
+cms_language: zh
 title: "2024"
 date: 2024-10-24
 year: "2024"

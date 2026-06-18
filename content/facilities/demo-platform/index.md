@@ -1,4 +1,5 @@
 ---
+cms_language: en
 translationKey: facility-demo-platform
 title: Nanoscribe Photonic Professional GT2
 summary: This legacy platform URL is kept for compatibility and points to the Nanoscribe microfabrication platform.

@@ -1,4 +1,6 @@
 ---
+cms_language: zh
+cms_collection: journal_zh
 translationKey: publication-JA-1
 title: "Arched microfluidic channel for the promotion of axonal growth performance"
 authors:

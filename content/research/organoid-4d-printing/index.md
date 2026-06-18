@@ -1,4 +1,5 @@
 ---
+cms_language: en
 title: Dynamic 4D Manufacturing of Organoids
 summary: Holographic feedback and DMD light-based processing enable precise control of organoid stiffness as a fourth dimension.
 date: 2024-10-24

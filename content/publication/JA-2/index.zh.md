@@ -1,4 +1,6 @@
 ---
+cms_language: zh
+cms_collection: journal_zh
 translationKey: publication-JA-2
 title: "Deep Reinforcement Learning-Based Collision-Free Navigation for Magnetic Helical Microrobots in Dynamic Environments"
 authors:

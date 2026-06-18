@@ -1,4 +1,5 @@
 ---
+cms_language: en
 translationKey: news-24-10-15
 title: 学术讲座
 date: 2024-10-15

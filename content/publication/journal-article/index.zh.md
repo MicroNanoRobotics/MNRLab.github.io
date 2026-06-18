@@ -1,4 +1,6 @@
 ---
+cms_language: zh
+cms_collection: journal_zh
 translationKey: publication-journal-article
 title: "Integrated Cross-Scale Manipulation and Modulable Encapsulation of Cell-Laden Hydrogel for Constructing Tissue-Mimicking Microstructures"
 authors:

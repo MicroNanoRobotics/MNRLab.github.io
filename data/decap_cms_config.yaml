@@ -13,6 +13,8 @@ public_folder: /uploads
 
 collections:
   - name: site_pages
+    media_folder: assets/media
+    public_folder: ""
     label: Site Pages / 页面
     files:
       - file: content/_index.md
@@ -43,7 +45,7 @@ collections:
                     widget: object
                     required: false
                     fields:
-                      - { label: Filename, name: filename, widget: string, required: false }
+                      - { label: Filename, name: filename, widget: image, required: false }
                   - label: Filters
                     name: filters
                     widget: object
@@ -72,7 +74,7 @@ collections:
                             widget: object
                             required: false
                             fields:
-                              - { label: Filename, name: filename, widget: string, required: false }
+                              - { label: Filename, name: filename, widget: image, required: false }
                           - { label: Position, name: position, widget: string, required: false }
                           - { label: Color, name: color, widget: string, required: false }
                   - label: Link
@@ -123,7 +125,7 @@ collections:
                     widget: object
                     required: false
                     fields:
-                      - { label: 文件名, name: filename, widget: string, required: false }
+                      - { label: 文件名, name: filename, widget: image, required: false }
                   - label: 筛选
                     name: filters
                     widget: object
@@ -152,7 +154,7 @@ collections:
                             widget: object
                             required: false
                             fields:
-                              - { label: 文件名, name: filename, widget: string, required: false }
+                              - { label: 文件名, name: filename, widget: image, required: false }
                           - { label: 位置, name: position, widget: string, required: false }
                           - { label: 颜色, name: color, widget: string, required: false }
                   - label: 链接
@@ -204,7 +206,7 @@ collections:
                     widget: object
                     required: false
                     fields:
-                      - { label: Filename, name: filename, widget: string, required: false }
+                      - { label: Filename, name: filename, widget: image, required: false }
                   - label: Filters
                     name: filters
                     widget: object
@@ -233,7 +235,7 @@ collections:
                             widget: object
                             required: false
                             fields:
-                              - { label: Filename, name: filename, widget: string, required: false }
+                              - { label: Filename, name: filename, widget: image, required: false }
                           - { label: Position, name: position, widget: string, required: false }
                           - { label: Color, name: color, widget: string, required: false }
                   - label: Link
@@ -285,7 +287,7 @@ collections:
                     widget: object
                     required: false
                     fields:
-                      - { label: 文件名, name: filename, widget: string, required: false }
+                      - { label: 文件名, name: filename, widget: image, required: false }
                   - label: 筛选
                     name: filters
                     widget: object
@@ -314,7 +316,7 @@ collections:
                             widget: object
                             required: false
                             fields:
-                              - { label: 文件名, name: filename, widget: string, required: false }
+                              - { label: 文件名, name: filename, widget: image, required: false }
                           - { label: 位置, name: position, widget: string, required: false }
                           - { label: 颜色, name: color, widget: string, required: false }
                   - label: 链接
@@ -338,148 +340,20 @@ collections:
                   - { label: 循环, name: loop, widget: boolean, required: false }
                   - { label: 间隔, name: interval, widget: number, value_type: int, required: false }
 
-  - name: publications
-    label: Publications EN
-    label_singular: Publication
-    folder: content/publication
-    path: "{{slug}}/index"
-    create: true
-    editor:
-      preview: false
-    media_folder: static/uploads/publications
-    public_folder: /uploads/publications
-    fields:
-      - { label: Translation Key, name: translationKey, widget: string, required: false, hint: Use the same value in the Chinese page. }
-      - { label: Title, name: title, widget: string }
-      - { label: Authors, name: authors, widget: list, required: true }
-      - { label: Author Notes, name: author_notes, widget: list, required: false }
-      - { label: Publication Date, name: date, widget: datetime, required: true }
-      - { label: Publish Date, name: publishDate, widget: datetime, required: false }
-      - { label: Publication, name: publication, widget: string, required: false }
-      - { label: Publication Short, name: publication_short, widget: string, required: false }
-      - { label: Abstract, name: abstract, widget: text, required: false }
-      - { label: Summary, name: summary, widget: text, required: false }
-      - { label: DOI, name: doi, widget: string, required: false }
-      - { label: PDF, name: url_pdf, widget: file, required: false }
-      - { label: Code URL, name: url_code, widget: string, required: false }
-      - { label: Dataset URL, name: url_dataset, widget: string, required: false }
-      - { label: Project URL, name: url_project, widget: string, required: false }
-      - { label: External Link, name: external_link, widget: string, required: false }
-      - { label: Supplementary PDF, name: url_supplement, widget: file, required: false }
-      - label: Publication Types
-        name: publication_types
-        widget: select
-        multiple: true
-        required: true
-        default: [article-journal]
-        options:
-          - { label: Journal Article, value: article-journal }
-          - { label: Conference Paper, value: paper-conference }
-          - { label: Preprint, value: paper }
-          - { label: Report, value: report }
-          - { label: Book, value: book }
-          - { label: Book Chapter, value: chapter }
-          - { label: Thesis, value: thesis }
-          - { label: Patent, value: patent }
-          - { label: Manuscript, value: manuscript }
-      - { label: Tags, name: tags, widget: list, required: false }
-      - { label: Patent Type, name: patent_type, widget: string, required: false }
-      - { label: Patent Country, name: country, widget: string, required: false }
-      - { label: Application Number, name: application_number, widget: string, required: false }
-      - { label: Publication Number, name: publication_number, widget: string, required: false }
-      - { label: Grant Number, name: grant_number, widget: string, required: false }
-      - { label: Patent Status, name: status, widget: select, required: false, options: [申请中, 已公开, 已授权, 转化中] }
-      - { label: Certificate PDF, name: certificate_pdf, widget: file, required: false }
-      - { label: Featured, name: featured, widget: boolean, default: false, required: false }
-      - label: Image
-        name: image
-        widget: object
-        required: false
-        collapsed: true
-        fields:
-          - { label: Filename, name: filename, widget: image, required: false }
-          - { label: Caption, name: caption, widget: string, required: false }
-          - { label: Focal Point, name: focal_point, widget: string, default: Smart, required: false }
-          - { label: Preview Only, name: preview_only, widget: boolean, default: false, required: false }
-      - { label: Body, name: body, widget: markdown, required: false }
-
-  - name: publications_zh
-    label: Publications 中文
-    label_singular: 论文成果
-    folder: content/publication
-    path: "{{slug}}/index.zh"
-    create: true
-    editor:
-      preview: false
-    media_folder: static/uploads/publications
-    public_folder: /uploads/publications
-    fields:
-      - { label: Translation Key, name: translationKey, widget: string, required: true, hint: 与英文页面保持一致。 }
-      - { label: 英文标题, name: title, widget: string }
-      - { label: 中文标题, name: title_zh, widget: string, required: false }
-      - { label: 作者, name: authors, widget: list, required: true }
-      - { label: 作者注释, name: author_notes, widget: list, required: false }
-      - { label: 发表日期, name: date, widget: datetime, required: true }
-      - { label: 发布日期, name: publishDate, widget: datetime, required: false }
-      - { label: 期刊 / 会议 / 出版物, name: publication, widget: string, required: false }
-      - { label: 出版物简称, name: publication_short, widget: string, required: false }
-      - { label: 中文摘要或简介, name: abstract, widget: text, required: false }
-      - { label: 摘要卡片, name: summary, widget: text, required: false }
-      - { label: DOI, name: doi, widget: string, required: false }
-      - { label: PDF, name: url_pdf, widget: file, required: false }
-      - { label: Code URL, name: url_code, widget: string, required: false }
-      - { label: Dataset URL, name: url_dataset, widget: string, required: false }
-      - { label: Project URL, name: url_project, widget: string, required: false }
-      - { label: 外部链接, name: external_link, widget: string, required: false }
-      - { label: 补充材料 PDF, name: url_supplement, widget: file, required: false }
-      - label: 成果类型
-        name: publication_types
-        widget: select
-        multiple: true
-        required: true
-        default: [article-journal]
-        options:
-          - { label: 期刊论文, value: article-journal }
-          - { label: 会议论文, value: paper-conference }
-          - { label: 预印本, value: paper }
-          - { label: 报告, value: report }
-          - { label: 书籍, value: book }
-          - { label: 章节, value: chapter }
-          - { label: 学位论文, value: thesis }
-          - { label: 专利, value: patent }
-          - { label: 手稿, value: manuscript }
-      - { label: 标签, name: tags, widget: list, required: false }
-      - { label: 专利类型, name: patent_type, widget: string, required: false }
-      - { label: 国家 / 地区, name: country, widget: string, required: false }
-      - { label: 申请号, name: application_number, widget: string, required: false }
-      - { label: 公开号, name: publication_number, widget: string, required: false }
-      - { label: 授权号, name: grant_number, widget: string, required: false }
-      - { label: 专利状态, name: status, widget: select, required: false, options: [申请中, 已公开, 已授权, 转化中] }
-      - { label: 证书 PDF, name: certificate_pdf, widget: file, required: false }
-      - { label: Featured, name: featured, widget: boolean, default: false, required: false }
-      - label: 图形摘要 / 图片
-        name: image
-        widget: object
-        required: false
-        collapsed: true
-        fields:
-          - { label: 文件名, name: filename, widget: image, required: false }
-          - { label: 图片说明, name: caption, widget: string, required: false }
-          - { label: 焦点, name: focal_point, widget: string, default: Smart, required: false }
-          - { label: 仅预览, name: preview_only, widget: boolean, default: false, required: false }
-      - { label: 正文, name: body, widget: markdown, required: false }
-
   - name: publication_journal_articles
     label: Journal Articles EN
     label_singular: Journal Article
     folder: content/publication
     path: "journal-{{slug}}/index"
     create: true
+    filter: { field: cms_collection, value: journal_en }
     editor:
       preview: false
     media_folder: static/uploads/publications
     public_folder: /uploads/publications
     fields:
+      - { label: CMS Language, name: cms_language, widget: hidden, default: en }
+      - { label: CMS Collection, name: cms_collection, widget: hidden, default: journal_en }
       - { label: Translation Key, name: translationKey, widget: string, required: false }
       - { label: Title, name: title, widget: string }
       - { label: Authors, name: authors, widget: list, required: true }
@@ -492,6 +366,11 @@ collections:
       - { label: Summary, name: summary, widget: text, required: false }
       - { label: DOI, name: doi, widget: string, required: false }
       - { label: PDF, name: url_pdf, widget: file, required: false }
+      - { label: Poster / Figure File, name: url_poster, widget: file, required: false }
+      - { label: Slides, name: url_slides, widget: file, required: false }
+      - { label: Source URL/File, name: url_source, widget: string, required: false }
+      - { label: Video, name: url_video, widget: file, required: false }
+      - { label: Supplementary PDF, name: url_supplement, widget: file, required: false }
       - { label: Tags, name: tags, widget: list, required: false }
       - { label: Featured, name: featured, widget: boolean, default: false, required: false }
       - label: Image
@@ -512,11 +391,14 @@ collections:
     folder: content/publication
     path: "journal-{{slug}}/index.zh"
     create: true
+    filter: { field: cms_collection, value: journal_zh }
     editor:
       preview: false
     media_folder: static/uploads/publications
     public_folder: /uploads/publications
     fields:
+      - { label: CMS Language, name: cms_language, widget: hidden, default: zh }
+      - { label: CMS Collection, name: cms_collection, widget: hidden, default: journal_zh }
       - { label: Translation Key, name: translationKey, widget: string, required: true }
       - { label: 英文标题, name: title, widget: string }
       - { label: 中文标题, name: title_zh, widget: string, required: false }
@@ -530,6 +412,11 @@ collections:
       - { label: 摘要卡片, name: summary, widget: text, required: false }
       - { label: DOI, name: doi, widget: string, required: false }
       - { label: PDF, name: url_pdf, widget: file, required: false }
+      - { label: 海报 / 附图文件, name: url_poster, widget: file, required: false }
+      - { label: 幻灯片, name: url_slides, widget: file, required: false }
+      - { label: 源码链接 / 文件路径, name: url_source, widget: string, required: false }
+      - { label: 视频, name: url_video, widget: file, required: false }
+      - { label: 补充材料 PDF, name: url_supplement, widget: file, required: false }
       - { label: 标签, name: tags, widget: list, required: false }
       - { label: Featured, name: featured, widget: boolean, default: false, required: false }
       - label: 图形摘要 / 图片
@@ -550,11 +437,14 @@ collections:
     folder: content/publication
     path: "book-{{slug}}/index"
     create: true
+    filter: { field: cms_collection, value: book_en }
     editor:
       preview: false
     media_folder: static/uploads/publications
     public_folder: /uploads/publications
     fields:
+      - { label: CMS Language, name: cms_language, widget: hidden, default: en }
+      - { label: CMS Collection, name: cms_collection, widget: hidden, default: book_en }
       - { label: Translation Key, name: translationKey, widget: string, required: false }
       - { label: Title, name: title, widget: string }
       - { label: Authors, name: authors, widget: list, required: true }
@@ -567,6 +457,11 @@ collections:
       - { label: Summary, name: summary, widget: text, required: false }
       - { label: DOI / ISBN, name: doi, widget: string, required: false }
       - { label: PDF, name: url_pdf, widget: file, required: false }
+      - { label: Poster / Figure File, name: url_poster, widget: file, required: false }
+      - { label: Slides, name: url_slides, widget: file, required: false }
+      - { label: Source URL/File, name: url_source, widget: string, required: false }
+      - { label: Video, name: url_video, widget: file, required: false }
+      - { label: Supplementary PDF, name: url_supplement, widget: file, required: false }
       - { label: Tags, name: tags, widget: list, required: false }
       - { label: Featured, name: featured, widget: boolean, default: false, required: false }
       - label: Image
@@ -587,11 +482,14 @@ collections:
     folder: content/publication
     path: "book-{{slug}}/index.zh"
     create: true
+    filter: { field: cms_collection, value: book_zh }
     editor:
       preview: false
     media_folder: static/uploads/publications
     public_folder: /uploads/publications
     fields:
+      - { label: CMS Language, name: cms_language, widget: hidden, default: zh }
+      - { label: CMS Collection, name: cms_collection, widget: hidden, default: book_zh }
       - { label: Translation Key, name: translationKey, widget: string, required: true }
       - { label: 英文标题, name: title, widget: string }
       - { label: 中文标题, name: title_zh, widget: string, required: false }
@@ -605,6 +503,11 @@ collections:
       - { label: 摘要卡片, name: summary, widget: text, required: false }
       - { label: DOI / ISBN, name: doi, widget: string, required: false }
       - { label: PDF, name: url_pdf, widget: file, required: false }
+      - { label: 海报 / 附图文件, name: url_poster, widget: file, required: false }
+      - { label: 幻灯片, name: url_slides, widget: file, required: false }
+      - { label: 源码链接 / 文件路径, name: url_source, widget: string, required: false }
+      - { label: 视频, name: url_video, widget: file, required: false }
+      - { label: 补充材料 PDF, name: url_supplement, widget: file, required: false }
       - { label: 标签, name: tags, widget: list, required: false }
       - { label: Featured, name: featured, widget: boolean, default: false, required: false }
       - label: 图片
@@ -625,11 +528,14 @@ collections:
     folder: content/publication
     path: "conference-{{slug}}/index"
     create: true
+    filter: { field: cms_collection, value: conference_en }
     editor:
       preview: false
     media_folder: static/uploads/publications
     public_folder: /uploads/publications
     fields:
+      - { label: CMS Language, name: cms_language, widget: hidden, default: en }
+      - { label: CMS Collection, name: cms_collection, widget: hidden, default: conference_en }
       - { label: Translation Key, name: translationKey, widget: string, required: false }
       - { label: Title, name: title, widget: string }
       - { label: Authors, name: authors, widget: list, required: true }
@@ -642,6 +548,11 @@ collections:
       - { label: Summary, name: summary, widget: text, required: false }
       - { label: DOI, name: doi, widget: string, required: false }
       - { label: PDF, name: url_pdf, widget: file, required: false }
+      - { label: Poster / Figure File, name: url_poster, widget: file, required: false }
+      - { label: Slides, name: url_slides, widget: file, required: false }
+      - { label: Source URL/File, name: url_source, widget: string, required: false }
+      - { label: Video, name: url_video, widget: file, required: false }
+      - { label: Supplementary PDF, name: url_supplement, widget: file, required: false }
       - { label: Tags, name: tags, widget: list, required: false }
       - { label: Featured, name: featured, widget: boolean, default: false, required: false }
       - label: Image
@@ -662,11 +573,14 @@ collections:
     folder: content/publication
     path: "conference-{{slug}}/index.zh"
     create: true
+    filter: { field: cms_collection, value: conference_zh }
     editor:
       preview: false
     media_folder: static/uploads/publications
     public_folder: /uploads/publications
     fields:
+      - { label: CMS Language, name: cms_language, widget: hidden, default: zh }
+      - { label: CMS Collection, name: cms_collection, widget: hidden, default: conference_zh }
       - { label: Translation Key, name: translationKey, widget: string, required: true }
       - { label: 英文标题, name: title, widget: string }
       - { label: 中文标题, name: title_zh, widget: string, required: false }
@@ -680,6 +594,11 @@ collections:
       - { label: 摘要卡片, name: summary, widget: text, required: false }
       - { label: DOI, name: doi, widget: string, required: false }
       - { label: PDF, name: url_pdf, widget: file, required: false }
+      - { label: 海报 / 附图文件, name: url_poster, widget: file, required: false }
+      - { label: 幻灯片, name: url_slides, widget: file, required: false }
+      - { label: 源码链接 / 文件路径, name: url_source, widget: string, required: false }
+      - { label: 视频, name: url_video, widget: file, required: false }
+      - { label: 补充材料 PDF, name: url_supplement, widget: file, required: false }
       - { label: 标签, name: tags, widget: list, required: false }
       - { label: Featured, name: featured, widget: boolean, default: false, required: false }
       - label: 图片
@@ -700,11 +619,14 @@ collections:
     folder: content/publication
     path: "patent-{{slug}}/index"
     create: true
+    filter: { field: cms_collection, value: patent_en }
     editor:
       preview: false
     media_folder: static/uploads/patents
     public_folder: /uploads/patents
     fields:
+      - { label: CMS Language, name: cms_language, widget: hidden, default: en }
+      - { label: CMS Collection, name: cms_collection, widget: hidden, default: patent_en }
       - { label: Translation Key, name: translationKey, widget: string, required: false }
       - { label: Title, name: title, widget: string }
       - { label: Inventors, name: authors, widget: list, required: true }
@@ -723,6 +645,11 @@ collections:
       - { label: Summary, name: summary, widget: text, required: false }
       - { label: Certificate PDF, name: certificate_pdf, widget: file, required: false }
       - { label: PDF, name: url_pdf, widget: file, required: false }
+      - { label: Poster / Figure File, name: url_poster, widget: file, required: false }
+      - { label: Slides, name: url_slides, widget: file, required: false }
+      - { label: Source URL/File, name: url_source, widget: string, required: false }
+      - { label: Video, name: url_video, widget: file, required: false }
+      - { label: Supplementary PDF, name: url_supplement, widget: file, required: false }
       - { label: Tags, name: tags, widget: list, required: false }
       - { label: Featured, name: featured, widget: boolean, default: false, required: false }
       - label: Image
@@ -743,11 +670,14 @@ collections:
     folder: content/publication
     path: "patent-{{slug}}/index.zh"
     create: true
+    filter: { field: cms_collection, value: patent_zh }
     editor:
       preview: false
     media_folder: static/uploads/patents
     public_folder: /uploads/patents
     fields:
+      - { label: CMS Language, name: cms_language, widget: hidden, default: zh }
+      - { label: CMS Collection, name: cms_collection, widget: hidden, default: patent_zh }
       - { label: Translation Key, name: translationKey, widget: string, required: true }
       - { label: 专利标题, name: title, widget: string }
       - { label: 发明人, name: authors, widget: list, required: true }
@@ -766,6 +696,11 @@ collections:
       - { label: 摘要卡片, name: summary, widget: text, required: false }
       - { label: 证书 PDF, name: certificate_pdf, widget: file, required: false }
       - { label: PDF, name: url_pdf, widget: file, required: false }
+      - { label: 海报 / 附图文件, name: url_poster, widget: file, required: false }
+      - { label: 幻灯片, name: url_slides, widget: file, required: false }
+      - { label: 源码链接 / 文件路径, name: url_source, widget: string, required: false }
+      - { label: 视频, name: url_video, widget: file, required: false }
+      - { label: 补充材料 PDF, name: url_supplement, widget: file, required: false }
       - { label: 标签, name: tags, widget: list, required: false }
       - { label: Featured, name: featured, widget: boolean, default: false, required: false }
       - label: 图片
@@ -786,11 +721,13 @@ collections:
     folder: content/post
     path: "{{slug}}/index"
     create: true
+    filter: { field: cms_language, value: en }
     editor:
       preview: false
     media_folder: static/uploads/news
     public_folder: /uploads/news
     fields:
+      - { label: CMS Language, name: cms_language, widget: hidden, default: en }
       - { label: Translation Key, name: translationKey, widget: string, required: false }
       - { label: Title, name: title, widget: string }
       - { label: Date, name: date, widget: datetime }
@@ -818,11 +755,13 @@ collections:
     folder: content/post
     path: "{{slug}}/index.zh"
     create: true
+    filter: { field: cms_language, value: zh }
     editor:
       preview: false
     media_folder: static/uploads/news
     public_folder: /uploads/news
     fields:
+      - { label: CMS Language, name: cms_language, widget: hidden, default: zh }
       - { label: Translation Key, name: translationKey, widget: string, required: true }
       - { label: 标题, name: title, widget: string }
       - { label: 日期, name: date, widget: datetime }
@@ -850,11 +789,13 @@ collections:
     folder: content/authors
     path: "{{slug}}/_index"
     create: true
+    filter: { field: cms_language, value: en }
     editor:
       preview: false
     media_folder: static/uploads/people
     public_folder: /uploads/people
     fields:
+      - { label: CMS Language, name: cms_language, widget: hidden, default: en }
       - { label: Translation Key, name: translationKey, widget: string, required: false }
       - { label: Display Name, name: title, widget: string }
       - { label: Full Name, name: name, widget: string, required: false }
@@ -932,11 +873,13 @@ collections:
     folder: content/authors
     path: "{{slug}}/_index.zh"
     create: true
+    filter: { field: cms_language, value: zh }
     editor:
       preview: false
     media_folder: static/uploads/people
     public_folder: /uploads/people
     fields:
+      - { label: CMS Language, name: cms_language, widget: hidden, default: zh }
       - { label: Translation Key, name: translationKey, widget: string, required: true }
       - { label: 中文显示名, name: title, widget: string }
       - { label: 中文姓名, name: name, widget: string, required: false }
@@ -1014,11 +957,13 @@ collections:
     folder: content/research
     path: "{{slug}}/index"
     create: true
+    filter: { field: cms_language, value: en }
     editor:
       preview: false
     media_folder: static/uploads/research
     public_folder: /uploads/research
     fields:
+      - { label: CMS Language, name: cms_language, widget: hidden, default: en }
       - { label: Translation Key, name: translationKey, widget: string, required: false }
       - { label: Title, name: title, widget: string }
       - { label: Summary, name: summary, widget: text, required: false }
@@ -1044,11 +989,13 @@ collections:
     folder: content/research
     path: "{{slug}}/index.zh"
     create: true
+    filter: { field: cms_language, value: zh }
     editor:
       preview: false
     media_folder: static/uploads/research
     public_folder: /uploads/research
     fields:
+      - { label: CMS Language, name: cms_language, widget: hidden, default: zh }
       - { label: Translation Key, name: translationKey, widget: string, required: true }
       - { label: 标题, name: title, widget: string }
       - { label: 摘要, name: summary, widget: text, required: false }
@@ -1074,11 +1021,13 @@ collections:
     folder: content/facilities
     path: "{{slug}}/index"
     create: true
+    filter: { field: cms_language, value: en }
     editor:
       preview: false
     media_folder: static/uploads/facilities
     public_folder: /uploads/facilities
     fields:
+      - { label: CMS Language, name: cms_language, widget: hidden, default: en }
       - { label: Translation Key, name: translationKey, widget: string, required: false }
       - { label: Title, name: title, widget: string }
       - { label: Summary, name: summary, widget: text, required: false }
@@ -1110,11 +1059,13 @@ collections:
     folder: content/facilities
     path: "{{slug}}/index.zh"
     create: true
+    filter: { field: cms_language, value: zh }
     editor:
       preview: false
     media_folder: static/uploads/facilities
     public_folder: /uploads/facilities
     fields:
+      - { label: CMS Language, name: cms_language, widget: hidden, default: zh }
       - { label: Translation Key, name: translationKey, widget: string, required: true }
       - { label: 标题, name: title, widget: string }
       - { label: 摘要, name: summary, widget: text, required: false }
@@ -1146,11 +1097,13 @@ collections:
     folder: content/gallery
     path: "{{slug}}/index"
     create: true
+    filter: { field: cms_language, value: en }
     editor:
       preview: false
     media_folder: static/uploads/gallery
     public_folder: /uploads/gallery
     fields:
+      - { label: CMS Language, name: cms_language, widget: hidden, default: en }
       - { label: Translation Key, name: translationKey, widget: string, required: false }
       - { label: Year Title, name: title, widget: string }
       - { label: Year, name: year, widget: string, required: true }
@@ -1171,11 +1124,13 @@ collections:
     folder: content/gallery
     path: "{{slug}}/index.zh"
     create: true
+    filter: { field: cms_language, value: zh }
     editor:
       preview: false
     media_folder: static/uploads/gallery
     public_folder: /uploads/gallery
     fields:
+      - { label: CMS Language, name: cms_language, widget: hidden, default: zh }
       - { label: Translation Key, name: translationKey, widget: string, required: true }
       - { label: 年份标题, name: title, widget: string }
       - { label: 年份, name: year, widget: string, required: true }

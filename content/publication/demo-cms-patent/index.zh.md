@@ -1,4 +1,6 @@
 ---
+cms_language: zh
+cms_collection: patent_zh
 translationKey: publication-demo-cms-patent
 title: "Demo: CMS patent entry"
 authors:

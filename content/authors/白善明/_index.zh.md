@@ -1,4 +1,5 @@
 ---
+cms_language: zh
 translationKey: author-白善明
 # Display name
 title: 白善明 Shanming Bai 

@@ -1,4 +1,6 @@
 ---
+cms_language: zh
+cms_collection: book_zh
 translationKey: publication-B-1
 title: "微纳机器人生物操作与生物制造 Micro/nano-robotic Biomanipulation and Biofabrication"
 authors:

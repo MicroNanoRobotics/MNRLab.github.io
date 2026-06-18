@@ -1,4 +1,6 @@
 ---
+cms_language: zh
+cms_collection: journal_zh
 translationKey: publication-JA-9
 title: "Spatial Constraint-Based Navigation and Emergency Replanning Adaptive Control for Magnetic Helical Microrobots in Dynamic Environments"
 authors:

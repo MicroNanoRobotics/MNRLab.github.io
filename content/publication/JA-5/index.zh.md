@@ -1,4 +1,6 @@
 ---
+cms_language: zh
+cms_collection: journal_zh
 translationKey: publication-JA-5
 title: "Data-driven Parallel Adaptive Control for Magnetic Helical Microrobots with Derivative Structure in Uncertain Environments"
 authors:

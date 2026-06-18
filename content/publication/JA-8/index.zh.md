@@ -1,4 +1,6 @@
 ---
+cms_language: zh
+cms_collection: journal_zh
 translationKey: publication-JA-8
 title: "TPP-Based Microfluidic Chip Design and Fabrication Method for Optimized Nerve Cells Directed Growth"
 authors:

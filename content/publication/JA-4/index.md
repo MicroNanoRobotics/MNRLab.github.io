@@ -1,4 +1,6 @@
 ---
+cms_language: en
+cms_collection: journal_en
 translationKey: publication-JA-4
 title: "IHVIN-GAT-Based Path Planning for Parallel and Independent Manipulation of Heterogeneous Microtargets via OETs in Unstructured Environments"
 authors:

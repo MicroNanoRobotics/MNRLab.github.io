@@ -1,4 +1,5 @@
 ---
+cms_language: en
 translationKey: facility-nanoscribe
 title: Nanoscribe Photonic Professional GT2
 summary: Scientific 3D printer for ultra-precise and rapid microfabrication.

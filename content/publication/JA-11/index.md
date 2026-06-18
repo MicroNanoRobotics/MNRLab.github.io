@@ -1,4 +1,6 @@
 ---
+cms_language: en
+cms_collection: journal_en
 translationKey: publication-JA-11
 title: "Reconfigurable Formation Control for Coordinated Micromanipulation of Cross-Scale Targets in Railed Multi-Probe Robot"
 authors:

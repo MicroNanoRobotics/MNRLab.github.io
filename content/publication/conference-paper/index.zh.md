@@ -1,4 +1,6 @@
 ---
+cms_language: zh
+cms_collection: conference_zh
 translationKey: publication-conference-paper
 title: 'An example conference paper'
 

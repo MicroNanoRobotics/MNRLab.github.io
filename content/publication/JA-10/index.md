@@ -1,4 +1,6 @@
 ---
+cms_language: en
+cms_collection: journal_en
 translationKey: publication-JA-10
 title: "Double-Modal Locomotion of a Hydrogel Ultra-Soft Magnetic Miniature Robot with Switchable Forms"
 authors:
