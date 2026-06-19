@@ -42,6 +42,10 @@ sections:
         </div>
       image:
         filename: 科研.png
+      slides:
+        - background:
+            image:
+              filename: 科研.png
     design:
       columns: "1"
       spacing:
@@ -106,6 +110,10 @@ sections_zh:
         </div>
       image:
         filename: 科研.png
+      slides:
+        - background:
+            image:
+              filename: 科研.png
     design:
       columns: "1"
       spacing:
