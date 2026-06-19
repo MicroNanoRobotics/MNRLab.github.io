@@ -2,11 +2,11 @@
 cms_language: en
 translationKey: author-郭斯予
 # Display name
-title: 郭斯予 Siyu Guo 
+title: 郭斯予 Siyu Guo
 
 # Full name (for SEO)
 first_name: Siyu
-last_name: Guo 
+last_name: Guo
 
 # Username (this should match the folder name)
 authors:
@@ -24,7 +24,7 @@ organizations:
     url: ''
 
 # Short bio (displayed in user profile at end of posts)
-bio: 
+bio:
 
 interests:
   - 磁控微机器人
@@ -80,10 +80,31 @@ weight: 100
 
 user_groups:
   - Masters Students
+title_zh: 郭斯予 Siyu Guo
 
+# Full name (for SEO)
+role_zh: 机械工程专业硕士研究生 Masters Student of Mechanical Engineering
 
+# Organizations/Affiliations
+bio_zh:
+interests_zh:
+  - 磁控微机器人
+education_zh:
+  courses:
+    - course: 机械工程专业 在读硕士
+      institution: 北京理工大学机电学院
+      year: 2024-
+    - course: 机械电子工程 学士
+      institution: 北京理工大学 徐特立学院
+      year: 2020-2024
+
+# Social/Academic Networking
+# For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
+#   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
+#   form "mailto:your-email@example.com" or "#contact" for contact widget.
+body_zh: |-
+
+  郭斯予（单身优质版），北京理工大学机械工程专业硕士研究生。主要从事的研究方向为磁控微机器人。
 ---
 
 郭斯予（单身优质版），北京理工大学机械工程专业硕士研究生。主要从事的研究方向为磁控微机器人。
-
-

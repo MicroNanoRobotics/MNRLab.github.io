@@ -21,12 +21,10 @@ publication_types: ["article-journal"]
 # Publication name and optional abbreviated publication name.
 publication: " IEEE/ASME Transactions on Mechatronics"
 publication_short: ""
-
-abstract: 
+abstract:
 
 # Summary. An optional shortened abstract.
 summary: xxxxxx
-
 tags:
 - Article
 featured: false
@@ -44,7 +42,7 @@ url_source: ''
 url_video: ''
 
 # Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder. 
+# To use, add an image named `featured.jpg/png` to your page's folder.
 image:
   caption: 'Image credit: [**Unsplash**](https://spj.science.org/doi/10.34133/research.0414#F1)'
   focal_point: ""
@@ -63,7 +61,6 @@ projects: []
 #   E.g. `slides: "example"` references `content/slides/example/index.md`.
 #   Otherwise, set `slides: ""`.
 slides: example
-
 ---
 
 <!-- {{% callout note %}}

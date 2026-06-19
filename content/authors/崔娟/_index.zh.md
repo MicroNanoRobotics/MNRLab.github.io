@@ -16,7 +16,7 @@ authors:
 superuser: true
 
 # Role/position
-role: 仪器科学与技术/电子信息 副教授/硕导 
+role: 仪器科学与技术/电子信息 副教授/硕导
 
 # Organizations/Affiliations
 organizations:
@@ -24,13 +24,10 @@ organizations:
     url: ''
 
 # Short bio (displayed in user profile at end of posts)
-bio: 
-
+bio:
 interests:
   - 微纳传感器件与系统
   - 微纳操作
-
-
 education:
   courses:
     - course: 副教授、硕士生导师
@@ -41,7 +38,7 @@ education:
       year: 2016-2020
     - course: 测试计量技术及仪器专业 硕士
       institution: 中北大学仪器与电子学院
-      year: 2013-2016    
+      year: 2013-2016
     - course: 探测制导与控制技术专业 学士
       institution: 中北大学机电工程学院
       year: 2009-2013
@@ -109,4 +106,3 @@ user_groups:
 10. Juan Cui, Huaping Wang*, Qing Shi, Jianing Li, Zhiqiang Zheng, Tao Sun, Qiang Huang and Toshio Fukuda. Assembly of cellular microstructures into lobule-like 3D microtissues based on microrobotic manipulation. 2018 International Conference on Manipulation, Automation and Robotics at Small Scales (MARSS), 2018. 07, 日本名古屋。(EI检索国际会议，***论文奖)
 
 11. Juan Cui, Huaping Wang*, Qing Shi, Jianing Li, Zhiqiang Zheng, Tao Sun, Qiang Huang and Toshio Fukuda. Microrobotic assembly of shape-controllable microstructures to perfusable 3D cell-laden microtissues. 7th Annual IEEE International Conference on Cyber Technology in Automation, Control and Intelligent Systems (IEEE-CYBER), 2017. 07, 美国夏威夷。(EI检索国际会议，***论文奖)
-

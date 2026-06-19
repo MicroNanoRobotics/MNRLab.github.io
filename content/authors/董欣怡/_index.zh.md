@@ -2,11 +2,11 @@
 cms_language: zh
 translationKey: author-董欣怡
 # Display name
-title: 董欣怡 Xinyi Dong 
+title: 董欣怡 Xinyi Dong
 
 # Full name (for SEO)
-first_name: Xinyi 
-last_name: Dong 
+first_name: Xinyi
+last_name: Dong
 
 # Username (this should match the folder name)
 authors:
@@ -24,11 +24,9 @@ organizations:
     url: ''
 
 # Short bio (displayed in user profile at end of posts)
-bio: 
-
+bio:
 interests:
   - 光固化生物打印
-
 education:
   courses:
     - course: 机械工程专业 硕博连读
@@ -83,8 +81,6 @@ weight: 100
 
 user_groups:
   - PhD Students
-
-
 ---
 
 董欣怡，北京理工大学机械工程专业博士研究生。主要从事的研究方向为光固化生物打印。曾担任队长带领团队获北京市互联网+一等奖等多项双创奖项；曾获2022年优秀本科毕设。以第一作者发表会议论文1篇并获最佳论文奖。
@@ -92,5 +88,5 @@ user_groups:
 
 
 【代表性成果】
- 
+
 1. X. Dong et al., “Holographic Feedback Controlled Micro-Stereolithography for Constructing Microstructures with Tuned Mechanical Property,” in 2024 7th International Symposium on Autonomous Systems (ISAS), Chongqing, China: IEEE, May 2024, pp. 1–6. doi: 10.1109/ISAS61044.2024.10552462.

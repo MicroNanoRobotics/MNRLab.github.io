@@ -23,11 +23,9 @@ publication_types: ["article-journal"]
 # Publication name and optional abbreviated publication name.
 publication: "Cyborg and Bionic Systems"
 publication_short: ""
-
 abstract: Microfluidic chips offer high customizability and excellent biocompatibility, holding important promise for the precise control of biological growth at the microscale. However, the microfluidic chips employed in the studies of regulating cell growth are typically fabricated through 2D photolithography. This approach partially restricts the diversity of cell growth platform designs and manufacturing efficiency. This paper presents a method for designing and manufacturing neural cell culture microfluidic chips (NCMC) using two-photon polymerization (TPP), where the discrete and directional cell growth is optimized through studying the associated geometric parameters of on-chip microchannels. This study involves simulations and discussions regarding the effects of different hatching distances on the mold surface topography and printing time in the Describe print preview module, which determines the appropriate printing accuracy corresponding to the desired mold structure. With the assistance of the 3D maskless lithography system, micron-level rapid printing of target molds with different dimensions were achieved. For NCMC with different geometric parameters, COMSOL software was used to simulate the local flow velocity and shear stress characteristics within the microchannels. SH-SY5Y cells were selected for directional differentiation experiments on NCMC with different geometric parameters. The results demonstrate that the TPP-based manufacturing method efficiently constructs neural microfluidic chips with high precision, optimizing the discrete and directional cell growth. We anticipate that our method for designing and manufacturing NCMC will hold great promise in construction and application of microscale 3D drug models.
 # Summary. An optional shortened abstract.
 summary: xxxxxx
-
 tags:
 - Article
 featured: false
@@ -45,7 +43,7 @@ url_source: ''
 url_video: ''
 
 # Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder. 
+# To use, add an image named `featured.jpg/png` to your page's folder.
 image:
   caption: 'Image credit: [**Unsplash**](https://spj.science.org/doi/10.34133/research.0414#F1)'
   focal_point: ""
@@ -64,7 +62,6 @@ projects: []
 #   E.g. `slides: "example"` references `content/slides/example/index.md`.
 #   Otherwise, set `slides: ""`.
 slides: example
-
 ---
 
 <!-- {{% callout note %}}

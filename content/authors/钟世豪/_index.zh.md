@@ -2,10 +2,10 @@
 cms_language: zh
 translationKey: author-钟世豪
 # Display name
-title: 钟世豪 Shihao Zhong 
+title: 钟世豪 Shihao Zhong
 
 # Full name (for SEO)
-first_name: Shihao 
+first_name: Shihao
 last_name: Zhong
 
 # Username (this should match the folder name)
@@ -25,11 +25,9 @@ organizations:
 
 # Short bio (displayed in user profile at end of posts)
 bio: My research interests include Continuum Robots, Magnetically Controlled Robots, Nanorobots, and more.
-
 interests:
   - 磁控机器人
   - 磁驱动机器人复杂运动控制
-
 education:
   courses:
     - course: 机械工程专业 硕博连读
@@ -87,8 +85,6 @@ user_groups:
   - PhD Students
   - Administration
   - Visitors
-
-
 ---
 
 钟世豪，北京理工大学机械工程专业博士研究生。主要从事的研究方向包括磁驱动机器人复杂运动控制等。
@@ -96,10 +92,10 @@ user_groups:
 
 
 【代表性成果】
- 
-1. Wang Huaping, Zhong Shihao, Zheng Zhiqiang*, Shi Qing, Sun Tao, Huang Qiang, Fukuda Toshio, "Data-driven Parallel Adaptive Control for Magnetic Helical Microrobots with Derivative Structure in Uncertain Environments", IEEE Transactions on Systems, Man and Cybernetics: System. vol. 54, no. 7, pp. 4139-4150, July 2024, DOI: 10.1109/TSMC.2024.3374071, 2024. （JCR 1 区，中科院一区 Top，IF：8.6，导师一作本人二作） 
 
-2. Zhong Shihao, Hou Yaozhen, Shi Qing, Li Yang, Huang Hen-Wei, Huang Qiang, Fukuda Toshio, Wang Huaping* "Spatial Constraint-Based Navigation and Emergency Replanning Adaptive Control for Magnetic Helical Microrobots in Dynamic Environments", IEEE Transactions on Automation Science and Engineering, vol. 21, no. 4, pp. 7180-7189, DOI:10.1109/TASE.2023.3339637, 2023. （JCR 1 区，中科院二区 Top，IF：5.9） 
+1. Wang Huaping, Zhong Shihao, Zheng Zhiqiang*, Shi Qing, Sun Tao, Huang Qiang, Fukuda Toshio, "Data-driven Parallel Adaptive Control for Magnetic Helical Microrobots with Derivative Structure in Uncertain Environments", IEEE Transactions on Systems, Man and Cybernetics: System. vol. 54, no. 7, pp. 4139-4150, July 2024, DOI: 10.1109/TSMC.2024.3374071, 2024. （JCR 1 区，中科院一区 Top，IF：8.6，导师一作本人二作）
+
+2. Zhong Shihao, Hou Yaozhen, Shi Qing, Li Yang, Huang Hen-Wei, Huang Qiang, Fukuda Toshio, Wang Huaping* "Spatial Constraint-Based Navigation and Emergency Replanning Adaptive Control for Magnetic Helical Microrobots in Dynamic Environments", IEEE Transactions on Automation Science and Engineering, vol. 21, no. 4, pp. 7180-7189, DOI:10.1109/TASE.2023.3339637, 2023. （JCR 1 区，中科院二区 Top，IF：5.9）
 
 3. Zhong Shihao#, Xin Zhengyuan#, Hou Yaozhen, Li Yang, Huang Hen-Wei, Sun Tao, Shi Qing, Wang Huaping* ''Double-Modal Locomotion of a Hydrogel Ultra-Soft Magnetic Miniature Robot with Switchable Forms'', Cyborg and Bionic Systems, vol. 5, no.0077, 2024. （封面论文，JCR 1 区，IF：10.5， 中国卓越行动计划，高起点新期刊，Science 合作期刊）
 

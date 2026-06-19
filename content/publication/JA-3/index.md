@@ -45,7 +45,7 @@ url_source: ''
 url_video: ''
 
 # Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder. 
+# To use, add an image named `featured.jpg/png` to your page's folder.
 image:
   caption: 'Image credit: [**Unsplash**](https://spj.science.org/doi/10.34133/research.0414#F1)'
   focal_point: ""
@@ -64,7 +64,23 @@ projects: []
 #   E.g. `slides: "example"` references `content/slides/example/index.md`.
 #   Otherwise, set `slides: ""`.
 slides: example
+title_zh: "Arched microfluidic channel for the promotion of axonal growth performance"
+summary_zh: xxxxxx
+abstract_zh: Uniformly distributed fluid shear stress can promote axonal growth, aiding in the efficient construction of functional neural interfaces. However, challenges remain in the construction of the micro-scale environment with a uniform fluidic stress distribution. In this study, we designed and fabricated a microfluidic chip with arched-section microfluidic channels (AMCs) to increase primary cortical neuron growth rate and terminal number by constructing a uniform-stress-distributed environment. Inspired by the three-dimensional (3D) microenvironment where cerebrospinal-fluid-contacting neurons are located, the surface curvature of the traditional rectangular-section microfluidic channel (RMC) was adjusted to construct structures with 3D curved surfaces. Compared with those on the RMC chips, the average growth rate of the axons on the AMC chips increased by 8.9% within 19 days, and the average number of terminals increased by 14.9%. This platform provides a structure that can effectively promote neuron growth and has potential in constructing more complex functional neural interfaces.
+# Summary. An optional shortened abstract.
+publication_zh: "iScience"
+publication_short_zh: ""
+body_zh: |-
 
+  <!-- {{% callout note %}}
+  Click the *Cite* button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  {{% /callout %}}
+
+  {{% callout note %}}
+  Create your slides in Markdown - click the *Slides* button to check out the example.
+  {{% /callout %}}
+
+  Add the publication's **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/). -->
 ---
 
 <!-- {{% callout note %}}

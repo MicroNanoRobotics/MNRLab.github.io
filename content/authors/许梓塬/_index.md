@@ -24,7 +24,7 @@ organizations:
     url: ''
 
 # Short bio (displayed in user profile at end of posts)
-bio: 
+bio:
 
 interests:
   - 电磁系统建模
@@ -82,8 +82,37 @@ weight: 100
 
 user_groups:
   - Masters Students
+title_zh: 许梓塬 Ziyuan Xu
+
+# Full name (for SEO)
+role_zh: 机器人工程 硕士研究生 Masters Student of Robotics Engineering
+
+# Organizations/Affiliations
+bio_zh:
+interests_zh:
+  - 电磁系统建模
+  - 微纳机器人操作
+education_zh:
+  courses:
+    - course: 机器人工程专业 在读硕士
+      institution: 北京理工大学机电学院
+      year: 2024-
+    - course: 机械电子工程专业 学士
+      institution: 北京交通大学机电学院
+      year: 2020-2024
 
 
+# Social/Academic Networking
+# For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
+#   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
+#   form "mailto:your-email@example.com" or "#contact" for contact widget.
+body_zh: |-
+
+  许梓塬（优质版），北京理工大学机器人工程专业硕士研究生。本科就读于北京交通大学，期间曾获国家奖学金，学习奖学金，校三好学生及优秀共青团员等荣誉。曾作为第一负责人完成国家级大创项目“智能机器人足球”，以第一作者发表的项目论文被EI收录。大四保研至北京理工大学机电学院继续攻读机器人专业，研究方向为电磁系统建模及微纳机器人操作等相关领域。
+
+  【代表性成果】
+
+  1. Z. Xu, W. Wang, J. Wen and G. Chen, "Petri Net Modelling and Motion Analysis of the Football Robot System," 2023 China Automation Congress (CAC), Chongqing, China, 2023, pp. 3611-3616, doi: 10.1109/CAC59555.2023.10451865
 ---
 
 许梓塬（优质版），北京理工大学机器人工程专业硕士研究生。本科就读于北京交通大学，期间曾获国家奖学金，学习奖学金，校三好学生及优秀共青团员等荣誉。曾作为第一负责人完成国家级大创项目“智能机器人足球”，以第一作者发表的项目论文被EI收录。大四保研至北京理工大学机电学院继续攻读机器人专业，研究方向为电磁系统建模及微纳机器人操作等相关领域。
@@ -91,6 +120,3 @@ user_groups:
 【代表性成果】
 
 1. Z. Xu, W. Wang, J. Wen and G. Chen, "Petri Net Modelling and Motion Analysis of the Football Robot System," 2023 China Automation Congress (CAC), Chongqing, China, 2023, pp. 3611-3616, doi: 10.1109/CAC59555.2023.10451865
-
- 
-

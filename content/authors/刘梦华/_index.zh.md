@@ -24,14 +24,11 @@ organizations:
     url: ''
 
 # Short bio (displayed in user profile at end of posts)
-bio: 
-
+bio:
 interests:
   - 仿人机器人
   - 微纳制造
   - 光刻技术
-
-
 education:
   courses:
 
@@ -85,11 +82,6 @@ weight: 100
 
 user_groups:
   - Alumni
-
-
 ---
 
 刘梦华（毕业版），北京理工大学先进制造专业博士研究生。主要从事的方向包括微纳加工与微纳制造、仿人机器人、功能化生物微流控芯片等。具备较强的沟通表达能力和英文口语交流能力，热爱社交、爬山和旅行等一系列户外活动。
-
- 
-

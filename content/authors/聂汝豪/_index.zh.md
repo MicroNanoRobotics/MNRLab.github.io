@@ -24,12 +24,10 @@ organizations:
     url: ''
 
 # Short bio (displayed in user profile at end of posts)
-bio: 
-
+bio:
 interests:
   - 模块化折纸微机器人
   - 磁微机器人
-
 education:
   courses:
     - course: 机械工程专业 在读博士
@@ -85,17 +83,8 @@ weight: 100
 
 user_groups:
   - PhD Students
-
-
 ---
 
 聂汝豪，北京理工大学机械工程专业博士研究生。主要从事的研究方向包括微型机器人、软体机器人、折纸机器人等。
 
  Ruhao Nie is a PhD Student of Mechanical Engineering at Beijing Institute of Technology. His research interests include miniature robot, soft robotics, origami robotics, and more.
-
-
-
-
-
- 
-

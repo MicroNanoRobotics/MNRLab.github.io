@@ -46,7 +46,7 @@ url_source: ''
 url_video: ''
 
 # Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder. 
+# To use, add an image named `featured.jpg/png` to your page's folder.
 image:
   caption: 'Image credit: [**Unsplash**](https://spj.science.org/doi/10.34133/research.0414#F1)'
   focal_point: ""
@@ -65,7 +65,24 @@ projects: []
 #   E.g. `slides: "example"` references `content/slides/example/index.md`.
 #   Otherwise, set `slides: ""`.
 slides: example
+title_zh: "Integrated Cross-Scale Manipulation and Modulable Encapsulation of Cell-Laden Hydrogel for Constructing Tissue-Mimicking Microstructures"
+summary_zh: xxxxxx
+abstract_zh: Engineered microstructures that mimic in vivo tissues have demonstrated great potential for applications in regenerative medicine, drug screening, and cell behavior exploration. However, current methods for engineering microstructures that mimic the multi-extracellular matrix and multicellular features of natural tissues to realize tissue-mimicking microstructures in vitro remain insufficient. Here, we propose a versatile method for constructing tissue-mimicking heterogeneous microstructures by orderly integration of macroscopic hydrogel exchange, microscopic cell manipulation, and encapsulation modulation. First, various cell-laden hydrogel droplets are manipulated at the millimeter scale using electrowetting on dielectric to achieve efficient hydrogel exchange. Second, the cells are manipulated at the micrometer scale using dielectrophoresis to adjust their density and arrangement within the hydrogel droplets. Third, the photopolymerization of these hydrogel droplets is triggered in designated regions by dynamically modulating the shape and position of the excitation ultraviolet beam. Thus, heterogeneous microstructures with different extracellular matrix geometries and components were constructed, including specific cell densities and patterns. The resulting heterogeneous microstructure supported long-term culture of hepatocytes and fibroblasts with high cell viability (over 90%). Moreover, the density and distribution of the 2 cell types had significant effects on the cell proliferation and urea secretion. We propose that our method can lead to the construction of additional biomimetic heterogeneous microstructures with unprecedented potential for use in future tissue engineering applications.
 
+# Summary. An optional shortened abstract.
+publication_zh: "Research"
+publication_short_zh: ""
+body_zh: |-
+
+  <!-- {{% callout note %}}
+  Click the *Cite* button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  {{% /callout %}}
+
+  {{% callout note %}}
+  Create your slides in Markdown - click the *Slides* button to check out the example.
+  {{% /callout %}}
+
+  Add the publication's **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/). -->
 ---
 
 <!-- {{% callout note %}}

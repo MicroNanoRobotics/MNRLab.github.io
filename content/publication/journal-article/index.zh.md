@@ -23,12 +23,10 @@ publication_types: ["article-journal"]
 # Publication name and optional abbreviated publication name.
 publication: "Research"
 publication_short: ""
-
 abstract: Engineered microstructures that mimic in vivo tissues have demonstrated great potential for applications in regenerative medicine, drug screening, and cell behavior exploration. However, current methods for engineering microstructures that mimic the multi-extracellular matrix and multicellular features of natural tissues to realize tissue-mimicking microstructures in vitro remain insufficient. Here, we propose a versatile method for constructing tissue-mimicking heterogeneous microstructures by orderly integration of macroscopic hydrogel exchange, microscopic cell manipulation, and encapsulation modulation. First, various cell-laden hydrogel droplets are manipulated at the millimeter scale using electrowetting on dielectric to achieve efficient hydrogel exchange. Second, the cells are manipulated at the micrometer scale using dielectrophoresis to adjust their density and arrangement within the hydrogel droplets. Third, the photopolymerization of these hydrogel droplets is triggered in designated regions by dynamically modulating the shape and position of the excitation ultraviolet beam. Thus, heterogeneous microstructures with different extracellular matrix geometries and components were constructed, including specific cell densities and patterns. The resulting heterogeneous microstructure supported long-term culture of hepatocytes and fibroblasts with high cell viability (over 90%). Moreover, the density and distribution of the 2 cell types had significant effects on the cell proliferation and urea secretion. We propose that our method can lead to the construction of additional biomimetic heterogeneous microstructures with unprecedented potential for use in future tissue engineering applications.
 
 # Summary. An optional shortened abstract.
 summary: xxxxxx
-
 tags:
 - Article
 featured: false
@@ -46,7 +44,7 @@ url_source: ''
 url_video: ''
 
 # Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder. 
+# To use, add an image named `featured.jpg/png` to your page's folder.
 image:
   caption: 'Image credit: [**Unsplash**](https://spj.science.org/doi/10.34133/research.0414#F1)'
   focal_point: ""
@@ -65,7 +63,6 @@ projects: []
 #   E.g. `slides: "example"` references `content/slides/example/index.md`.
 #   Otherwise, set `slides: ""`.
 slides: example
-
 ---
 
 <!-- {{% callout note %}}

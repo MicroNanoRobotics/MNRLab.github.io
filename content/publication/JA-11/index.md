@@ -22,7 +22,7 @@ publication_types: ["article-journal"]
 publication: " IEEE/ASME Transactions on Mechatronics"
 publication_short: ""
 
-abstract: 
+abstract:
 
 # Summary. An optional shortened abstract.
 summary: xxxxxx
@@ -44,7 +44,7 @@ url_source: ''
 url_video: ''
 
 # Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder. 
+# To use, add an image named `featured.jpg/png` to your page's folder.
 image:
   caption: 'Image credit: [**Unsplash**](https://spj.science.org/doi/10.34133/research.0414#F1)'
   focal_point: ""
@@ -63,7 +63,24 @@ projects: []
 #   E.g. `slides: "example"` references `content/slides/example/index.md`.
 #   Otherwise, set `slides: ""`.
 slides: example
+title_zh: "Reconfigurable Formation Control for Coordinated Micromanipulation of Cross-Scale Targets in Railed Multi-Probe Robot"
+summary_zh: xxxxxx
+abstract_zh:
 
+# Summary. An optional shortened abstract.
+publication_zh: " IEEE/ASME Transactions on Mechatronics"
+publication_short_zh: ""
+body_zh: |-
+
+  <!-- {{% callout note %}}
+  Click the *Cite* button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  {{% /callout %}}
+
+  {{% callout note %}}
+  Create your slides in Markdown - click the *Slides* button to check out the example.
+  {{% /callout %}}
+
+  Add the publication's **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/). -->
 ---
 
 <!-- {{% callout note %}}

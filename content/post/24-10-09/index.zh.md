@@ -7,6 +7,7 @@ image:
   focal_point: 'top'
 authors: []
 ---
+
 Integrated Cross-Scale Manipulation and Modulable Encapsulation of Cell-Laden Hydrogel for Constructing Tissue-Mimicking Microstructures
 
 <!--more-->

@@ -24,7 +24,7 @@ organizations:
     url: ''
 
 # Short bio (displayed in user profile at end of posts)
-bio: 
+bio:
 
 interests:
   - 磁控连续体机器人
@@ -82,14 +82,33 @@ weight: 100
 
 user_groups:
   - Masters Students
+title_zh: 袁岩 Yan Yuan
+
+# Full name (for SEO)
+role_zh: 机械工程专业硕士研究生 Masters Student of Mechanical Engineering
+
+# Organizations/Affiliations
+bio_zh:
+interests_zh:
+  - 磁控连续体机器人
+  - 机械臂控制
+education_zh:
+  courses:
+    - course: 机械工程专业 在读硕士
+      institution: 北京理工大学机电学院
+      year: 2024-
+    - course: 机械电子工程专业 学士
+      institution: 北京理工大学机电学院
+      year: 2020-2024
 
 
+# Social/Academic Networking
+# For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
+#   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
+#   form "mailto:your-email@example.com" or "#contact" for contact widget.
+body_zh: |-
+
+  袁岩（热恋版），北京理工大学机械工程专业硕士研究生。主要从事的研究方向包括连续体机器人控制、机械臂控制等。
 ---
 
 袁岩（热恋版），北京理工大学机械工程专业硕士研究生。主要从事的研究方向包括连续体机器人控制、机械臂控制等。
-
-
-
-
- 
-

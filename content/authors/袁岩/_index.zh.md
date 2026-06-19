@@ -24,12 +24,10 @@ organizations:
     url: ''
 
 # Short bio (displayed in user profile at end of posts)
-bio: 
-
+bio:
 interests:
   - 磁控连续体机器人
   - 机械臂控制
-
 education:
   courses:
     - course: 机械工程专业 在读硕士
@@ -82,14 +80,6 @@ weight: 100
 
 user_groups:
   - Masters Students
-
-
 ---
 
 袁岩（热恋版），北京理工大学机械工程专业硕士研究生。主要从事的研究方向包括连续体机器人控制、机械臂控制等。
-
-
-
-
- 
-

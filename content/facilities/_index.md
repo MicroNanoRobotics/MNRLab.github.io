@@ -11,4 +11,4 @@ banner:
   image: ''
 ---
 
-The legacy platform page under `/event/` is kept for compatibility. New platform and equipment records can be maintained here through the CMS.
+Shared research platforms, instruments, and equipment available to support laboratory research and micro/nano robotics experiments.

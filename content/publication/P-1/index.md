@@ -27,7 +27,7 @@ publication_types: ["patent"]
 publication: ""
 publication_short: ""
 
-abstract: 
+abstract:
 
 # Summary. An optional shortened abstract.
 summary:
@@ -37,10 +37,10 @@ tags:
 featured: false
 
 links:
-- name: 
-  url: 
-url_pdf: 
-url_code: 
+- name:
+  url:
+url_pdf:
+url_code:
 url_dataset: '#'
 url_poster: '#'
 url_project: ''
@@ -49,7 +49,7 @@ url_source: '#'
 url_video: '#'
 
 # Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder. 
+# To use, add an image named `featured.jpg/png` to your page's folder.
 image:
   caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/s9CC2SKySJM)'
   focal_point: ""
@@ -69,6 +69,20 @@ projects:
 #   E.g. `slides: "example"` references `content/slides/example/index.md`.
 #   Otherwise, set `slides: ""`.
 slides: example
+title_zh: "一种靶向投递的微T型机器人装置及应用方法"
+summary_zh:
+abstract_zh:
+
+# Summary. An optional shortened abstract.
+publication_zh: ""
+publication_short_zh: ""
+body_zh: |-
+
+  <!-- {{% callout note %}}
+  Create your slides in Markdown - click the *Slides* button to check out the example.
+  {{% /callout %}}
+
+  Add the publication's **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/). -->
 ---
 
 <!-- {{% callout note %}}

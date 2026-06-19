@@ -2,11 +2,11 @@
 cms_language: zh
 translationKey: author-郭斯予
 # Display name
-title: 郭斯予 Siyu Guo 
+title: 郭斯予 Siyu Guo
 
 # Full name (for SEO)
 first_name: Siyu
-last_name: Guo 
+last_name: Guo
 
 # Username (this should match the folder name)
 authors:
@@ -24,11 +24,9 @@ organizations:
     url: ''
 
 # Short bio (displayed in user profile at end of posts)
-bio: 
-
+bio:
 interests:
   - 磁控微机器人
-
 education:
   courses:
     - course: 机械工程专业 在读硕士
@@ -80,10 +78,6 @@ weight: 100
 
 user_groups:
   - Masters Students
-
-
 ---
 
 郭斯予（单身优质版），北京理工大学机械工程专业硕士研究生。主要从事的研究方向为磁控微机器人。
-
-

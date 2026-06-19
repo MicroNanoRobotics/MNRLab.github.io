@@ -5,7 +5,7 @@ translationKey: author-严皓天
 title: 严皓天 Haotian Yan
 
 # Full name (for SEO)
-first_name: Haotian 
+first_name: Haotian
 last_name: Yan
 
 # Username (this should match the folder name)
@@ -24,7 +24,7 @@ organizations:
     url: ''
 
 # Short bio (displayed in user profile at end of posts)
-bio: 
+bio:
 
 interests:
   - 软体微纳磁控机器人设计
@@ -79,14 +79,30 @@ weight: 100
 
 user_groups:
   - Masters Students
+title_zh: 严皓天 Haotian Yan
+
+# Full name (for SEO)
+role_zh: 机械电子工程专业本科生 Undergraduate student of Mechanical Engineering
+
+# Organizations/Affiliations
+bio_zh:
+interests_zh:
+  - 软体微纳磁控机器人设计
+  - 多模态微机器人设计和控制
+education_zh:
+  courses:
+    - course: 机械电子工程专业 学士在读
+      institution: 北京理工大学机电学院
+      year: 2021-（2025）
 
 
+# Social/Academic Networking
+# For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
+#   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
+#   form "mailto:your-email@example.com" or "#contact" for contact widget.
+body_zh: |-
+
+  严皓天（运动版），北京理工大学机械电子工程专业本科生，保研至王化平教授课题组，目前研究方向包括软体微纳磁控机器人设计、多模态微机器人设计和控制等。具备较强的综合运动能力，热爱篮球、羽毛球、游泳、乒乓球等一系列体育运动。
 ---
 
 严皓天（运动版），北京理工大学机械电子工程专业本科生，保研至王化平教授课题组，目前研究方向包括软体微纳磁控机器人设计、多模态微机器人设计和控制等。具备较强的综合运动能力，热爱篮球、羽毛球、游泳、乒乓球等一系列体育运动。
-
-
-
-
- 
-

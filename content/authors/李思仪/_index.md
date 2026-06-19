@@ -24,7 +24,7 @@ organizations:
     url: ''
 
 # Short bio (displayed in user profile at end of posts)
-bio: 
+bio:
 
 interests:
   - 磁控连续体机器人控制
@@ -84,8 +84,39 @@ weight: 100
 
 user_groups:
   - PhD Students
+title_zh: 李思仪 Siyi Li
 
+# Full name (for SEO)
+role_zh: 机械工程专业博士研究生 PhD Student of Mechanical Engineering
 
+# Organizations/Affiliations
+bio_zh:
+interests_zh:
+  - 磁控连续体机器人控制
+  - 机械臂控制
+education_zh:
+  courses:
+    - course: 机械工程专业 在读博士
+      institution: 北京理工大学机电学院
+      year: 2024-
+    - course: 仪器仪表工程专业 硕士
+      institution: 北京科技大学工程技术研究院
+      year: 2021-2024
+    - course: 人工智能专业 学士
+      institution: 北京科技大学自动化学院
+      year: 2017-2021
+
+# Social/Academic Networking
+# For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
+#   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
+#   form "mailto:your-email@example.com" or "#contact" for contact widget.
+body_zh: |-
+
+  李思仪，北京理工大学机械工程专业博士研究生。主要从事的研究方向包括连续体机器人控制、机械臂控制等。
+
+  【代表性成果】
+
+  1. LI S, PENG G, XU D, et al. A multifeature fusion model for surface roughness measurement of cold-rolled strip steel based on laser speckle[J]. Measurement, 2024, 227: 114319.
 ---
 
 李思仪，北京理工大学机械工程专业博士研究生。主要从事的研究方向包括连续体机器人控制、机械臂控制等。
@@ -93,6 +124,3 @@ user_groups:
 【代表性成果】
 
 1. LI S, PENG G, XU D, et al. A multifeature fusion model for surface roughness measurement of cold-rolled strip steel based on laser speckle[J]. Measurement, 2024, 227: 114319.
-
- 
-

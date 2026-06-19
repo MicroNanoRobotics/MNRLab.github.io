@@ -26,21 +26,19 @@ publication_types: ["patent"]
 # Publication name and optional abbreviated publication name.
 publication: ""
 publication_short: ""
-
-abstract: 
+abstract:
 
 # Summary. An optional shortened abstract.
 summary:
-
 tags:
 - Patent
 featured: false
 
 links:
-- name: 
-  url: 
-url_pdf: 
-url_code: 
+- name:
+  url:
+url_pdf:
+url_code:
 url_dataset: '#'
 url_poster: '#'
 url_project: ''
@@ -49,7 +47,7 @@ url_source: '#'
 url_video: '#'
 
 # Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder. 
+# To use, add an image named `featured.jpg/png` to your page's folder.
 image:
   caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/s9CC2SKySJM)'
   focal_point: ""

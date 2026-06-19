@@ -2,7 +2,7 @@
 cms_language: zh
 translationKey: author-王化平
 # Display name
-title: 王化平 Huaping Wang 
+title: 王化平 Huaping Wang
 
 # Full Name (for SEO)
 first_name: Huaping
@@ -25,12 +25,10 @@ organizations:
 
 # Short bio (displayed in user profile at end of posts)
 bio: My research interests include Robotics and micro and nano biotechnology
-
 interests:
   - 多尺度机器人设计与集成
   - 微纳生物目标交互
   - 多机器人协同微操作
-
 education:
   courses:
     - course: 教授、博士生导师
@@ -50,7 +48,7 @@ education:
       year: 2010-2015
     - course: 微机电系统专业 访问学者
       institution: 日本名古屋大学微纳系统工程系
-      year: 2012-2014    
+      year: 2012-2014
     - course: 机电工程专业 交换生
       institution: 香港理工大学电子与信息工程系
       year: 2009.01-2009.07

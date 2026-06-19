@@ -37,6 +37,14 @@ image:
   focal_point: Smart
   preview_only: false
 projects: []
+title_zh: "Demo: CMS patent entry"
+summary_zh: "Demo patent entry under Publications."
+abstract_zh: "This is a demo patent entry under Publications. Replace or remove it after real patent data is added."
+publication_zh: "Patent"
+publication_short_zh: "Patent"
+body_zh: |-
+
+  This demo item confirms that patent records can be managed under Publications and edited through Decap CMS.
 ---
 
 This demo item confirms that patent records can be managed under Publications and edited through Decap CMS.

@@ -1,4 +1,5 @@
 ---
+cms_language: zh
 title: Tour
 date: 2024-10-24
 type: landing

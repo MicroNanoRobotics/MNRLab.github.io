@@ -17,6 +17,13 @@ images:
 summary: Snapshots of Togetherness - Our Team Story.
 aliases:
   - /gallery/team-photo-gallery/
+title_zh: "2024"
+summary_zh: 团队活动与实验室合影。
+event_zh: 团队相册
+location_zh: 微纳机器人实验室
+body_zh: |-
+
+  团队活动与实验室合影。
 ---
 
 Snapshots of Togetherness - Our Team Story.

@@ -24,7 +24,7 @@ organizations:
     url: ''
 
 # Short bio (displayed in user profile at end of posts)
-bio: 
+bio:
 
 interests:
   - 模块化折纸微机器人
@@ -85,17 +85,40 @@ weight: 100
 
 user_groups:
   - PhD Students
+title_zh: 聂汝豪 Ruhao Nie
+
+# Full name (for SEO)
+role_zh: 机械工程专业博士研究生 PhD Student of Mechanical Engineering
+
+# Organizations/Affiliations
+bio_zh:
+interests_zh:
+  - 模块化折纸微机器人
+  - 磁微机器人
+education_zh:
+  courses:
+    - course: 机械工程专业 在读博士
+      institution: 北京理工大学机电学院
+      year: 2025-
+    - course: 机器人工程专业 硕士研究生
+      institution: 北京理工大学机电学院
+      year: 2023-2025
+    - course: 机器人工程专业 学士
+      institution: 北京科技大学机械工程学院
+      year: 2019-2023
 
 
+# Social/Academic Networking
+# For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
+#   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
+#   form "mailto:your-email@example.com" or "#contact" for contact widget.
+body_zh: |-
+
+  聂汝豪，北京理工大学机械工程专业博士研究生。主要从事的研究方向包括微型机器人、软体机器人、折纸机器人等。
+
+   Ruhao Nie is a PhD Student of Mechanical Engineering at Beijing Institute of Technology. His research interests include miniature robot, soft robotics, origami robotics, and more.
 ---
 
 聂汝豪，北京理工大学机械工程专业博士研究生。主要从事的研究方向包括微型机器人、软体机器人、折纸机器人等。
 
  Ruhao Nie is a PhD Student of Mechanical Engineering at Beijing Institute of Technology. His research interests include miniature robot, soft robotics, origami robotics, and more.
-
-
-
-
-
- 
-
