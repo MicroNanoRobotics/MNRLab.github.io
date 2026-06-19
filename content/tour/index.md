@@ -67,10 +67,6 @@ sections:
         {{% cta cta_link="../people/" cta_text="Meet the team ->" %}}
     design:
       columns: "1"
-  - content:
-      image:
-        filename: 科研.png
-    block: slider
 sections_zh:
   - block: hero
     content:
@@ -133,8 +129,4 @@ sections_zh:
         {{% cta cta_link="../people/" cta_text="查看团队成员 ->" %}}
     design:
       columns: "1"
-  - content:
-      image:
-        filename: 科研.png
-    block: slider
 ---
