@@ -49,6 +49,10 @@ sections:
           - 20px
           - "0"
       css_class: fullscreen
+  - block: slider
+    content:
+      image:
+        filename: 科研.png
   - block: collection
     content:
       title: Latest Articles
@@ -67,10 +71,6 @@ sections:
         {{% cta cta_link="../people/" cta_text="Meet the team ->" %}}
     design:
       columns: "1"
-  - block: slider
-    content:
-      image:
-        filename: 科研.png
 sections_zh:
   - block: hero
     content:
@@ -119,6 +119,10 @@ sections_zh:
           - 20px
           - "0"
       css_class: fullscreen
+  - block: slider
+    content:
+      image:
+        filename: 科研.png
   - block: collection
     content:
       title: 最新论文
@@ -137,8 +141,4 @@ sections_zh:
         {{% cta cta_link="../people/" cta_text="查看团队成员 ->" %}}
     design:
       columns: "1"
-  - block: slider
-    content:
-      image:
-        filename: 科研.png
 ---
