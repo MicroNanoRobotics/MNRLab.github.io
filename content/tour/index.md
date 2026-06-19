@@ -104,6 +104,8 @@ sections_zh:
         <div align="center">
           <img src="cover3.jpg" alt="" width="100%" height="auto">
         </div>
+      image:
+        filename: 科研.png
     design:
       columns: "1"
       spacing:
