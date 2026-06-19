@@ -24,6 +24,7 @@ main:
     weight: 50
   - name: Publications
     identifier: publications
+    url: publication
     weight: 60
   - name: Publications
     url: publication

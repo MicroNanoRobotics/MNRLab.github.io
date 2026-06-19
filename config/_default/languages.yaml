@@ -36,6 +36,7 @@ zh:
         weight: 50
       - name: 论文成果
         identifier: publications
+        url: publication
         weight: 60
       - name: 全部成果
         url: publication
