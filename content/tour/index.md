@@ -38,12 +38,8 @@ sections:
       subtitle: Selected research highlights
       text: ""
       image:
-        filename: 科研.png
-      slides:
-        - background:
-            image:
-              filename: 科研.png
-          title: "1"
+        filename: ""
+      slides: []
     design:
       columns: "1"
       spacing:
@@ -71,6 +67,10 @@ sections:
         {{% cta cta_link="../people/" cta_text="Meet the team ->" %}}
     design:
       columns: "1"
+  - block: slider
+    content:
+      image:
+        filename: 科研.png
 sections_zh:
   - block: hero
     content:
@@ -137,4 +137,8 @@ sections_zh:
         {{% cta cta_link="../people/" cta_text="查看团队成员 ->" %}}
     design:
       columns: "1"
+  - block: slider
+    content:
+      image:
+        filename: 科研.png
 ---
