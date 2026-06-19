@@ -3,94 +3,52 @@ cms_language: en
 cms_collection: journal_en
 translationKey: publication-JA-9
 title: "Spatial Constraint-Based Navigation and Emergency Replanning Adaptive Control for Magnetic Helical Microrobots in Dynamic Environments"
+title_zh: "Spatial Constraint-Based Navigation and Emergency Replanning Adaptive Control for Magnetic Helical Microrobots in Dynamic Environments"
 authors:
-- Shihao Zhong
-- Huaping Wang
-author_notes:
-- "The first author"
-- "Corresponding author"
-date: "2023-12-02T00:00:00Z"
-doi: "10.1109/TASE.2023.3339637"
-
-# Schedule page publish date (NOT publication's date).
-publishDate: "2023-12-02T00:00:00Z"
-
-# Publication type.
-# Accepts a single type but formatted as a YAML list (for Hugo requirements).
-# Enter a publication type from the CSL standard.
-publication_types: ["article-journal"]
-
-# Publication name and optional abbreviated publication name.
+- "Shihao Zhong"
+- "Yaozhen Hou"
+- "Qing Shi"
+- "Yang Li"
+- "Hen-Wei Huang"
+- "Qiang Huang"
+- "Toshio Fukuda"
+- "Huaping Wang"
+date: "2023-01-01T00:00:00Z"
+publishDate: "2023-01-01T00:00:00Z"
+publication_types:
+- article-journal
 publication: "IEEE Transactions on Automation Science and Engineering"
+publication_zh: "IEEE Transactions on Automation Science and Engineering"
 publication_short: ""
-
-abstract:
-
-# Summary. An optional shortened abstract.
-summary: xxxxxx
-
+publication_short_zh: ""
+doi: "10.1109/TASE.2023.3339637"
+abstract: ""
+abstract_zh: ""
+summary: "IEEE Transactions on Automation Science and Engineering, 2023."
+summary_zh: "IEEE Transactions on Automation Science and Engineering, 2023."
 tags:
 - Article
 featured: false
-
-# links:
-# - name: ""
-#   url: ""
-url_pdf: ''
-url_code: ''
-url_dataset: ''
-url_poster: ''
-url_project: ''
-url_slides: ''
-url_source: ''
-url_video: ''
-
-# Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder.
+url_pdf: ""
+url_code: ""
+url_dataset: ""
+url_poster: ""
+url_project: ""
+url_slides: ""
+url_source: ""
+url_video: ""
 image:
-  caption: 'Image credit: [**Unsplash**](https://spj.science.org/doi/10.34133/research.0414#F1)'
+  caption: ""
   focal_point: ""
   preview_only: false
-
-# Associated Projects (optional).
-#   Associate this publication with one or more of your projects.
-#   Simply enter your project's folder or file name without extension.
-#   E.g. `internal-project` references `content/project/internal-project/index.md`.
-#   Otherwise, set `projects: []`.
 projects: []
-
-# Slides (optional).
-#   Associate this publication with Markdown slides.
-#   Simply enter your slide deck's filename without extension.
-#   E.g. `slides: "example"` references `content/slides/example/index.md`.
-#   Otherwise, set `slides: ""`.
-slides: example
-title_zh: "Spatial Constraint-Based Navigation and Emergency Replanning Adaptive Control for Magnetic Helical Microrobots in Dynamic Environments"
-summary_zh: xxxxxx
-abstract_zh:
-
-# Summary. An optional shortened abstract.
-publication_zh: "IEEE Transactions on Automation Science and Engineering"
-publication_short_zh: ""
+slides: ""
 body_zh: |-
+  ## Source record
 
-  <!-- {{% callout note %}}
-  Click the *Cite* button above to demo the feature to enable visitors to import publication metadata into their reference management software.
-  {{% /callout %}}
-
-  {{% callout note %}}
-  Create your slides in Markdown - click the *Slides* button to check out the example.
-  {{% /callout %}}
-
-  Add the publication's **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/). -->
+  Zhong Shihao, Hou Yaozhen, Shi Qing, Li Yang, Huang Hen-Wei, Huang Qiang, Fukuda Toshio, Wang Huaping* "Spatial Constraint-Based Navigation and Emergency Replanning Adaptive Control for Magnetic Helical Microrobots in Dynamic Environments", IEEE Transactions on Automation Science and Engineering, vol. 21, no. 4, pp. 7180-7189, DOI:10.1109/TASE.2023.3339637, 2023.(中科院计算机科学2区，JCR 1区) [JIF:5.9] [Google学术引用:12] [SCI他引:10] （收录号：WOS:001167026900001）
 ---
 
-<!-- {{% callout note %}}
-Click the *Cite* button above to demo the feature to enable visitors to import publication metadata into their reference management software.
-{{% /callout %}}
+## Source record
 
-{{% callout note %}}
-Create your slides in Markdown - click the *Slides* button to check out the example.
-{{% /callout %}}
-
-Add the publication's **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/). -->
+Zhong Shihao, Hou Yaozhen, Shi Qing, Li Yang, Huang Hen-Wei, Huang Qiang, Fukuda Toshio, Wang Huaping* "Spatial Constraint-Based Navigation and Emergency Replanning Adaptive Control for Magnetic Helical Microrobots in Dynamic Environments", IEEE Transactions on Automation Science and Engineering, vol. 21, no. 4, pp. 7180-7189, DOI:10.1109/TASE.2023.3339637, 2023.(中科院计算机科学2区，JCR 1区) [JIF:5.9] [Google学术引用:12] [SCI他引:10] （收录号：WOS:001167026900001）

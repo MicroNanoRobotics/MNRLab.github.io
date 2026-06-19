@@ -3,92 +3,51 @@ cms_language: en
 cms_collection: journal_en
 translationKey: publication-JA-11
 title: "Reconfigurable Formation Control for Coordinated Micromanipulation of Cross-Scale Targets in Railed Multi-Probe Robot"
+title_zh: "Reconfigurable Formation Control for Coordinated Micromanipulation of Cross-Scale Targets in Railed Multi-Probe Robot"
 authors:
-- Huaping Wang
-author_notes:
-- "The first author&Corresponding author"
-date: "2023-08-06T00:00:00Z"
-doi: "10.1109/TMECH.2023.3304487"
-
-# Schedule page publish date (NOT publication's date).
-publishDate: "2023-08-06T00:00:00Z"
-
-# Publication type.
-# Accepts a single type but formatted as a YAML list (for Hugo requirements).
-# Enter a publication type from the CSL standard.
-publication_types: ["article-journal"]
-
-# Publication name and optional abbreviated publication name.
-publication: " IEEE/ASME Transactions on Mechatronics"
+- "Huaping Wang"
+- "Jiancong Chen"
+- "Han Tao"
+- "Haojun Hu"
+- "Qing Shi"
+- "Qiang Huang"
+- "Toshio Fukuda"
+date: "2024-01-01T00:00:00Z"
+publishDate: "2024-01-01T00:00:00Z"
+publication_types:
+- article-journal
+publication: "IEEE/ASME Transactions on Mechatronics"
+publication_zh: "IEEE/ASME Transactions on Mechatronics"
 publication_short: ""
-
-abstract:
-
-# Summary. An optional shortened abstract.
-summary: xxxxxx
-
+publication_short_zh: ""
+doi: "10.1109/TMECH.2023.3304487"
+abstract: ""
+abstract_zh: ""
+summary: "IEEE/ASME Transactions on Mechatronics, 2024."
+summary_zh: "IEEE/ASME Transactions on Mechatronics, 2024."
 tags:
 - Article
 featured: false
-
-# links:
-# - name: ""
-#   url: ""
-url_pdf: ''
-url_code: ''
-url_dataset: ''
-url_poster: ''
-url_project: ''
-url_slides: ''
-url_source: ''
-url_video: ''
-
-# Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder.
+url_pdf: ""
+url_code: ""
+url_dataset: ""
+url_poster: ""
+url_project: ""
+url_slides: ""
+url_source: ""
+url_video: ""
 image:
-  caption: 'Image credit: [**Unsplash**](https://spj.science.org/doi/10.34133/research.0414#F1)'
+  caption: ""
   focal_point: ""
   preview_only: false
-
-# Associated Projects (optional).
-#   Associate this publication with one or more of your projects.
-#   Simply enter your project's folder or file name without extension.
-#   E.g. `internal-project` references `content/project/internal-project/index.md`.
-#   Otherwise, set `projects: []`.
 projects: []
-
-# Slides (optional).
-#   Associate this publication with Markdown slides.
-#   Simply enter your slide deck's filename without extension.
-#   E.g. `slides: "example"` references `content/slides/example/index.md`.
-#   Otherwise, set `slides: ""`.
-slides: example
-title_zh: "Reconfigurable Formation Control for Coordinated Micromanipulation of Cross-Scale Targets in Railed Multi-Probe Robot"
-summary_zh: xxxxxx
-abstract_zh:
-
-# Summary. An optional shortened abstract.
-publication_zh: " IEEE/ASME Transactions on Mechatronics"
-publication_short_zh: ""
+slides: ""
 body_zh: |-
+  ## Source record
 
-  <!-- {{% callout note %}}
-  Click the *Cite* button above to demo the feature to enable visitors to import publication metadata into their reference management software.
-  {{% /callout %}}
-
-  {{% callout note %}}
-  Create your slides in Markdown - click the *Slides* button to check out the example.
-  {{% /callout %}}
-
-  Add the publication's **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/). -->
+  Wang Huaping*, Chen Jiancong, Tao Han, Hu Haojun, Shi Qing, Huang Qiang, Fukuda Toshio, "Reconfigurable Formation Control for Coordinated Micromanipulation of Cross-Scale Targets in Railed Multi-Probe Robot", IEEE/ASME Transactions on Mechatronics, vol. 29, no. 2, pp. 1319-1330, April, 2024. (DOI: 10.1109/TMECH.2023.3304487) (中科院工程技术1区，JCR 1区) [JIF:6.1] [Google学术引用:0] [SCI他引:暂无] （收录号：WOS:001060603100001）
 ---
 
-<!-- {{% callout note %}}
-Click the *Cite* button above to demo the feature to enable visitors to import publication metadata into their reference management software.
-{{% /callout %}}
+## Source record
 
-{{% callout note %}}
-Create your slides in Markdown - click the *Slides* button to check out the example.
-{{% /callout %}}
-
-Add the publication's **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/). -->
+Wang Huaping*, Chen Jiancong, Tao Han, Hu Haojun, Shi Qing, Huang Qiang, Fukuda Toshio, "Reconfigurable Formation Control for Coordinated Micromanipulation of Cross-Scale Targets in Railed Multi-Probe Robot", IEEE/ASME Transactions on Mechatronics, vol. 29, no. 2, pp. 1319-1330, April, 2024. (DOI: 10.1109/TMECH.2023.3304487) (中科院工程技术1区，JCR 1区) [JIF:6.1] [Google学术引用:0] [SCI他引:暂无] （收录号：WOS:001060603100001）
