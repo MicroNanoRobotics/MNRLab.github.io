@@ -1,0 +1,19 @@
+{{/* Resolve featured images from page bundles, legacy CMS upload paths, or assets/media. */}}
+{{ $page := . }}
+{{ $resource := ($page.Resources.ByType "image").GetMatch "*featured*" }}
+
+{{ if eq $resource nil }}
+  {{ with $page.Params.image.filename }}
+    {{ $resource = partial "mnr_page_resource.html" (dict "page" $page "src" .) }}
+    {{ if eq $resource nil }}
+      {{ $clean := strings.TrimPrefix "/" . }}
+      {{ $base := path.Base $clean }}
+      {{ $resource = resources.GetMatch (path.Join "media" $clean) }}
+      {{ if eq $resource nil }}
+        {{ $resource = resources.GetMatch (path.Join "media" $base) }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ return $resource }}

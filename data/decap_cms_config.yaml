@@ -1855,8 +1855,8 @@ collections:
     value: en
   editor:
     preview: false
-  media_folder: static/uploads/gallery
-  public_folder: /uploads/gallery
+  media_folder: ''
+  public_folder: ''
   fields:
   - label: CMS Language
     name: cms_language

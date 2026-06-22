@@ -1,0 +1,32 @@
+{{ $page := .page }}
+{{ $src := "" }}
+{{ with .src }}
+  {{ $src = printf "%v" . }}
+{{ end }}
+{{ $clean := strings.TrimPrefix "/" $src }}
+{{ $base := path.Base $clean }}
+{{ $url := "" }}
+
+{{ if $src }}
+  {{ $resource := $page.Resources.GetMatch $src }}
+  {{ if not $resource }}
+    {{ $resource = $page.Resources.GetMatch $clean }}
+  {{ end }}
+  {{ if not $resource }}
+    {{ $resource = $page.Resources.GetMatch (printf "static/%s" $clean) }}
+  {{ end }}
+  {{ if not $resource }}
+    {{ $resource = $page.Resources.GetMatch $base }}
+  {{ end }}
+  {{ if not $resource }}
+    {{ $resource = $page.Resources.GetMatch (printf "**/%s" $base) }}
+  {{ end }}
+
+  {{ if $resource }}
+    {{ $url = $resource.RelPermalink }}
+  {{ else }}
+    {{ $url = $clean | relURL }}
+  {{ end }}
+{{ end }}
+
+{{ return $url }}

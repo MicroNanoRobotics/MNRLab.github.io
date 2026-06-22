@@ -49,6 +49,12 @@
       {{ $avatar := ($person.Resources.ByType "image").GetMatch "*avatar*" }}
       {{ if and (not $avatar) $person.Params.avatar }}
         {{ $avatar = ($person.Resources.ByType "image").GetMatch $person.Params.avatar }}
+        {{ if not $avatar }}
+          {{ $avatar = ($person.Resources.ByType "image").GetMatch (path.Base $person.Params.avatar) }}
+        {{ end }}
+        {{ if not $avatar }}
+          {{ $avatar = ($person.Resources.ByType "image").GetMatch (printf "**/%s" (path.Base $person.Params.avatar)) }}
+        {{ end }}
       {{ end }}
       {{ $link := "" }}
       {{ with site.GetPage (printf "/authors/%s" (path.Base $person.File.Dir)) }}

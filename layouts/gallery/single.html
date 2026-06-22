@@ -14,9 +14,9 @@
     <section class="mnr-gallery-slideshow" aria-label="Gallery slideshow" data-gallery-slideshow>
       <div class="mnr-gallery-slides">
         {{ range $index, $image := . }}
-          {{ $imageURL := strings.TrimPrefix "/" $image }}
+          {{ $imageURL := partial "mnr_gallery_image_url.html" (dict "page" $ "src" $image) }}
           <figure class="mnr-gallery-slide{{ if eq $index 0 }} is-active{{ end }}">
-            <img src="{{ $imageURL | relURL }}" alt="{{ $.Title }}" loading="{{ if eq $index 0 }}eager{{ else }}lazy{{ end }}">
+            <img src="{{ $imageURL }}" alt="{{ $.Title }}" loading="{{ if eq $index 0 }}eager{{ else }}lazy{{ end }}">
           </figure>
         {{ end }}
       </div>
@@ -30,10 +30,10 @@
   {{ with .Params.images }}
     <div class="mnr-gallery-photo-grid" data-gallery-grid>
       {{ range $index, $image := . }}
-        {{ $imageURL := strings.TrimPrefix "/" . }}
+        {{ $imageURL := partial "mnr_gallery_image_url.html" (dict "page" $ "src" $image) }}
         <figure>
-          <button class="mnr-gallery-thumb" type="button" data-gallery-index="{{ $index }}" data-gallery-src="{{ $imageURL | relURL }}" aria-label="Open photo {{ add $index 1 }}">
-            <img src="{{ $imageURL | relURL }}" alt="{{ $.Title }}" loading="lazy">
+          <button class="mnr-gallery-thumb" type="button" data-gallery-index="{{ $index }}" data-gallery-src="{{ $imageURL }}" aria-label="Open photo {{ add $index 1 }}">
+            <img src="{{ $imageURL }}" alt="{{ $.Title }}" loading="lazy">
           </button>
         </figure>
       {{ end }}
@@ -41,11 +41,11 @@
   {{ end }}
 
   {{ with .Params.images }}
-    {{ $firstImageURL := strings.TrimPrefix "/" (index . 0) }}
+    {{ $firstImageURL := partial "mnr_gallery_image_url.html" (dict "page" $ "src" (index . 0)) }}
     <div class="mnr-gallery-lightbox" data-gallery-lightbox aria-hidden="true">
       <button class="mnr-gallery-lightbox-close" type="button" aria-label="Close photo" data-gallery-close>&times;</button>
       <button class="mnr-gallery-lightbox-nav mnr-gallery-lightbox-prev" type="button" aria-label="Previous photo" data-lightbox-prev>&lsaquo;</button>
-      <img src="{{ $firstImageURL | relURL }}" alt="{{ $.Title }}" data-gallery-lightbox-image>
+      <img src="{{ $firstImageURL }}" alt="{{ $.Title }}" data-gallery-lightbox-image>
       <button class="mnr-gallery-lightbox-nav mnr-gallery-lightbox-next" type="button" aria-label="Next photo" data-lightbox-next>&rsaquo;</button>
     </div>
 

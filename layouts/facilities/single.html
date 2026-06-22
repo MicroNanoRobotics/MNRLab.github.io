@@ -37,9 +37,20 @@
   <div class="row">
     {{ range . }}
       {{ $image_path := . }}
+      {{ $clean := strings.TrimPrefix "/" $image_path }}
+      {{ $base := path.Base $clean }}
       {{ $resource := $.Resources.GetMatch $image_path }}
       {{ if not $resource }}
-        {{ $resource = $.Resources.GetMatch (path.Base $image_path) }}
+        {{ $resource = $.Resources.GetMatch $clean }}
+      {{ end }}
+      {{ if not $resource }}
+        {{ $resource = $.Resources.GetMatch (printf "static/%s" $clean) }}
+      {{ end }}
+      {{ if not $resource }}
+        {{ $resource = $.Resources.GetMatch $base }}
+      {{ end }}
+      {{ if not $resource }}
+        {{ $resource = $.Resources.GetMatch (printf "**/%s" $base) }}
       {{ end }}
       {{ $full := $image_path | relURL }}
       {{ $thumb := $full }}

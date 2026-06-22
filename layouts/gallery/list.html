@@ -11,12 +11,12 @@
       {{ with .Params.images }}
         {{ $cover = index . 0 }}
       {{ end }}
-      {{ $coverURL := strings.TrimPrefix "/" $cover }}
+      {{ $coverURL := partial "mnr_gallery_image_url.html" (dict "page" . "src" $cover) }}
       <article class="mnr-gallery-card mnr-gallery-year-card">
         <a href="{{ .RelPermalink }}">
           <div class="mnr-gallery-cover">
             {{ if $cover }}
-              <img src="{{ $coverURL | relURL }}" alt="{{ .Title }}" loading="lazy">
+              <img src="{{ $coverURL }}" alt="{{ .Title }}" loading="lazy">
             {{ else }}
               <div class="mnr-gallery-placeholder"></div>
             {{ end }}

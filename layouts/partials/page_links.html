@@ -4,10 +4,7 @@
 
 {{/* ***** TODO: Deprecate `url_preprint` in favour of `url_pdf` given there's now a dedicated "Preprint" pub. type. ***** */}}
 {{ with $page.Params.url_preprint }}
-  {{ $resource := $page.Resources.GetMatch . }}
-  {{ if not $resource }}
-    {{ $resource = $page.Resources.GetMatch (path.Base .) }}
-  {{ end }}
+  {{ $resource := partial "mnr_page_resource.html" (dict "page" $page "src" .) }}
   {{ if $resource }}
     {{ $link = $resource.RelPermalink }}
   {{ else }}
@@ -23,10 +20,7 @@
   {{ $pdf = .RelPermalink }}
 {{ else }}
   {{ if $page.Params.url_pdf }}
-    {{ $resource := $page.Resources.GetMatch $page.Params.url_pdf }}
-    {{ if not $resource }}
-      {{ $resource = $page.Resources.GetMatch (path.Base $page.Params.url_pdf) }}
-    {{ end }}
+    {{ $resource := partial "mnr_page_resource.html" (dict "page" $page "src" $page.Params.url_pdf) }}
     {{ if $resource }}
       {{ $pdf = $resource.RelPermalink }}
     {{ else }}
@@ -41,10 +35,7 @@
 </a>
 {{ end }}
 {{ with $page.Params.url_supplement }}
-  {{ $resource := $page.Resources.GetMatch . }}
-  {{ if not $resource }}
-    {{ $resource = $page.Resources.GetMatch (path.Base .) }}
-  {{ end }}
+  {{ $resource := partial "mnr_page_resource.html" (dict "page" $page "src" .) }}
   {{ if $resource }}
     {{ $link = $resource.RelPermalink }}
   {{ else }}
@@ -55,10 +46,7 @@
 </a>
 {{ end }}
 {{ with $page.Params.certificate_pdf }}
-  {{ $resource := $page.Resources.GetMatch . }}
-  {{ if not $resource }}
-    {{ $resource = $page.Resources.GetMatch (path.Base .) }}
-  {{ end }}
+  {{ $resource := partial "mnr_page_resource.html" (dict "page" $page "src" .) }}
   {{ if $resource }}
     {{ $link = $resource.RelPermalink }}
   {{ else }}
@@ -76,10 +64,7 @@
 </a>
 {{ end }}
 {{ with $page.Params.url_code }}
-  {{ $resource := $page.Resources.GetMatch . }}
-  {{ if not $resource }}
-    {{ $resource = $page.Resources.GetMatch (path.Base .) }}
-  {{ end }}
+  {{ $resource := partial "mnr_page_resource.html" (dict "page" $page "src" .) }}
   {{ if $resource }}
     {{ $link = $resource.RelPermalink }}
   {{ else }}
@@ -90,10 +75,7 @@
 </a>
 {{ end }}
 {{ with $page.Params.url_dataset }}
-  {{ $resource := $page.Resources.GetMatch . }}
-  {{ if not $resource }}
-    {{ $resource = $page.Resources.GetMatch (path.Base .) }}
-  {{ end }}
+  {{ $resource := partial "mnr_page_resource.html" (dict "page" $page "src" .) }}
   {{ if $resource }}
     {{ $link = $resource.RelPermalink }}
   {{ else }}
@@ -121,10 +103,7 @@
 {{ end }}
 {{ end }}
 {{ with $page.Params.url_poster }}
-  {{ $resource := $page.Resources.GetMatch . }}
-  {{ if not $resource }}
-    {{ $resource = $page.Resources.GetMatch (path.Base .) }}
-  {{ end }}
+  {{ $resource := partial "mnr_page_resource.html" (dict "page" $page "src" .) }}
   {{ if $resource }}
     {{ $link = $resource.RelPermalink }}
   {{ else }}
@@ -142,10 +121,7 @@
   {{ end }}
 {{ else }}
 {{ with $page.Params.url_slides }}
-  {{ $resource := $page.Resources.GetMatch . }}
-  {{ if not $resource }}
-    {{ $resource = $page.Resources.GetMatch (path.Base .) }}
-  {{ end }}
+  {{ $resource := partial "mnr_page_resource.html" (dict "page" $page "src" .) }}
   {{ if $resource }}
     {{ $link = $resource.RelPermalink }}
   {{ else }}
@@ -157,10 +133,7 @@
 {{ end }}
 {{ end }}
 {{ with $page.Params.url_video }}
-  {{ $resource := $page.Resources.GetMatch . }}
-  {{ if not $resource }}
-    {{ $resource = $page.Resources.GetMatch (path.Base .) }}
-  {{ end }}
+  {{ $resource := partial "mnr_page_resource.html" (dict "page" $page "src" .) }}
   {{ if $resource }}
     {{ $link = $resource.RelPermalink }}
   {{ else }}
@@ -171,10 +144,7 @@
 </a>
 {{ end }}
 {{ with $page.Params.url_source }}
-  {{ $resource := $page.Resources.GetMatch . }}
-  {{ if not $resource }}
-    {{ $resource = $page.Resources.GetMatch (path.Base .) }}
-  {{ end }}
+  {{ $resource := partial "mnr_page_resource.html" (dict "page" $page "src" .) }}
   {{ if $resource }}
     {{ $link = $resource.RelPermalink }}
   {{ else }}
@@ -199,7 +169,7 @@
   {{ $scheme := (urls.Parse $link).Scheme }}
   {{ $target := "" }}
   {{ if not $scheme }}
-    {{ $resource := $page.Resources.GetMatch $link }}
+    {{ $resource := partial "mnr_page_resource.html" (dict "page" $page "src" $link) }}
     {{ if $resource }}
       {{ $link = $resource.RelPermalink }}
     {{ else }}

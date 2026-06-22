@@ -13,6 +13,12 @@
   {{ $avatar := ($author_page.Resources.ByType "image").GetMatch "*avatar*" }}
   {{ if and (not $avatar) $author_page.Params.avatar }}
     {{ $avatar = ($author_page.Resources.ByType "image").GetMatch $author_page.Params.avatar }}
+    {{ if not $avatar }}
+      {{ $avatar = ($author_page.Resources.ByType "image").GetMatch (path.Base $author_page.Params.avatar) }}
+    {{ end }}
+    {{ if not $avatar }}
+      {{ $avatar = ($author_page.Resources.ByType "image").GetMatch (printf "**/%s" (path.Base $author_page.Params.avatar)) }}
+    {{ end }}
   {{ end }}
   {{ $avatar_shape := site.Params.features.avatar.shape | default "circle" }}
   <div class="media author-card content-widget-hr">
