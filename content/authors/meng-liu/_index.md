@@ -1,13 +1,13 @@
 ---
 cms_language: en
 translationKey: author-刘猛
-title: "Meng Liu "
+title: Meng Liu
 title_zh: 刘猛
-name: "Meng Liu "
+name: Meng Liu
 name_zh: 刘猛
 first_name: Meng
-last_name: "Liu "
-role: Masters Student of Mechanical Engineering
+last_name: Liu
+role: "Master's Student of Mechanical Engineering"
 role_zh: 机械工程专业硕士研究生
 user_groups:
   - Masters Students
@@ -42,7 +42,7 @@ education_zh:
     - course: 探测制导与与控制技术专业 学士
       institution: 北京理工大学机电学院
       year: 2021-2025
-avatar: 微信图片_20260622172610_241_91.jpg
+avatar: avatar.jpg
 group_order: []
 body_zh: 刘猛，北京理工大学机械工程硕士研究生，主要从事的研究方向包括微纳机器人，三维重建等。热爱足球。
 ---
