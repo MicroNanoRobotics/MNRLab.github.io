@@ -7,7 +7,7 @@ name: "Meng Liu "
 name_zh: 刘猛
 first_name: Meng
 last_name: "Liu "
-role: Master's Student of Mechanical Engineering
+role: Masters Student of Mechanical Engineering
 role_zh: 机械工程专业硕士研究生
 user_groups:
   - Masters Students
@@ -21,6 +21,7 @@ interests:
   - vla
 interests_zh:
   - 微纳机器人，三维重建，vla
+weight: 5
 superuser: false
 highlight_name: false
 organizations:
@@ -42,9 +43,7 @@ education_zh:
       institution: 北京理工大学机电学院
       year: 2021-2025
 avatar: 微信图片_20260622172610_241_91.jpg
-group_order:
-  - order: 4
-    group: Masters Students
+group_order: []
 body_zh: 刘猛，北京理工大学机械工程硕士研究生，主要从事的研究方向包括微纳机器人，三维重建等。热爱足球。
 ---
 Liu Meng, a master student of mechanical engineering at Beijing Institute of Technology, mainly studies micro-nano robots and 3D reconstruction. Love football greatly.
