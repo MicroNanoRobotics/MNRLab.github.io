@@ -19,7 +19,7 @@ interests_zh:
   - 软体微纳磁控机器人设计
   - 多模态微机器人设计和控制
 email: xxx
-weight: 100
+weight: 3
 superuser: false
 organizations:
   - name: Beijing Institute of Technology
