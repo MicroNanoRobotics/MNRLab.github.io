@@ -1,0 +1,88 @@
+{{/* Hugo Blox: Markdown */}}
+{{/* Local extension: render CMS-managed image, slides, and link fields when present. */}}
+
+{{/* Initialise */}}
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+{{ $columns := $block.design.columns | default "1" }}
+{{ $text := $block.content.text | emojify | $page.RenderString }}
+
+{{ $image_filename := "" }}
+{{ with $block.content.image }}
+  {{ with .filename }}
+    {{ $image_filename = . }}
+  {{ end }}
+{{ end }}
+
+{{ $slides := slice }}
+{{ with $block.content.slides }}
+  {{ $slides = . }}
+{{ end }}
+
+{{ $link := dict }}
+{{ with $block.content.link }}
+  {{ $link = . }}
+{{ end }}
+
+{{ $col_class := "col-12" }}
+{{ if ne $columns "1" }}
+  {{ $col_class = "col-12 col-lg-8" }}
+{{ end }}
+
+<div class="{{ $col_class }}">
+  {{ $text }}
+
+  {{ with $image_filename }}
+    {{ $filename := . | replaceRE "^/" "" | replaceRE "^assets/media/" "" | replaceRE "^media/" "" }}
+    {{ $image := resources.Get (printf "media/%s" $filename) }}
+    {{ if $image }}
+      <figure>
+        <img class="img-fluid" src="{{ $image.RelPermalink }}" alt="{{ $block.content.title | default $page.Title }}">
+      </figure>
+    {{ else }}
+      {{ warnf "Couldn't find `%s` in the `assets/media/` folder. The markdown block will render without this image." . }}
+    {{ end }}
+  {{ end }}
+
+  {{ if gt (len $slides) 0 }}
+  <div class="row mt-4">
+    {{ range $slides }}
+      {{ $slide_image_filename := "" }}
+      {{ with .background }}
+        {{ with .image }}
+          {{ with .filename }}
+            {{ $slide_image_filename = . }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+      <div class="col-12 col-md-6 mb-4">
+        {{ with $slide_image_filename }}
+          {{ $filename := . | replaceRE "^/" "" | replaceRE "^assets/media/" "" | replaceRE "^media/" "" }}
+          {{ $image := resources.Get (printf "media/%s" $filename) }}
+          {{ if $image }}
+            <img class="img-fluid rounded mb-3" src="{{ $image.RelPermalink }}" alt="{{ $.wcPage.Title }}">
+          {{ else }}
+            {{ warnf "Couldn't find `%s` in the `assets/media/` folder. The markdown slide will render without this image." . }}
+          {{ end }}
+        {{ end }}
+        {{ with .title }}<h3>{{ . | markdownify | emojify }}</h3>{{ end }}
+        {{ with .content }}<div>{{ . | emojify | $page.RenderString }}</div>{{ end }}
+      </div>
+    {{ end }}
+  </div>
+  {{ end }}
+
+  {{ with $link.url }}
+    {{ $pack := $link.icon_pack | default "fas" }}
+    {{ $pack_prefix := $pack }}
+    {{ if in (slice "fab" "fas" "far" "fal") $pack }}
+      {{ $pack_prefix = "fa" }}
+    {{ end }}
+    <p>
+      <a class="btn btn-primary" href="{{ . | relURL }}">
+        {{ with $link.icon }}<i class="{{ $pack }} {{ $pack_prefix }}-{{ . }} mr-1"></i>{{ end }}
+        {{ $link.text | default (i18n "read_more") | markdownify | emojify }}
+      </a>
+    </p>
+  {{ end }}
+</div>

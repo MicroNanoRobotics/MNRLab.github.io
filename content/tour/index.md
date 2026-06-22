@@ -36,10 +36,8 @@ sections:
     content:
       title: Journal Covers
       subtitle: Selected research highlights
-      text: ""
-      image:
-        filename: ""
-      slides: []
+      text: |
+        ![Journal covers](科研.png)
     design:
       columns: "1"
       spacing:
@@ -98,10 +96,8 @@ sections_zh:
     content:
       title: 期刊封面
       subtitle: 代表性科研成果
-      text: ""
-      image:
-        filename: ""
-      slides: []
+      text: |
+        ![期刊封面](科研.png)
     design:
       columns: "1"
       spacing:

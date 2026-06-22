@@ -24,6 +24,10 @@
   translation: DOI
 - id: btn_pdf
   translation: PDF
+- id: btn_supplement
+  translation: 补充材料
+- id: btn_certificate
+  translation: 证书
 - id: btn_code
   translation: 代码
 - id: btn_dataset

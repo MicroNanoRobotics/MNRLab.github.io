@@ -40,9 +40,7 @@ sections:
       title: 期刊封面
       subtitle: 代表性科研成果
       text: |
-        <div align="center">
-          <img src="cover3.jpg" alt="" width="100%" height="auto">
-        </div>
+        ![期刊封面](科研.png)
     design:
       columns: '1'
       spacing:

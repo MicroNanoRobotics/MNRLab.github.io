@@ -47,6 +47,9 @@
     {{ range $ordered }}
       {{ $person := .page }}
       {{ $avatar := ($person.Resources.ByType "image").GetMatch "*avatar*" }}
+      {{ if and (not $avatar) $person.Params.avatar }}
+        {{ $avatar = ($person.Resources.ByType "image").GetMatch $person.Params.avatar }}
+      {{ end }}
       {{ $link := "" }}
       {{ with site.GetPage (printf "/authors/%s" (path.Base $person.File.Dir)) }}
         {{ $link = .RelPermalink }}

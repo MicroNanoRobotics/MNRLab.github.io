@@ -1,0 +1,61 @@
+{{ define "main" }}
+
+{{ partial "page_header" . }}
+
+<div class="article-container">
+  {{ $is_zh := eq .Lang "zh" }}
+  {{ $location_label := cond $is_zh "位置" "Location" }}
+  {{ $responsible_label := cond $is_zh "负责人" "Responsible person" }}
+  {{ $gallery_label := cond $is_zh "图片集" "Gallery" }}
+
+  {{ with .Params.category }}
+  <p class="text-muted mb-1">{{ . }}</p>
+  {{ end }}
+
+  {{ with .Params.location }}
+  <p class="mb-1"><strong>{{ $location_label }}:</strong> {{ . }}</p>
+  {{ end }}
+
+  {{ with .Params.responsible_person }}
+  <p class="mb-3"><strong>{{ $responsible_label }}:</strong> {{ . }}</p>
+  {{ end }}
+
+  {{ with .Params.equipment_list }}
+  <ul>
+    {{ range . }}
+    <li>{{ . }}</li>
+    {{ end }}
+  </ul>
+  {{ end }}
+
+  <div class="article-style">
+    {{ .Content }}
+  </div>
+
+  {{ with .Params.gallery }}
+  <h2>{{ $gallery_label }}</h2>
+  <div class="row">
+    {{ range . }}
+      {{ $image_path := . }}
+      {{ $resource := $.Resources.GetMatch $image_path }}
+      {{ if not $resource }}
+        {{ $resource = $.Resources.GetMatch (path.Base $image_path) }}
+      {{ end }}
+      {{ $full := $image_path | relURL }}
+      {{ $thumb := $full }}
+      {{ if $resource }}
+        {{ $full = $resource.RelPermalink }}
+        {{ $processed := $resource.Fit "800x600" }}
+        {{ $thumb = $processed.RelPermalink }}
+      {{ end }}
+      <div class="col-12 col-md-6 mb-4">
+        <a href="{{ $full }}" target="_blank" rel="noopener">
+          <img class="img-fluid rounded" src="{{ $thumb }}" alt="{{ $.Title }}">
+        </a>
+      </div>
+    {{ end }}
+  </div>
+  {{ end }}
+</div>
+
+{{ end }}

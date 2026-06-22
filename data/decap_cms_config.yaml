@@ -12,7 +12,7 @@ public_folder: /uploads
 collections:
 - name: site_pages
   label: Pages / 页面
-  media_folder: assets/media
+  media_folder: /assets/media
   public_folder: ''
   files:
   - file: content/_index.md
@@ -640,8 +640,8 @@ collections:
     value: journal_en
   editor:
     preview: false
-  media_folder: static/uploads/publications
-  public_folder: /uploads/publications
+  media_folder: ''
+  public_folder: ''
   fields:
   - label: CMS Language
     name: cms_language
@@ -807,8 +807,8 @@ collections:
     value: book_en
   editor:
     preview: false
-  media_folder: static/uploads/publications
-  public_folder: /uploads/publications
+  media_folder: ''
+  public_folder: ''
   fields:
   - label: CMS Language
     name: cms_language
@@ -974,8 +974,8 @@ collections:
     value: conference_en
   editor:
     preview: false
-  media_folder: static/uploads/publications
-  public_folder: /uploads/publications
+  media_folder: ''
+  public_folder: ''
   fields:
   - label: CMS Language
     name: cms_language
@@ -1141,8 +1141,8 @@ collections:
     value: patent_en
   editor:
     preview: false
-  media_folder: static/uploads/publications
-  public_folder: /uploads/publications
+  media_folder: ''
+  public_folder: ''
   fields:
   - label: CMS Language
     name: cms_language
@@ -1341,8 +1341,8 @@ collections:
     value: en
   editor:
     preview: false
-  media_folder: static/uploads/news
-  public_folder: /uploads/news
+  media_folder: ''
+  public_folder: ''
   fields:
   - label: CMS Language
     name: cms_language
@@ -1435,8 +1435,8 @@ collections:
     value: en
   editor:
     preview: false
-  media_folder: static/uploads/people
-  public_folder: /uploads/people
+  media_folder: ''
+  public_folder: ''
   fields:
   - label: CMS Language
     name: cms_language
@@ -1654,8 +1654,8 @@ collections:
     value: en
   editor:
     preview: false
-  media_folder: static/uploads/research
-  public_folder: /uploads/research
+  media_folder: ''
+  public_folder: ''
   fields:
   - label: CMS Language
     name: cms_language
@@ -1741,8 +1741,8 @@ collections:
     value: en
   editor:
     preview: false
-  media_folder: static/uploads/facilities
-  public_folder: /uploads/facilities
+  media_folder: ''
+  public_folder: ''
   fields:
   - label: CMS Language
     name: cms_language
