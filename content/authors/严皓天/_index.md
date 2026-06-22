@@ -2,7 +2,7 @@
 cms_language: en
 translationKey: author-严皓天
 # Display name
-title: 严皓天 Haotian Yan
+title: Haotian Yan
 
 # Full name (for SEO)
 first_name: Haotian
@@ -16,27 +16,24 @@ authors:
 superuser: false
 
 # Role/position
-role: 机械电子工程专业本科生 Undergraduate student of Mechanical Engineering
+role: Undergraduate Student of Mechatronic Engineering
 
 # Organizations/Affiliations
 organizations:
-  - name: 北京理工大学 Beijing Institute of Technology
+  - name: Beijing Institute of Technology
     url: ''
-
 # Short bio (displayed in user profile at end of posts)
-bio:
+bio: Research interests include soft micro/nano magnetically controlled robot design and multimodal microrobot design and control.
 
 interests:
-  - 软体微纳磁控机器人设计
-  - 多模态微机器人设计和控制
+  - Soft micro/nano magnetically controlled robot design
+  - Multimodal microrobot design and control
 
 education:
   courses:
-    - course: 机械电子工程专业 学士在读
-      institution: 北京理工大学机电学院
-      year: 2021-（2025）
-
-
+    - course: BEng Candidate in Mechatronic Engineering
+      institution: School of Mechatronical Engineering, Beijing Institute of Technology
+      year: 2021-2025
 # Social/Academic Networking
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
@@ -79,13 +76,13 @@ weight: 100
 
 user_groups:
   - Masters Students
-title_zh: 严皓天 Haotian Yan
+title_zh: 严皓天
 
 # Full name (for SEO)
-role_zh: 机械电子工程专业本科生 Undergraduate student of Mechanical Engineering
+role_zh: 机械电子工程专业本科生
 
 # Organizations/Affiliations
-bio_zh:
+bio_zh: 研究方向包括软体微纳磁控机器人设计、多模态微机器人设计和控制。
 interests_zh:
   - 软体微纳磁控机器人设计
   - 多模态微机器人设计和控制
@@ -93,16 +90,14 @@ education_zh:
   courses:
     - course: 机械电子工程专业 学士在读
       institution: 北京理工大学机电学院
-      year: 2021-（2025）
-
-
+      year: 2021-2025
 # Social/Academic Networking
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
 #   form "mailto:your-email@example.com" or "#contact" for contact widget.
 body_zh: |-
 
-  严皓天（运动版），北京理工大学机械电子工程专业本科生，保研至王化平教授课题组，目前研究方向包括软体微纳磁控机器人设计、多模态微机器人设计和控制等。具备较强的综合运动能力，热爱篮球、羽毛球、游泳、乒乓球等一系列体育运动。
+  严皓天，北京理工大学机械电子工程专业本科生，保研至王化平教授课题组。目前研究方向包括软体微纳磁控机器人设计、多模态微机器人设计和控制等。具备较强的综合运动能力，热爱篮球、羽毛球、游泳、乒乓球等体育运动。
 ---
 
-严皓天（运动版），北京理工大学机械电子工程专业本科生，保研至王化平教授课题组，目前研究方向包括软体微纳磁控机器人设计、多模态微机器人设计和控制等。具备较强的综合运动能力，热爱篮球、羽毛球、游泳、乒乓球等一系列体育运动。
+Haotian Yan is an undergraduate student of Mechatronic Engineering at Beijing Institute of Technology and has been recommended for graduate study in Prof. Huaping Wang's group. His current research interests include soft micro/nano magnetically controlled robot design and multimodal microrobot design and control. He is active in sports including basketball, badminton, swimming, and table tennis.

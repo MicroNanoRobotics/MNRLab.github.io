@@ -2,7 +2,7 @@
 cms_language: en
 translationKey: author-许梓塬
 # Display name
-title: 许梓塬 Ziyuan Xu
+title: Ziyuan Xu
 
 # Full name (for SEO)
 first_name: Ziyuan
@@ -16,30 +16,27 @@ authors:
 superuser: false
 
 # Role/position
-role: 机器人工程 硕士研究生 Masters Student of Robotics Engineering
+role: "Master's Student of Robotics Engineering"
 
 # Organizations/Affiliations
 organizations:
-  - name: 北京理工大学 Beijing Institute of Technology
+  - name: Beijing Institute of Technology
     url: ''
-
 # Short bio (displayed in user profile at end of posts)
-bio:
+bio: Research interests include electromagnetic system modeling and micro/nano robot manipulation.
 
 interests:
-  - 电磁系统建模
-  - 微纳机器人操作
+  - Electromagnetic system modeling
+  - Micro/nano robot manipulation
 
 education:
   courses:
-    - course: 机器人工程专业 在读硕士
-      institution: 北京理工大学机电学院
+    - course: "Master's Candidate in Robotics Engineering"
+      institution: School of Mechatronical Engineering, Beijing Institute of Technology
       year: 2024-
-    - course: 机械电子工程专业 学士
-      institution: 北京交通大学机电学院
+    - course: BEng in Mechatronic Engineering
+      institution: School of Mechanical, Electronic and Control Engineering, Beijing Jiaotong University
       year: 2020-2024
-
-
 # Social/Academic Networking
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
@@ -82,13 +79,13 @@ weight: 100
 
 user_groups:
   - Masters Students
-title_zh: 许梓塬 Ziyuan Xu
+title_zh: 许梓塬
 
 # Full name (for SEO)
-role_zh: 机器人工程 硕士研究生 Masters Student of Robotics Engineering
+role_zh: 机器人工程专业硕士研究生
 
 # Organizations/Affiliations
-bio_zh:
+bio_zh: 研究方向包括电磁系统建模及微纳机器人操作。
 interests_zh:
   - 电磁系统建模
   - 微纳机器人操作
@@ -100,23 +97,21 @@ education_zh:
     - course: 机械电子工程专业 学士
       institution: 北京交通大学机电学院
       year: 2020-2024
-
-
 # Social/Academic Networking
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
 #   form "mailto:your-email@example.com" or "#contact" for contact widget.
 body_zh: |-
 
-  许梓塬（优质版），北京理工大学机器人工程专业硕士研究生。本科就读于北京交通大学，期间曾获国家奖学金，学习奖学金，校三好学生及优秀共青团员等荣誉。曾作为第一负责人完成国家级大创项目“智能机器人足球”，以第一作者发表的项目论文被EI收录。大四保研至北京理工大学机电学院继续攻读机器人专业，研究方向为电磁系统建模及微纳机器人操作等相关领域。
+  许梓塬，北京理工大学机器人工程专业硕士研究生。本科就读于北京交通大学，期间曾获国家奖学金、学习奖学金、校三好学生及优秀共青团员等荣誉。曾作为第一负责人完成国家级大创项目“智能机器人足球”，以第一作者发表的项目论文被EI收录。大四保研至北京理工大学机电学院继续攻读机器人专业，研究方向为电磁系统建模及微纳机器人操作等相关领域。
 
-  【代表性成果】
+  ## 代表性成果
 
-  1. Z. Xu, W. Wang, J. Wen and G. Chen, "Petri Net Modelling and Motion Analysis of the Football Robot System," 2023 China Automation Congress (CAC), Chongqing, China, 2023, pp. 3611-3616, doi: 10.1109/CAC59555.2023.10451865
+  1. Z. Xu, W. Wang, J. Wen and G. Chen, "Petri Net Modelling and Motion Analysis of the Football Robot System," 2023 China Automation Congress (CAC), Chongqing, China, 2023, pp. 3611-3616, doi: 10.1109/CAC59555.2023.10451865.
 ---
 
-许梓塬（优质版），北京理工大学机器人工程专业硕士研究生。本科就读于北京交通大学，期间曾获国家奖学金，学习奖学金，校三好学生及优秀共青团员等荣誉。曾作为第一负责人完成国家级大创项目“智能机器人足球”，以第一作者发表的项目论文被EI收录。大四保研至北京理工大学机电学院继续攻读机器人专业，研究方向为电磁系统建模及微纳机器人操作等相关领域。
+Ziyuan Xu is a master's student of Robotics Engineering at Beijing Institute of Technology. He received his bachelor's degree from Beijing Jiaotong University, where he won the National Scholarship, academic scholarships, Outstanding Student honors, and Outstanding Communist Youth League Member honors. He led a national-level undergraduate innovation project on intelligent robot soccer, and his first-author project paper was indexed by EI. He was recommended for graduate study at the School of Mechatronical Engineering, Beijing Institute of Technology, where his research focuses on electromagnetic system modeling and micro/nano robot manipulation.
 
-【代表性成果】
+## Representative Publications
 
-1. Z. Xu, W. Wang, J. Wen and G. Chen, "Petri Net Modelling and Motion Analysis of the Football Robot System," 2023 China Automation Congress (CAC), Chongqing, China, 2023, pp. 3611-3616, doi: 10.1109/CAC59555.2023.10451865
+1. Z. Xu, W. Wang, J. Wen and G. Chen, "Petri Net Modelling and Motion Analysis of the Football Robot System," 2023 China Automation Congress (CAC), Chongqing, China, 2023, pp. 3611-3616, doi: 10.1109/CAC59555.2023.10451865.

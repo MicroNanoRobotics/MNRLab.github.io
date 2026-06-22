@@ -2,7 +2,7 @@
 cms_language: en
 translationKey: author-郭斯予
 # Display name
-title: 郭斯予 Siyu Guo
+title: Siyu Guo
 
 # Full name (for SEO)
 first_name: Siyu
@@ -16,28 +16,26 @@ authors:
 superuser: false
 
 # Role/position
-role: 机械工程专业硕士研究生 Masters Student of Mechanical Engineering
+role: "Master's Student of Mechanical Engineering"
 
 # Organizations/Affiliations
 organizations:
-  - name: 北京理工大学 Beijing Institute of Technology
+  - name: Beijing Institute of Technology
     url: ''
-
 # Short bio (displayed in user profile at end of posts)
-bio:
+bio: Research interests include magnetically controlled microrobots.
 
 interests:
-  - 磁控微机器人
+  - Magnetically controlled microrobots
 
 education:
   courses:
-    - course: 机械工程专业 在读硕士
-      institution: 北京理工大学机电学院
+    - course: "Master's Candidate in Mechanical Engineering"
+      institution: School of Mechatronical Engineering, Beijing Institute of Technology
       year: 2024-
-    - course: 机械电子工程 学士
-      institution: 北京理工大学 徐特立学院
+    - course: BEng in Mechatronic Engineering
+      institution: Xu Teli School, Beijing Institute of Technology
       year: 2020-2024
-
 # Social/Academic Networking
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
@@ -80,13 +78,13 @@ weight: 100
 
 user_groups:
   - Masters Students
-title_zh: 郭斯予 Siyu Guo
+title_zh: 郭斯予
 
 # Full name (for SEO)
-role_zh: 机械工程专业硕士研究生 Masters Student of Mechanical Engineering
+role_zh: 机械工程专业硕士研究生
 
 # Organizations/Affiliations
-bio_zh:
+bio_zh: 研究方向为磁控微机器人。
 interests_zh:
   - 磁控微机器人
 education_zh:
@@ -94,17 +92,16 @@ education_zh:
     - course: 机械工程专业 在读硕士
       institution: 北京理工大学机电学院
       year: 2024-
-    - course: 机械电子工程 学士
-      institution: 北京理工大学 徐特立学院
+    - course: 机械电子工程专业 学士
+      institution: 北京理工大学徐特立学院
       year: 2020-2024
-
 # Social/Academic Networking
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
 #   form "mailto:your-email@example.com" or "#contact" for contact widget.
 body_zh: |-
 
-  郭斯予（单身优质版），北京理工大学机械工程专业硕士研究生。主要从事的研究方向为磁控微机器人。
+  郭斯予，北京理工大学机械工程专业硕士研究生。主要从事的研究方向为磁控微机器人。
 ---
 
-郭斯予（单身优质版），北京理工大学机械工程专业硕士研究生。主要从事的研究方向为磁控微机器人。
+Siyu Guo is a master's student of Mechanical Engineering at Beijing Institute of Technology. His research focuses on magnetically controlled microrobots.

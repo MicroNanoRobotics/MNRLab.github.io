@@ -2,11 +2,12 @@
 cms_language: zh
 translationKey: author-刘梦华
 # Display name
-title: 刘梦华 Menghua Liu
+title: 刘梦华
+title_zh: 刘梦华
 
 # Full name (for SEO)
-first_name: Menghua
-last_name: Liu
+first_name: 梦华
+last_name: 刘
 
 # Username (this should match the folder name)
 authors:
@@ -16,30 +17,28 @@ authors:
 superuser: false
 
 # Role/position
-role: 先进制造专业博士研究生 PhD Student of Advanced manufacturing
+role: 先进制造专业博士研究生
+role_zh: 先进制造专业博士研究生
 
 # Organizations/Affiliations
 organizations:
-  - name: 北京理工大学 Beijing Institute of Technology
+  - name: 北京理工大学
     url: ''
-
 # Short bio (displayed in user profile at end of posts)
-bio:
+bio: 研究方向包括微纳加工与微纳制造、仿人机器人、功能化生物微流控芯片。
+bio_zh: 研究方向包括微纳加工与微纳制造、仿人机器人、功能化生物微流控芯片。
 interests:
   - 仿人机器人
   - 微纳制造
   - 光刻技术
 education:
   courses:
-
     - course: 机械工程专业 博士联合培养
       institution: 荷语鲁汶大学工程科学学院
       year: 2024-2025
     - course: 先进制造专业 博士
       institution: 北京理工大学机电学院
       year: 2019-2025
-
-
 # Social/Academic Networking
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
@@ -82,6 +81,17 @@ weight: 100
 
 user_groups:
   - Alumni
+body_zh: |-
+
+  刘梦华，北京理工大学先进制造专业博士研究生。主要从事的方向包括微纳加工与微纳制造、仿人机器人、功能化生物微流控芯片等。具备较强的沟通表达能力和英文口语交流能力，热爱社交、爬山和旅行等户外活动。
+education_zh:
+  courses:
+    - course: 机械工程专业 博士联合培养
+      institution: 荷语鲁汶大学工程科学学院
+      year: 2024-2025
+    - course: 先进制造专业 博士
+      institution: 北京理工大学机电学院
+      year: 2019-2025
 ---
 
-刘梦华（毕业版），北京理工大学先进制造专业博士研究生。主要从事的方向包括微纳加工与微纳制造、仿人机器人、功能化生物微流控芯片等。具备较强的沟通表达能力和英文口语交流能力，热爱社交、爬山和旅行等一系列户外活动。
+刘梦华，北京理工大学先进制造专业博士研究生。主要从事的方向包括微纳加工与微纳制造、仿人机器人、功能化生物微流控芯片等。具备较强的沟通表达能力和英文口语交流能力，热爱社交、爬山和旅行等户外活动。

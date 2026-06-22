@@ -22,6 +22,22 @@
   {{ end }}
 
   {{ range $group := $block.content.user_groups }}
+    {{ $group_label := $group }}
+    {{ if eq $page.Language.Lang "zh" }}
+      {{ $group_labels := dict
+        "Principal Investigators" "课题负责人"
+        "Postdocs" "博士后"
+        "PhD Students" "博士研究生"
+        "Masters Students" "硕士研究生"
+        "Undergraduate Students" "本科生"
+        "Administration" "行政人员"
+        "Visitors" "访问人员"
+        "Alumni" "校友"
+      }}
+      {{ with index $group_labels $group }}
+        {{ $group_label = . }}
+      {{ end }}
+    {{ end }}
     {{ $query := where (where site.Pages "Section" "authors") ".Params.user_groups" "intersect" (slice $group) }}
     {{ $ordered := slice }}
 
@@ -40,7 +56,7 @@
 
     {{ if $ordered | and (gt (len $block.content.user_groups) 1) }}
       <div class="col-md-12">
-        <h2 class="mb-4">{{ $group | markdownify }}</h2>
+        <h2 class="mb-4">{{ $group_label | markdownify }}</h2>
       </div>
     {{ end }}
 
