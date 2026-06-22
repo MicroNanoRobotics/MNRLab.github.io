@@ -38,10 +38,18 @@ sections:
       subtitle: Selected research highlights
       text: ""
       slides:
-        - title: Journal Covers
+        - title: smartbot
           background:
             image:
-              filename: cover3.jpg
+              filename: 图片1.jpg
+        - background:
+            image:
+              filename: 图片3.png
+          title: CBS
+        - background:
+            image:
+              filename: 图片5.png
+          title: AS
     design:
       columns: "1"
       spacing:
@@ -101,10 +109,18 @@ sections_zh:
       subtitle: 代表性科研成果
       text: ""
       slides:
-        - title: 期刊封面
+        - title: smartbot
           background:
             image:
-              filename: cover3.jpg
+              filename: 图片1.jpg
+        - background:
+            image:
+              filename: 图片3.png
+          title: CBS
+        - background:
+            image:
+              filename: 图片5.png
+          title: AS
     design:
       columns: "1"
       spacing:
