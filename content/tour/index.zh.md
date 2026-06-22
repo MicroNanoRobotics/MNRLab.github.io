@@ -39,8 +39,12 @@ sections:
     content:
       title: 期刊封面
       subtitle: 代表性科研成果
-      text: |
-        ![期刊封面](科研.png)
+      text: ""
+      slides:
+        - title: 期刊封面
+          background:
+            image:
+              filename: cover3.jpg
     design:
       columns: '1'
       spacing:
