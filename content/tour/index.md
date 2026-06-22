@@ -50,7 +50,6 @@ sections:
           - "0"
           - 20px
           - "0"
-      css_class: fullscreen
   - block: collection
     content:
       title: Latest Articles
@@ -114,7 +113,6 @@ sections_zh:
           - "0"
           - 20px
           - "0"
-      css_class: fullscreen
   - block: collection
     content:
       title: 最新论文
