@@ -16,7 +16,7 @@ interests:
 interests_zh:
   - 磁控微机器人
 email: xxxxx
-weight: 100
+weight: 1
 superuser: false
 organizations:
   - name: Beijing Institute of Technology
